@@ -1,0 +1,306 @@
+nohup: ignoring input
+Could not save font_manager cache [Errno 122] Disk quota exceeded
+Device running: cuda
+Namespace(n_neurons=320, n_layers=6, epochs=200, batchsize=512, lr=5e-05, no_decay=False, decay_rate=0.8, decay_at_interval=True, decay_interval=15, datapath='new_gmm_isabel_week_6.vti', outpath='./models/', exp_path='../logs/', modified_data_path='./data/', dataset_name='3d_data', vti_name='predicted_isabel_7.vti', vti_path='./data/')
+
+Learning Rate: 5e-05
+Batch Size: 512
+Decay Rate: 0.8
+Max Epochs: 200
+Number of Neurons per Layer: 320
+Number of Layers (including input/output): 8
+Data Path: new_gmm_isabel_week_6.vti
+Output Path: ./models/
+Dataset Name: 3d_data
+Vti Name: predicted_isabel_7.vti
+train_3d_data_6rb_320n_512bs_5e-05lr_Truedecay_0.8dr_decayingAtInterval15
+Decay: True
+Extracting variables from path: new_gmm_isabel_week_6.vti
+
+n_pts: 3125000 dim: (250, 250, 50) n_dim: 3 total_arr: 9
+Total Variables: 9
+Univariate: False
+Coordinates Shape: (3125000, 3)
+Values Shape: (3125000, 9)
+Dataset Name: 3d_data
+Total Variables: 9
+Variables Name: ['GMM_Mean0', 'GMM_Mean1', 'GMM_Mean2', 'GMM_Std0', 'GMM_Std1', 'GMM_Std2', 'GMM_Weight0', 'GMM_Weight1', 'GMM_Weight2']
+
+Total Points in Data: 3125000
+Dimension of the Dataset: (250, 250, 50)
+Number of Dimensions: 3
+Coordinate Tensor Shape: torch.Size([3125000, 3])
+Scalar Values Tensor Shape: torch.Size([3125000, 9])
+
+###### Data setup is complete, now starting training ######
+
+MyResidualSirenNet(
+  (net_layers): ModuleList(
+    (0): SineLayer(
+      (linear): Linear(in_features=3, out_features=320, bias=True)
+    )
+    (1-6): 6 x ResidualSineLayer(
+      (linear_1): Linear(in_features=320, out_features=320, bias=True)
+      (linear_2): Linear(in_features=320, out_features=320, bias=True)
+    )
+    (7): Linear(in_features=320, out_features=9, bias=True)
+  )
+)
+Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 5e-05
+    maximize: False
+    weight_decay: 0
+)
+MSELoss()
+
+Learning Rate: 5e-05
+Max Epochs: 200
+Batch Size: 512
+Number of Hidden Layers: 6
+Number of Neurons per Layer: 320
+Decay Rate: 0.8
+Rate decays every 15 epochs.
+
+  0%|          | 0/200 [00:00<?, ?it/s]  0%|          | 1/200 [02:00<6:38:20, 120.10s/it]Epoch: 1/200 | Total Loss: 0.011810 | Entropy Loss: 1.070037 | Time: 120.1s | LR: 5e-05
+  1%|          | 2/200 [03:56<6:29:54, 118.16s/it]Epoch: 2/200 | Total Loss: 0.012026 | Entropy Loss: 1.070040 | Time: 116.79s | LR: 4e-05
+  2%|▏         | 3/200 [05:56<6:30:34, 118.96s/it]Epoch: 3/200 | Total Loss: 0.012346 | Entropy Loss: 1.070053 | Time: 119.91s | LR: 3.2000000000000005e-05
+  2%|▏         | 4/200 [07:53<6:25:07, 117.90s/it]Epoch: 4/200 | Total Loss: 0.012203 | Entropy Loss: 1.070051 | Time: 116.27s | LR: 3.2000000000000005e-05
+  2%|▎         | 5/200 [09:50<6:22:02, 117.55s/it]Epoch: 5/200 | Total Loss: 0.012168 | Entropy Loss: 1.070050 | Time: 116.95s | LR: 3.2000000000000005e-05
+  3%|▎         | 6/200 [11:48<6:21:17, 117.93s/it]Epoch: 6/200 | Total Loss: 0.012167 | Entropy Loss: 1.070045 | Time: 118.65s | LR: 3.2000000000000005e-05
+  4%|▎         | 7/200 [13:46<6:19:26, 117.96s/it]Epoch: 7/200 | Total Loss: 0.012177 | Entropy Loss: 1.070044 | Time: 118.03s | LR: 2.5600000000000006e-05
+  4%|▍         | 8/200 [15:44<6:17:28, 117.96s/it]Epoch: 8/200 | Total Loss: 0.012129 | Entropy Loss: 1.070041 | Time: 117.97s | LR: 2.5600000000000006e-05
+  4%|▍         | 9/200 [17:41<6:14:42, 117.71s/it]Epoch: 9/200 | Total Loss: 0.012122 | Entropy Loss: 1.070041 | Time: 117.16s | LR: 2.5600000000000006e-05
+  5%|▌         | 10/200 [19:39<6:12:15, 117.56s/it]Epoch: 10/200 | Total Loss: 0.012118 | Entropy Loss: 1.070043 | Time: 117.21s | LR: 2.5600000000000006e-05
+  6%|▌         | 11/200 [21:37<6:11:17, 117.87s/it]Epoch: 11/200 | Total Loss: 0.012131 | Entropy Loss: 1.070040 | Time: 118.57s | LR: 2.0480000000000007e-05
+  6%|▌         | 12/200 [23:36<6:09:59, 118.08s/it]Epoch: 12/200 | Total Loss: 0.012096 | Entropy Loss: 1.070043 | Time: 118.56s | LR: 2.0480000000000007e-05
+  6%|▋         | 13/200 [25:34<6:07:48, 118.01s/it]Epoch: 13/200 | Total Loss: 0.012086 | Entropy Loss: 1.070041 | Time: 117.85s | LR: 2.0480000000000007e-05
+  7%|▋         | 14/200 [27:32<6:05:56, 118.05s/it]Epoch: 14/200 | Total Loss: 0.012087 | Entropy Loss: 1.070042 | Time: 118.12s | LR: 1.6384000000000008e-05
+  8%|▊         | 15/200 [29:29<6:03:28, 117.88s/it]Epoch: 15/200 | Total Loss: 0.012042 | Entropy Loss: 1.070040 | Time: 117.51s | LR: 1.6384000000000008e-05
+  8%|▊         | 16/200 [31:27<6:01:47, 117.98s/it]Epoch: 16/200 | Total Loss: 0.012034 | Entropy Loss: 1.070040 | Time: 118.19s | LR: 1.3107200000000007e-05
+  8%|▊         | 17/200 [33:25<5:59:24, 117.84s/it]Epoch: 17/200 | Total Loss: 0.012004 | Entropy Loss: 1.070041 | Time: 117.51s | LR: 1.3107200000000007e-05
+  9%|▉         | 18/200 [35:23<5:57:59, 118.02s/it]Epoch: 18/200 | Total Loss: 0.011986 | Entropy Loss: 1.070038 | Time: 118.44s | LR: 1.3107200000000007e-05
+ 10%|▉         | 19/200 [37:22<5:56:14, 118.09s/it]Epoch: 19/200 | Total Loss: 0.011993 | Entropy Loss: 1.070039 | Time: 118.26s | LR: 1.0485760000000006e-05
+ 10%|█         | 20/200 [39:20<5:54:37, 118.21s/it]Epoch: 20/200 | Total Loss: 0.011967 | Entropy Loss: 1.070039 | Time: 118.49s | LR: 1.0485760000000006e-05
+ 10%|█         | 21/200 [41:18<5:52:08, 118.04s/it]Epoch: 21/200 | Total Loss: 0.011963 | Entropy Loss: 1.070037 | Time: 117.63s | LR: 1.0485760000000006e-05
+ 11%|█         | 22/200 [43:16<5:50:32, 118.16s/it]Epoch: 22/200 | Total Loss: 0.011966 | Entropy Loss: 1.070038 | Time: 118.45s | LR: 8.388608000000005e-06
+ 12%|█▏        | 23/200 [45:13<5:47:51, 117.92s/it]Epoch: 23/200 | Total Loss: 0.011938 | Entropy Loss: 1.070039 | Time: 117.35s | LR: 8.388608000000005e-06
+ 12%|█▏        | 24/200 [47:11<5:45:39, 117.84s/it]Epoch: 24/200 | Total Loss: 0.011935 | Entropy Loss: 1.070038 | Time: 117.65s | LR: 8.388608000000005e-06
+ 12%|█▎        | 25/200 [49:08<5:43:10, 117.66s/it]Epoch: 25/200 | Total Loss: 0.011931 | Entropy Loss: 1.070037 | Time: 117.23s | LR: 8.388608000000005e-06
+ 13%|█▎        | 26/200 [51:06<5:41:34, 117.79s/it]Epoch: 26/200 | Total Loss: 0.011928 | Entropy Loss: 1.070035 | Time: 118.09s | LR: 8.388608000000005e-06
+ 14%|█▎        | 27/200 [53:04<5:39:16, 117.67s/it]Epoch: 27/200 | Total Loss: 0.011925 | Entropy Loss: 1.070039 | Time: 117.4s | LR: 8.388608000000005e-06
+ 14%|█▍        | 28/200 [55:02<5:38:02, 117.92s/it]Epoch: 28/200 | Total Loss: 0.011922 | Entropy Loss: 1.070038 | Time: 118.5s | LR: 8.388608000000005e-06
+ 14%|█▍        | 29/200 [57:01<5:36:25, 118.04s/it]Epoch: 29/200 | Total Loss: 0.011915 | Entropy Loss: 1.070037 | Time: 118.33s | LR: 8.388608000000005e-06
+ 15%|█▌        | 30/200 [58:58<5:33:54, 117.85s/it]Epoch: 30/200 | Total Loss: 0.011915 | Entropy Loss: 1.070038 | Time: 117.39s | LR: 8.388608000000005e-06
+ 16%|█▌        | 31/200 [1:00:57<5:33:07, 118.27s/it]Epoch: 31/200 | Total Loss: 0.011922 | Entropy Loss: 1.070037 | Time: 119.25s | LR: 6.7108864000000044e-06
+ 16%|█▌        | 32/200 [1:02:55<5:30:33, 118.06s/it]Epoch: 32/200 | Total Loss: 0.011916 | Entropy Loss: 1.070040 | Time: 117.56s | LR: 6.7108864000000044e-06
+ 16%|█▋        | 33/200 [1:04:55<5:30:02, 118.58s/it]Epoch: 33/200 | Total Loss: 0.011909 | Entropy Loss: 1.070037 | Time: 119.79s | LR: 6.7108864000000044e-06
+ 17%|█▋        | 34/200 [1:06:53<5:27:55, 118.52s/it]Epoch: 34/200 | Total Loss: 0.011900 | Entropy Loss: 1.070034 | Time: 118.4s | LR: 6.7108864000000044e-06
+ 18%|█▊        | 35/200 [1:08:52<5:25:56, 118.53s/it]Epoch: 35/200 | Total Loss: 0.011899 | Entropy Loss: 1.070036 | Time: 118.53s | LR: 6.7108864000000044e-06
+ 18%|█▊        | 36/200 [1:10:50<5:24:15, 118.63s/it]Epoch: 36/200 | Total Loss: 0.011895 | Entropy Loss: 1.070037 | Time: 118.87s | LR: 6.7108864000000044e-06
+ 18%|█▊        | 37/200 [1:12:49<5:22:17, 118.64s/it]Epoch: 37/200 | Total Loss: 0.011894 | Entropy Loss: 1.070037 | Time: 118.65s | LR: 6.7108864000000044e-06
+ 19%|█▉        | 38/200 [1:14:47<5:19:45, 118.43s/it]Epoch: 38/200 | Total Loss: 0.011897 | Entropy Loss: 1.070037 | Time: 117.94s | LR: 5.368709120000004e-06
+ 20%|█▉        | 39/200 [1:16:46<5:18:16, 118.61s/it]Epoch: 39/200 | Total Loss: 0.011898 | Entropy Loss: 1.070038 | Time: 119.04s | LR: 4.294967296000004e-06
+ 20%|██        | 40/200 [1:18:44<5:15:55, 118.47s/it]Epoch: 40/200 | Total Loss: 0.011886 | Entropy Loss: 1.070036 | Time: 118.14s | LR: 4.294967296000004e-06
+ 20%|██        | 41/200 [1:20:43<5:14:14, 118.58s/it]Epoch: 41/200 | Total Loss: 0.011872 | Entropy Loss: 1.070037 | Time: 118.84s | LR: 4.294967296000004e-06
+ 21%|██        | 42/200 [1:22:43<5:12:59, 118.86s/it]Epoch: 42/200 | Total Loss: 0.011877 | Entropy Loss: 1.070037 | Time: 119.49s | LR: 3.4359738368000033e-06
+ 22%|██▏       | 43/200 [1:24:43<5:12:05, 119.27s/it]Epoch: 43/200 | Total Loss: 0.011867 | Entropy Loss: 1.070035 | Time: 120.25s | LR: 3.4359738368000033e-06
+ 22%|██▏       | 44/200 [1:26:40<5:08:45, 118.75s/it]Epoch: 44/200 | Total Loss: 0.011863 | Entropy Loss: 1.070039 | Time: 117.54s | LR: 3.4359738368000033e-06
+ 22%|██▎       | 45/200 [1:28:38<5:06:02, 118.47s/it]Epoch: 45/200 | Total Loss: 0.011860 | Entropy Loss: 1.070035 | Time: 117.79s | LR: 3.4359738368000033e-06
+ 23%|██▎       | 46/200 [1:30:36<5:03:19, 118.18s/it]Epoch: 46/200 | Total Loss: 0.011855 | Entropy Loss: 1.070037 | Time: 117.5s | LR: 2.7487790694400027e-06
+ 24%|██▎       | 47/200 [1:32:34<5:01:38, 118.29s/it]Epoch: 47/200 | Total Loss: 0.011848 | Entropy Loss: 1.070038 | Time: 118.56s | LR: 2.7487790694400027e-06
+ 24%|██▍       | 48/200 [1:34:33<4:59:55, 118.39s/it]Epoch: 48/200 | Total Loss: 0.011848 | Entropy Loss: 1.070037 | Time: 118.62s | LR: 2.1990232555520023e-06
+ 24%|██▍       | 49/200 [1:36:31<4:57:57, 118.40s/it]Epoch: 49/200 | Total Loss: 0.011839 | Entropy Loss: 1.070035 | Time: 118.41s | LR: 2.1990232555520023e-06
+ 25%|██▌       | 50/200 [1:38:30<4:56:03, 118.42s/it]Epoch: 50/200 | Total Loss: 0.011837 | Entropy Loss: 1.070037 | Time: 118.45s | LR: 2.1990232555520023e-06
+ 26%|██▌       | 51/200 [1:40:27<4:53:32, 118.20s/it]Epoch: 51/200 | Total Loss: 0.011836 | Entropy Loss: 1.070037 | Time: 117.7s | LR: 2.1990232555520023e-06
+ 26%|██▌       | 52/200 [1:42:25<4:51:01, 117.99s/it]Epoch: 52/200 | Total Loss: 0.011835 | Entropy Loss: 1.070039 | Time: 117.48s | LR: 2.1990232555520023e-06
+ 26%|██▋       | 53/200 [1:44:26<4:51:00, 118.78s/it]Epoch: 53/200 | Total Loss: 0.011829 | Entropy Loss: 1.070037 | Time: 120.63s | LR: 2.1990232555520023e-06
+ 27%|██▋       | 54/200 [1:46:24<4:48:36, 118.61s/it]Epoch: 54/200 | Total Loss: 0.011827 | Entropy Loss: 1.070038 | Time: 118.2s | LR: 2.1990232555520023e-06
+ 28%|██▊       | 55/200 [1:48:22<4:46:24, 118.51s/it]Epoch: 55/200 | Total Loss: 0.011823 | Entropy Loss: 1.070035 | Time: 118.29s | LR: 2.1990232555520023e-06
+ 28%|██▊       | 56/200 [1:50:22<4:45:08, 118.81s/it]Epoch: 56/200 | Total Loss: 0.011821 | Entropy Loss: 1.070036 | Time: 119.5s | LR: 2.1990232555520023e-06
+ 28%|██▊       | 57/200 [1:52:20<4:42:38, 118.59s/it]Epoch: 57/200 | Total Loss: 0.011819 | Entropy Loss: 1.070037 | Time: 118.08s | LR: 2.1990232555520023e-06
+ 29%|██▉       | 58/200 [1:54:19<4:41:04, 118.77s/it]Epoch: 58/200 | Total Loss: 0.011820 | Entropy Loss: 1.070036 | Time: 119.18s | LR: 1.7592186044416019e-06
+ 30%|██▉       | 59/200 [1:56:19<4:40:13, 119.24s/it]Epoch: 59/200 | Total Loss: 0.011816 | Entropy Loss: 1.070036 | Time: 120.36s | LR: 1.7592186044416019e-06
+ 30%|███       | 60/200 [1:58:18<4:37:46, 119.05s/it]Epoch: 60/200 | Total Loss: 0.011811 | Entropy Loss: 1.070036 | Time: 118.59s | LR: 1.7592186044416019e-06
+ 30%|███       | 61/200 [2:00:19<4:37:18, 119.70s/it]Epoch: 61/200 | Total Loss: 0.011811 | Entropy Loss: 1.070037 | Time: 121.23s | LR: 1.4073748835532816e-06
+ 31%|███       | 62/200 [2:02:19<4:35:14, 119.67s/it]Epoch: 62/200 | Total Loss: 0.011806 | Entropy Loss: 1.070038 | Time: 119.6s | LR: 1.4073748835532816e-06
+ 32%|███▏      | 63/200 [2:04:17<4:32:20, 119.28s/it]Epoch: 63/200 | Total Loss: 0.011805 | Entropy Loss: 1.070037 | Time: 118.35s | LR: 1.4073748835532816e-06
+ 32%|███▏      | 64/200 [2:06:16<4:30:10, 119.19s/it]Epoch: 64/200 | Total Loss: 0.011801 | Entropy Loss: 1.070036 | Time: 119.0s | LR: 1.4073748835532816e-06
+ 32%|███▎      | 65/200 [2:08:14<4:27:13, 118.77s/it]Epoch: 65/200 | Total Loss: 0.011802 | Entropy Loss: 1.070037 | Time: 117.77s | LR: 1.1258999068426254e-06
+ 33%|███▎      | 66/200 [2:10:12<4:24:58, 118.65s/it]Epoch: 66/200 | Total Loss: 0.011794 | Entropy Loss: 1.070038 | Time: 118.36s | LR: 1.1258999068426254e-06
+ 34%|███▎      | 67/200 [2:12:11<4:23:25, 118.84s/it]Epoch: 67/200 | Total Loss: 0.011791 | Entropy Loss: 1.070035 | Time: 119.29s | LR: 1.1258999068426254e-06
+ 34%|███▍      | 68/200 [2:14:08<4:20:08, 118.24s/it]Epoch: 68/200 | Total Loss: 0.011790 | Entropy Loss: 1.070039 | Time: 116.85s | LR: 1.1258999068426254e-06
+ 34%|███▍      | 69/200 [2:16:08<4:19:02, 118.65s/it]Epoch: 69/200 | Total Loss: 0.011789 | Entropy Loss: 1.070036 | Time: 119.59s | LR: 1.1258999068426254e-06
+ 35%|███▌      | 70/200 [2:18:06<4:16:44, 118.50s/it]Epoch: 70/200 | Total Loss: 0.011788 | Entropy Loss: 1.070035 | Time: 118.15s | LR: 1.1258999068426254e-06
+ 36%|███▌      | 71/200 [2:20:04<4:14:18, 118.28s/it]Epoch: 71/200 | Total Loss: 0.011791 | Entropy Loss: 1.070034 | Time: 117.77s | LR: 9.007199254741003e-07
+ 36%|███▌      | 72/200 [2:22:02<4:12:13, 118.23s/it]Epoch: 72/200 | Total Loss: 0.011789 | Entropy Loss: 1.070039 | Time: 118.11s | LR: 9.007199254741003e-07
+ 36%|███▋      | 73/200 [2:24:00<4:10:24, 118.30s/it]Epoch: 73/200 | Total Loss: 0.011784 | Entropy Loss: 1.070035 | Time: 118.46s | LR: 9.007199254741003e-07
+ 37%|███▋      | 74/200 [2:25:59<4:08:53, 118.52s/it]Epoch: 74/200 | Total Loss: 0.011783 | Entropy Loss: 1.070039 | Time: 119.02s | LR: 9.007199254741003e-07
+ 38%|███▊      | 75/200 [2:27:56<4:06:02, 118.10s/it]Epoch: 75/200 | Total Loss: 0.011784 | Entropy Loss: 1.070034 | Time: 117.13s | LR: 7.205759403792803e-07
+ 38%|███▊      | 76/200 [2:29:56<4:05:00, 118.55s/it]Epoch: 76/200 | Total Loss: 0.011781 | Entropy Loss: 1.070038 | Time: 119.61s | LR: 5.764607523034243e-07
+ 38%|███▊      | 77/200 [2:31:54<4:02:23, 118.24s/it]Epoch: 77/200 | Total Loss: 0.011779 | Entropy Loss: 1.070043 | Time: 117.52s | LR: 5.764607523034243e-07
+ 39%|███▉      | 78/200 [2:33:52<4:00:24, 118.23s/it]Epoch: 78/200 | Total Loss: 0.011778 | Entropy Loss: 1.070034 | Time: 118.2s | LR: 5.764607523034243e-07
+ 40%|███▉      | 79/200 [2:35:52<3:59:27, 118.74s/it]Epoch: 79/200 | Total Loss: 0.011776 | Entropy Loss: 1.070037 | Time: 119.92s | LR: 5.764607523034243e-07
+ 40%|████      | 80/200 [2:37:31<3:45:58, 112.99s/it]Epoch: 80/200 | Total Loss: 0.011777 | Entropy Loss: 1.070040 | Time: 99.58s | LR: 4.6116860184273944e-07
+ 40%|████      | 81/200 [2:39:28<3:46:15, 114.08s/it]Epoch: 81/200 | Total Loss: 0.011774 | Entropy Loss: 1.070032 | Time: 116.63s | LR: 4.6116860184273944e-07
+ 41%|████      | 82/200 [2:41:28<3:47:54, 115.89s/it]Epoch: 82/200 | Total Loss: 0.011773 | Entropy Loss: 1.070038 | Time: 120.1s | LR: 4.6116860184273944e-07
+ 42%|████▏     | 83/200 [2:43:27<3:47:51, 116.85s/it]Epoch: 83/200 | Total Loss: 0.011774 | Entropy Loss: 1.070034 | Time: 119.09s | LR: 3.689348814741916e-07
+ 42%|████▏     | 84/200 [2:45:24<3:46:05, 116.94s/it]Epoch: 84/200 | Total Loss: 0.011777 | Entropy Loss: 1.070039 | Time: 117.17s | LR: 2.9514790517935326e-07
+ 42%|████▎     | 85/200 [2:47:26<3:46:47, 118.32s/it]Epoch: 85/200 | Total Loss: 0.011773 | Entropy Loss: 1.070038 | Time: 121.54s | LR: 2.9514790517935326e-07
+ 43%|████▎     | 86/200 [2:49:26<3:45:42, 118.79s/it]Epoch: 86/200 | Total Loss: 0.011775 | Entropy Loss: 1.070038 | Time: 119.9s | LR: 2.3611832414348262e-07
+ 44%|████▎     | 87/200 [2:51:27<3:45:08, 119.54s/it]Epoch: 87/200 | Total Loss: 0.011771 | Entropy Loss: 1.070036 | Time: 121.28s | LR: 2.3611832414348262e-07
+ 44%|████▍     | 88/200 [2:53:26<3:42:46, 119.34s/it]Epoch: 88/200 | Total Loss: 0.011771 | Entropy Loss: 1.070039 | Time: 118.87s | LR: 1.8889465931478612e-07
+ 44%|████▍     | 89/200 [2:55:23<3:39:37, 118.71s/it]Epoch: 89/200 | Total Loss: 0.011771 | Entropy Loss: 1.070036 | Time: 117.25s | LR: 1.8889465931478612e-07
+ 45%|████▌     | 90/200 [2:57:21<3:37:24, 118.58s/it]Epoch: 90/200 | Total Loss: 0.011771 | Entropy Loss: 1.070038 | Time: 118.28s | LR: 1.511157274518289e-07
+ 46%|████▌     | 91/200 [2:59:18<3:34:32, 118.10s/it]Epoch: 91/200 | Total Loss: 0.011768 | Entropy Loss: 1.070039 | Time: 116.97s | LR: 1.208925819614631e-07
+ 46%|████▌     | 92/200 [3:01:16<3:32:28, 118.04s/it]Epoch: 92/200 | Total Loss: 0.011767 | Entropy Loss: 1.070035 | Time: 117.89s | LR: 1.208925819614631e-07
+ 46%|████▋     | 93/200 [3:03:09<3:27:27, 116.33s/it]Epoch: 93/200 | Total Loss: 0.011766 | Entropy Loss: 1.070042 | Time: 112.36s | LR: 1.208925819614631e-07
+ 47%|████▋     | 94/200 [3:05:05<3:25:17, 116.21s/it]Epoch: 94/200 | Total Loss: 0.011770 | Entropy Loss: 1.070034 | Time: 115.91s | LR: 9.67140655691705e-08
+ 48%|████▊     | 95/200 [3:07:01<3:23:43, 116.41s/it]Epoch: 95/200 | Total Loss: 0.011765 | Entropy Loss: 1.070033 | Time: 116.9s | LR: 9.67140655691705e-08
+ 48%|████▊     | 96/200 [3:09:02<3:23:57, 117.66s/it]Epoch: 96/200 | Total Loss: 0.011764 | Entropy Loss: 1.070037 | Time: 120.58s | LR: 9.67140655691705e-08
+ 48%|████▊     | 97/200 [3:11:01<3:22:25, 117.91s/it]Epoch: 97/200 | Total Loss: 0.011767 | Entropy Loss: 1.070035 | Time: 118.49s | LR: 7.73712524553364e-08
+ 49%|████▉     | 98/200 [3:13:03<3:22:49, 119.31s/it]Epoch: 98/200 | Total Loss: 0.011766 | Entropy Loss: 1.070041 | Time: 122.56s | LR: 7.73712524553364e-08
+ 50%|████▉     | 99/200 [3:15:03<3:21:19, 119.60s/it]Epoch: 99/200 | Total Loss: 0.011763 | Entropy Loss: 1.070037 | Time: 120.27s | LR: 7.73712524553364e-08
+ 50%|█████     | 100/200 [3:17:05<3:20:26, 120.27s/it]Epoch: 100/200 | Total Loss: 0.011768 | Entropy Loss: 1.070036 | Time: 121.81s | LR: 6.189700196426913e-08
+ 50%|█████     | 101/200 [3:19:06<3:18:35, 120.36s/it]Epoch: 101/200 | Total Loss: 0.011764 | Entropy Loss: 1.070040 | Time: 120.56s | LR: 6.189700196426913e-08
+ 51%|█████     | 102/200 [3:21:01<3:14:16, 118.94s/it]Epoch: 102/200 | Total Loss: 0.011763 | Entropy Loss: 1.070036 | Time: 115.63s | LR: 6.189700196426913e-08
+ 52%|█████▏    | 103/200 [3:23:00<3:12:14, 118.91s/it]Epoch: 103/200 | Total Loss: 0.011763 | Entropy Loss: 1.070045 | Time: 118.84s | LR: 6.189700196426913e-08
+ 52%|█████▏    | 104/200 [3:24:56<3:08:58, 118.11s/it]Epoch: 104/200 | Total Loss: 0.011763 | Entropy Loss: 1.070030 | Time: 116.23s | LR: 4.9517601571415304e-08
+ 52%|█████▎    | 105/200 [3:26:55<3:07:22, 118.34s/it]Epoch: 105/200 | Total Loss: 0.011759 | Entropy Loss: 1.070044 | Time: 118.88s | LR: 4.9517601571415304e-08
+ 53%|█████▎    | 106/200 [3:28:58<3:07:25, 119.63s/it]Epoch: 106/200 | Total Loss: 0.011761 | Entropy Loss: 1.070038 | Time: 122.64s | LR: 3.9614081257132246e-08
+ 54%|█████▎    | 107/200 [3:31:00<3:06:22, 120.25s/it]Epoch: 107/200 | Total Loss: 0.011760 | Entropy Loss: 1.070035 | Time: 121.68s | LR: 3.9614081257132246e-08
+ 54%|█████▍    | 108/200 [3:32:57<3:03:02, 119.38s/it]Epoch: 108/200 | Total Loss: 0.011758 | Entropy Loss: 1.070037 | Time: 117.35s | LR: 3.9614081257132246e-08
+ 55%|█████▍    | 109/200 [3:34:54<3:00:04, 118.73s/it]Epoch: 109/200 | Total Loss: 0.011758 | Entropy Loss: 1.070041 | Time: 117.2s | LR: 3.16912650057058e-08
+ 55%|█████▌    | 110/200 [3:36:52<2:57:51, 118.57s/it]Epoch: 110/200 | Total Loss: 0.011757 | Entropy Loss: 1.070038 | Time: 118.21s | LR: 3.16912650057058e-08
+ 56%|█████▌    | 111/200 [3:38:49<2:54:49, 117.86s/it]Epoch: 111/200 | Total Loss: 0.011754 | Entropy Loss: 1.070035 | Time: 116.18s | LR: 3.16912650057058e-08
+ 56%|█████▌    | 112/200 [3:40:43<2:51:15, 116.76s/it]Epoch: 112/200 | Total Loss: 0.011754 | Entropy Loss: 1.070043 | Time: 114.21s | LR: 2.535301200456464e-08
+ 56%|█████▋    | 113/200 [3:42:39<2:49:10, 116.68s/it]Epoch: 113/200 | Total Loss: 0.011755 | Entropy Loss: 1.070039 | Time: 116.47s | LR: 2.0282409603651712e-08
+ 57%|█████▋    | 114/200 [3:44:36<2:47:14, 116.69s/it]Epoch: 114/200 | Total Loss: 0.011755 | Entropy Loss: 1.070032 | Time: 116.71s | LR: 2.0282409603651712e-08
+ 57%|█████▊    | 115/200 [3:46:33<2:45:38, 116.92s/it]Epoch: 115/200 | Total Loss: 0.011752 | Entropy Loss: 1.070034 | Time: 117.46s | LR: 2.0282409603651712e-08
+ 58%|█████▊    | 116/200 [3:48:29<2:43:01, 116.45s/it]Epoch: 116/200 | Total Loss: 0.011750 | Entropy Loss: 1.070042 | Time: 115.34s | LR: 2.0282409603651712e-08
+ 58%|█████▊    | 117/200 [3:50:26<2:41:19, 116.62s/it]Epoch: 117/200 | Total Loss: 0.011748 | Entropy Loss: 1.070043 | Time: 117.03s | LR: 2.0282409603651712e-08
+ 59%|█████▉    | 118/200 [3:52:25<2:40:19, 117.31s/it]Epoch: 118/200 | Total Loss: 0.011750 | Entropy Loss: 1.070039 | Time: 118.91s | LR: 1.622592768292137e-08
+ 60%|█████▉    | 119/200 [3:54:22<2:38:17, 117.25s/it]Epoch: 119/200 | Total Loss: 0.011747 | Entropy Loss: 1.070035 | Time: 117.12s | LR: 1.622592768292137e-08
+ 60%|██████    | 120/200 [3:56:18<2:35:52, 116.91s/it]Epoch: 120/200 | Total Loss: 0.011745 | Entropy Loss: 1.070041 | Time: 116.12s | LR: 1.622592768292137e-08
+ 60%|██████    | 121/200 [3:58:16<2:34:21, 117.24s/it]Epoch: 121/200 | Total Loss: 0.011745 | Entropy Loss: 1.070032 | Time: 117.99s | LR: 1.2980742146337097e-08
+ 61%|██████    | 122/200 [4:00:08<2:30:13, 115.55s/it]Epoch: 122/200 | Total Loss: 0.011743 | Entropy Loss: 1.070043 | Time: 111.62s | LR: 1.2980742146337097e-08
+ 62%|██████▏   | 123/200 [4:01:53<2:24:19, 112.46s/it]Epoch: 123/200 | Total Loss: 0.011739 | Entropy Loss: 1.070038 | Time: 105.26s | LR: 1.2980742146337097e-08
+ 62%|██████▏   | 124/200 [4:03:49<2:23:58, 113.66s/it]Epoch: 124/200 | Total Loss: 0.011738 | Entropy Loss: 1.070040 | Time: 116.46s | LR: 1.2980742146337097e-08
+ 62%|██████▎   | 125/200 [4:05:46<2:23:06, 114.48s/it]Epoch: 125/200 | Total Loss: 0.011738 | Entropy Loss: 1.070038 | Time: 116.38s | LR: 1.2980742146337097e-08
+ 63%|██████▎   | 126/200 [4:07:46<2:23:24, 116.28s/it]Epoch: 126/200 | Total Loss: 0.011738 | Entropy Loss: 1.070040 | Time: 120.47s | LR: 1.0384593717069679e-08
+ 64%|██████▎   | 127/200 [4:09:41<2:21:02, 115.93s/it]Epoch: 127/200 | Total Loss: 0.011734 | Entropy Loss: 1.070042 | Time: 115.1s | LR: 1.0384593717069679e-08
+ 64%|██████▍   | 128/200 [4:11:39<2:19:44, 116.45s/it]Epoch: 128/200 | Total Loss: 0.011730 | Entropy Loss: 1.070042 | Time: 117.68s | LR: 1.0384593717069679e-08
+ 64%|██████▍   | 129/200 [4:13:38<2:18:45, 117.27s/it]Epoch: 129/200 | Total Loss: 0.011729 | Entropy Loss: 1.070042 | Time: 119.17s | LR: 1.0384593717069679e-08
+ 65%|██████▌   | 130/200 [4:15:35<2:16:33, 117.05s/it]Epoch: 130/200 | Total Loss: 0.011727 | Entropy Loss: 1.070040 | Time: 116.55s | LR: 1.0384593717069679e-08
+ 66%|██████▌   | 131/200 [4:17:32<2:14:38, 117.08s/it]Epoch: 131/200 | Total Loss: 0.011727 | Entropy Loss: 1.070035 | Time: 117.16s | LR: 1.0384593717069679e-08
+ 66%|██████▌   | 132/200 [4:19:27<2:12:09, 116.62s/it]Epoch: 132/200 | Total Loss: 0.011725 | Entropy Loss: 1.070046 | Time: 115.52s | LR: 1.0384593717069679e-08
+ 66%|██████▋   | 133/200 [4:21:25<2:10:36, 116.97s/it]Epoch: 133/200 | Total Loss: 0.011726 | Entropy Loss: 1.070039 | Time: 117.78s | LR: 8.307674973655743e-09
+ 67%|██████▋   | 134/200 [4:23:22<2:08:46, 117.07s/it]Epoch: 134/200 | Total Loss: 0.011719 | Entropy Loss: 1.070038 | Time: 117.32s | LR: 8.307674973655743e-09
+ 68%|██████▊   | 135/200 [4:25:03<2:01:27, 112.11s/it]Epoch: 135/200 | Total Loss: 0.011715 | Entropy Loss: 1.070040 | Time: 100.54s | LR: 8.307674973655743e-09
+ 68%|██████▊   | 136/200 [4:26:57<2:00:03, 112.55s/it]Epoch: 136/200 | Total Loss: 0.011715 | Entropy Loss: 1.070039 | Time: 113.56s | LR: 6.646139978924595e-09
+ 68%|██████▊   | 137/200 [4:28:56<2:00:19, 114.59s/it]Epoch: 137/200 | Total Loss: 0.011710 | Entropy Loss: 1.070042 | Time: 119.35s | LR: 6.646139978924595e-09
+ 69%|██████▉   | 138/200 [4:30:48<1:57:46, 113.97s/it]Epoch: 138/200 | Total Loss: 0.011703 | Entropy Loss: 1.070043 | Time: 112.53s | LR: 6.646139978924595e-09
+ 70%|██████▉   | 139/200 [4:32:44<1:56:24, 114.50s/it]Epoch: 139/200 | Total Loss: 0.011701 | Entropy Loss: 1.070040 | Time: 115.73s | LR: 6.646139978924595e-09
+ 70%|███████   | 140/200 [4:34:41<1:55:14, 115.24s/it]Epoch: 140/200 | Total Loss: 0.011702 | Entropy Loss: 1.070040 | Time: 116.96s | LR: 5.316911983139676e-09
+ 70%|███████   | 141/200 [4:36:36<1:53:19, 115.25s/it]Epoch: 141/200 | Total Loss: 0.011693 | Entropy Loss: 1.070039 | Time: 115.27s | LR: 5.316911983139676e-09
+ 71%|███████   | 142/200 [4:38:34<1:52:08, 116.01s/it]Epoch: 142/200 | Total Loss: 0.011686 | Entropy Loss: 1.070042 | Time: 117.78s | LR: 5.316911983139676e-09
+ 72%|███████▏  | 143/200 [4:40:32<1:50:41, 116.51s/it]Epoch: 143/200 | Total Loss: 0.011682 | Entropy Loss: 1.070043 | Time: 117.68s | LR: 5.316911983139676e-09
+ 72%|███████▏  | 144/200 [4:42:31<1:49:20, 117.16s/it]Epoch: 144/200 | Total Loss: 0.011680 | Entropy Loss: 1.070043 | Time: 118.67s | LR: 5.316911983139676e-09
+ 72%|███████▎  | 145/200 [4:44:28<1:47:25, 117.19s/it]Epoch: 145/200 | Total Loss: 0.011678 | Entropy Loss: 1.070043 | Time: 117.27s | LR: 5.316911983139676e-09
+ 73%|███████▎  | 146/200 [4:46:25<1:45:24, 117.11s/it]Epoch: 146/200 | Total Loss: 0.011677 | Entropy Loss: 1.070041 | Time: 116.93s | LR: 5.316911983139676e-09
+ 74%|███████▎  | 147/200 [4:48:21<1:43:18, 116.95s/it]Epoch: 147/200 | Total Loss: 0.011675 | Entropy Loss: 1.070040 | Time: 116.55s | LR: 5.316911983139676e-09
+ 74%|███████▍  | 148/200 [4:49:56<1:35:39, 110.38s/it]Epoch: 148/200 | Total Loss: 0.011672 | Entropy Loss: 1.070042 | Time: 95.05s | LR: 5.316911983139676e-09
+ 74%|███████▍  | 149/200 [4:51:54<1:35:35, 112.47s/it]Epoch: 149/200 | Total Loss: 0.011672 | Entropy Loss: 1.070042 | Time: 117.35s | LR: 4.253529586511741e-09
+ 75%|███████▌  | 150/200 [4:53:47<1:34:01, 112.82s/it]Epoch: 150/200 | Total Loss: 0.011662 | Entropy Loss: 1.070043 | Time: 113.62s | LR: 4.253529586511741e-09
+ 76%|███████▌  | 151/200 [4:55:45<1:33:15, 114.20s/it]Epoch: 151/200 | Total Loss: 0.011655 | Entropy Loss: 1.070043 | Time: 117.42s | LR: 3.402823669209393e-09
+ 76%|███████▌  | 152/200 [4:57:44<1:32:35, 115.74s/it]Epoch: 152/200 | Total Loss: 0.011644 | Entropy Loss: 1.070044 | Time: 119.33s | LR: 3.402823669209393e-09
+ 76%|███████▋  | 153/200 [4:59:44<1:31:31, 116.85s/it]Epoch: 153/200 | Total Loss: 0.011636 | Entropy Loss: 1.070043 | Time: 119.42s | LR: 3.402823669209393e-09
+ 77%|███████▋  | 154/200 [5:01:43<1:30:04, 117.48s/it]Epoch: 154/200 | Total Loss: 0.011629 | Entropy Loss: 1.070045 | Time: 118.95s | LR: 3.402823669209393e-09
+ 78%|███████▊  | 155/200 [5:03:40<1:28:07, 117.50s/it]Epoch: 155/200 | Total Loss: 0.011622 | Entropy Loss: 1.070045 | Time: 117.55s | LR: 3.402823669209393e-09
+ 78%|███████▊  | 156/200 [5:05:39<1:26:26, 117.86s/it]Epoch: 156/200 | Total Loss: 0.011618 | Entropy Loss: 1.070044 | Time: 118.71s | LR: 3.402823669209393e-09
+ 78%|███████▊  | 157/200 [5:07:37<1:24:32, 117.98s/it]Epoch: 157/200 | Total Loss: 0.011612 | Entropy Loss: 1.070047 | Time: 118.24s | LR: 3.402823669209393e-09
+ 79%|███████▉  | 158/200 [5:09:37<1:23:02, 118.64s/it]Epoch: 158/200 | Total Loss: 0.011608 | Entropy Loss: 1.070045 | Time: 120.19s | LR: 3.402823669209393e-09
+ 80%|███████▉  | 159/200 [5:11:42<1:22:13, 120.33s/it]Epoch: 159/200 | Total Loss: 0.011604 | Entropy Loss: 1.070045 | Time: 124.27s | LR: 3.402823669209393e-09
+ 80%|████████  | 160/200 [5:13:43<1:20:30, 120.77s/it]Epoch: 160/200 | Total Loss: 0.011601 | Entropy Loss: 1.070045 | Time: 121.79s | LR: 3.402823669209393e-09
+ 80%|████████  | 161/200 [5:15:44<1:18:31, 120.81s/it]Epoch: 161/200 | Total Loss: 0.011598 | Entropy Loss: 1.070047 | Time: 120.91s | LR: 3.402823669209393e-09
+ 81%|████████  | 162/200 [5:17:45<1:16:32, 120.84s/it]Epoch: 162/200 | Total Loss: 0.011592 | Entropy Loss: 1.070046 | Time: 120.92s | LR: 3.402823669209393e-09
+ 82%|████████▏ | 163/200 [5:19:51<1:15:22, 122.23s/it]Epoch: 163/200 | Total Loss: 0.011589 | Entropy Loss: 1.070046 | Time: 125.45s | LR: 3.402823669209393e-09
+ 82%|████████▏ | 164/200 [5:21:50<1:12:46, 121.29s/it]Epoch: 164/200 | Total Loss: 0.011586 | Entropy Loss: 1.070045 | Time: 119.09s | LR: 3.402823669209393e-09
+ 82%|████████▎ | 165/200 [5:23:47<1:09:59, 120.00s/it]Epoch: 165/200 | Total Loss: 0.011582 | Entropy Loss: 1.070047 | Time: 117.0s | LR: 3.402823669209393e-09
+ 83%|████████▎ | 166/200 [5:25:46<1:07:57, 119.92s/it]Epoch: 166/200 | Total Loss: 0.011580 | Entropy Loss: 1.070046 | Time: 119.75s | LR: 2.7222589353675143e-09
+ 84%|████████▎ | 167/200 [5:27:49<1:06:25, 120.77s/it]Epoch: 167/200 | Total Loss: 0.011571 | Entropy Loss: 1.070047 | Time: 122.74s | LR: 2.7222589353675143e-09
+ 84%|████████▍ | 168/200 [5:29:50<1:04:22, 120.71s/it]Epoch: 168/200 | Total Loss: 0.011562 | Entropy Loss: 1.070046 | Time: 120.56s | LR: 2.7222589353675143e-09
+ 84%|████████▍ | 169/200 [5:31:52<1:02:37, 121.21s/it]Epoch: 169/200 | Total Loss: 0.011558 | Entropy Loss: 1.070045 | Time: 122.37s | LR: 2.7222589353675143e-09
+ 85%|████████▌ | 170/200 [5:33:55<1:00:49, 121.64s/it]Epoch: 170/200 | Total Loss: 0.011552 | Entropy Loss: 1.070048 | Time: 122.65s | LR: 2.7222589353675143e-09
+ 86%|████████▌ | 171/200 [5:36:01<59:28, 123.05s/it]  Epoch: 171/200 | Total Loss: 0.011547 | Entropy Loss: 1.070049 | Time: 126.35s | LR: 2.7222589353675143e-09
+ 86%|████████▌ | 172/200 [5:38:05<57:28, 123.16s/it]Epoch: 172/200 | Total Loss: 0.011544 | Entropy Loss: 1.070047 | Time: 123.41s | LR: 2.7222589353675143e-09
+ 86%|████████▋ | 173/200 [5:40:06<55:12, 122.68s/it]Epoch: 173/200 | Total Loss: 0.011541 | Entropy Loss: 1.070047 | Time: 121.54s | LR: 2.7222589353675143e-09
+ 87%|████████▋ | 174/200 [5:41:54<51:11, 118.12s/it]Epoch: 174/200 | Total Loss: 0.011536 | Entropy Loss: 1.070048 | Time: 107.49s | LR: 2.7222589353675143e-09
+ 88%|████████▊ | 175/200 [5:43:52<49:16, 118.26s/it]Epoch: 175/200 | Total Loss: 0.011531 | Entropy Loss: 1.070048 | Time: 118.6s | LR: 2.7222589353675143e-09
+ 88%|████████▊ | 176/200 [5:45:53<47:35, 118.96s/it]Epoch: 176/200 | Total Loss: 0.011527 | Entropy Loss: 1.070049 | Time: 120.58s | LR: 2.7222589353675143e-09
+ 88%|████████▊ | 177/200 [5:47:51<45:28, 118.65s/it]Epoch: 177/200 | Total Loss: 0.011523 | Entropy Loss: 1.070048 | Time: 117.92s | LR: 2.7222589353675143e-09
+ 89%|████████▉ | 178/200 [5:49:55<44:08, 120.37s/it]Epoch: 178/200 | Total Loss: 0.011520 | Entropy Loss: 1.070049 | Time: 124.38s | LR: 2.7222589353675143e-09
+ 90%|████████▉ | 179/200 [5:52:00<42:35, 121.67s/it]Epoch: 179/200 | Total Loss: 0.011515 | Entropy Loss: 1.070048 | Time: 124.71s | LR: 2.7222589353675143e-09
+ 90%|█████████ | 180/200 [5:54:06<40:58, 122.91s/it]Epoch: 180/200 | Total Loss: 0.011512 | Entropy Loss: 1.070049 | Time: 125.8s | LR: 2.7222589353675143e-09
+ 90%|█████████ | 181/200 [5:56:06<38:41, 122.16s/it]Epoch: 181/200 | Total Loss: 0.011507 | Entropy Loss: 1.070048 | Time: 120.41s | LR: 2.1778071482940114e-09
+ 91%|█████████ | 182/200 [5:58:08<36:38, 122.12s/it]Epoch: 182/200 | Total Loss: 0.011498 | Entropy Loss: 1.070049 | Time: 122.01s | LR: 2.1778071482940114e-09
+ 92%|█████████▏| 183/200 [6:00:06<34:16, 120.99s/it]Epoch: 183/200 | Total Loss: 0.011491 | Entropy Loss: 1.070049 | Time: 118.36s | LR: 2.1778071482940114e-09
+ 92%|█████████▏| 184/200 [6:02:09<32:22, 121.43s/it]Epoch: 184/200 | Total Loss: 0.011486 | Entropy Loss: 1.070050 | Time: 122.44s | LR: 2.1778071482940114e-09
+ 92%|█████████▎| 185/200 [6:04:10<30:18, 121.24s/it]Epoch: 185/200 | Total Loss: 0.011480 | Entropy Loss: 1.070049 | Time: 120.79s | LR: 2.1778071482940114e-09
+ 93%|█████████▎| 186/200 [6:06:08<28:04, 120.29s/it]Epoch: 186/200 | Total Loss: 0.011476 | Entropy Loss: 1.070051 | Time: 118.09s | LR: 2.1778071482940114e-09
+ 94%|█████████▎| 187/200 [6:08:09<26:09, 120.70s/it]Epoch: 187/200 | Total Loss: 0.011472 | Entropy Loss: 1.070050 | Time: 121.64s | LR: 2.1778071482940114e-09
+ 94%|█████████▍| 188/200 [6:10:05<23:48, 119.06s/it]Epoch: 188/200 | Total Loss: 0.011468 | Entropy Loss: 1.070050 | Time: 115.25s | LR: 2.1778071482940114e-09
+ 94%|█████████▍| 189/200 [6:12:08<22:02, 120.26s/it]Epoch: 189/200 | Total Loss: 0.011463 | Entropy Loss: 1.070050 | Time: 123.05s | LR: 2.1778071482940114e-09
+ 95%|█████████▌| 190/200 [6:14:08<20:01, 120.17s/it]Epoch: 190/200 | Total Loss: 0.011460 | Entropy Loss: 1.070050 | Time: 119.95s | LR: 2.1778071482940114e-09
+ 96%|█████████▌| 191/200 [6:16:00<17:41, 117.92s/it]Epoch: 191/200 | Total Loss: 0.011457 | Entropy Loss: 1.070051 | Time: 112.67s | LR: 2.1778071482940114e-09
+ 96%|█████████▌| 192/200 [6:17:57<15:41, 117.73s/it]Epoch: 192/200 | Total Loss: 0.011453 | Entropy Loss: 1.070049 | Time: 117.3s | LR: 2.1778071482940114e-09
+ 96%|█████████▋| 193/200 [6:19:56<13:45, 117.91s/it]Epoch: 193/200 | Total Loss: 0.011451 | Entropy Loss: 1.070050 | Time: 118.32s | LR: 2.1778071482940114e-09
+ 97%|█████████▋| 194/200 [6:21:53<11:46, 117.76s/it]Epoch: 194/200 | Total Loss: 0.011448 | Entropy Loss: 1.070050 | Time: 117.4s | LR: 2.1778071482940114e-09
+ 98%|█████████▊| 195/200 [6:23:52<09:49, 118.00s/it]Epoch: 195/200 | Total Loss: 0.011446 | Entropy Loss: 1.070050 | Time: 118.55s | LR: 2.1778071482940114e-09
+ 98%|█████████▊| 196/200 [6:25:51<07:53, 118.36s/it]Epoch: 196/200 | Total Loss: 0.011443 | Entropy Loss: 1.070048 | Time: 119.2s | LR: 1.7422457186352093e-09
+ 98%|█████████▊| 197/200 [6:27:50<05:55, 118.60s/it]Epoch: 197/200 | Total Loss: 0.011438 | Entropy Loss: 1.070048 | Time: 119.16s | LR: 1.7422457186352093e-09
+ 99%|█████████▉| 198/200 [6:29:50<03:57, 118.94s/it]Epoch: 198/200 | Total Loss: 0.011436 | Entropy Loss: 1.070048 | Time: 119.74s | LR: 1.7422457186352093e-09
+100%|█████████▉| 199/200 [6:31:50<01:59, 119.34s/it]Epoch: 199/200 | Total Loss: 0.011435 | Entropy Loss: 1.070049 | Time: 120.27s | LR: 1.7422457186352093e-09
+100%|██████████| 200/200 [6:33:48<00:00, 118.90s/it]100%|██████████| 200/200 [6:33:48<00:00, 118.14s/it]
+Epoch: 200/200 | Total Loss: 0.011433 | Entropy Loss: 1.070048 | Time: 117.84s | LR: 1.7422457186352093e-09
+
+Epoch with Least Loss: 200 | Loss: 0.011433432297048745 
+
+GMM_Mean0  PSNR: 13.945548949963115
+GMM_Mean1  PSNR: 14.61212166858056
+GMM_Mean2  PSNR: 23.066392824816187
+GMM_Std0  PSNR: 7.663105640752413
+GMM_Std1  PSNR: 7.179860834685209
+GMM_Std2  PSNR: 6.519870840793944
+GMM_Weight0  PSNR: 14.337762797269463
+GMM_Weight1  PSNR: 8.01693593692975
+GMM_Weight2  PSNR: 18.44238522668966
+
+Average psnr :  12.642664968942256
+mean 11.27092758449433
+RMSE: 0.5463659380878997
+GMM_Mean0  PSNR: 13.945548949963115
+GMM_Mean1  PSNR: 14.61212166858056
+GMM_Mean2  PSNR: 23.066392824816187
+GMM_Std0  PSNR: 7.663105640752413
+GMM_Std1  PSNR: 7.179860834685209
+GMM_Std2  PSNR: 6.519870840793944
+GMM_Weight0  PSNR: 14.337762797269463
+GMM_Weight1  PSNR: 8.01693593692975
+GMM_Weight2  PSNR: 18.44238522668966
+
+Average psnr :  12.642664968942256
+RMSE: 0.5463659380878997
+Traceback (most recent call last):
+  File "/data/tsudhakar24/thesis/parameter_learning_main_wweek_7.py", line 887, in <module>
+    print(os.path.getsize('/kaggle/working/models/train_3d_data_200ep_6rb_320n_512bs_5e-05lr_Truedecay_0.8dr_decayingAtInterval15.pth') / (1024 ** 2), 'MB')
+  File "/usr/lib/python3.10/genericpath.py", line 50, in getsize
+    return os.stat(filename).st_size
+FileNotFoundError: [Errno 2] No such file or directory: '/kaggle/working/models/train_3d_data_200ep_6rb_320n_512bs_5e-05lr_Truedecay_0.8dr_decayingAtInterval15.pth'

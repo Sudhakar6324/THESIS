@@ -1,0 +1,457 @@
+Loading original model from /content/150_neurons_mean.pth
+Initial PSNR (Mean Model): 72.7811
+Original model parameters: 272551
+
+--- Starting Iterative Pruning ---
+
+Attempting to prune with ratio: 5%
+Original hidden neurons: 150, New hidden neurons: 143 (Pruning 7 neurons)
+New pruned model architecture:
+MyResidualSirenNet(
+  (net_layers): ModuleList(
+    (0): SineLayer(
+      (linear): Linear(in_features=3, out_features=143, bias=True)
+    )
+    (1-6): 6 x ResidualSineLayer(
+      (linear_1): Linear(in_features=143, out_features=143, bias=True)
+      (linear_2): Linear(in_features=143, out_features=143, bias=True)
+    )
+    (7): Linear(in_features=143, out_features=1, bias=True)
+  )
+)
+New pruned model parameters: 247820
+Parameter reduction: 9.07%
+
+--- Fine-tuning pruned model for 50 epochs ---
+  2%|▏         | 1/50 [00:04<03:18,  4.05s/it]Fine-tune Epoch 1/50, Loss: 3.497561e-04, LR: 5.00e-06
+  4%|▍         | 2/50 [00:08<03:37,  4.54s/it]Fine-tune Epoch 2/50, Loss: 3.140939e-05, LR: 5.00e-06
+  6%|▌         | 3/50 [00:13<03:27,  4.42s/it]Fine-tune Epoch 3/50, Loss: 1.610739e-05, LR: 5.00e-06
+  8%|▊         | 4/50 [00:17<03:26,  4.49s/it]Fine-tune Epoch 4/50, Loss: 1.052519e-05, LR: 5.00e-06
+ 10%|█         | 5/50 [00:22<03:20,  4.45s/it]Fine-tune Epoch 5/50, Loss: 7.700598e-06, LR: 5.00e-06
+ 12%|█▏        | 6/50 [00:26<03:12,  4.37s/it]Fine-tune Epoch 6/50, Loss: 6.179420e-06, LR: 5.00e-06
+ 14%|█▍        | 7/50 [00:31<03:12,  4.48s/it]Fine-tune Epoch 7/50, Loss: 5.300114e-06, LR: 5.00e-06
+ 16%|█▌        | 8/50 [00:35<03:04,  4.40s/it]Fine-tune Epoch 8/50, Loss: 4.721413e-06, LR: 5.00e-06
+ 18%|█▊        | 9/50 [00:39<02:58,  4.36s/it]Fine-tune Epoch 9/50, Loss: 4.266458e-06, LR: 5.00e-06
+ 20%|██        | 10/50 [00:44<03:00,  4.51s/it]Fine-tune Epoch 10/50, Loss: 4.168041e-06, LR: 5.00e-06
+ 22%|██▏       | 11/50 [00:48<02:50,  4.37s/it]Fine-tune Epoch 11/50, Loss: 3.895726e-06, LR: 5.00e-06
+ 24%|██▍       | 12/50 [00:52<02:42,  4.27s/it]Fine-tune Epoch 12/50, Loss: 3.449366e-06, LR: 5.00e-06
+ 26%|██▌       | 13/50 [00:57<02:44,  4.45s/it]Fine-tune Epoch 13/50, Loss: 3.607361e-06, LR: 5.00e-06
+ 28%|██▊       | 14/50 [01:01<02:37,  4.39s/it]Fine-tune Epoch 14/50, Loss: 3.206359e-06, LR: 5.00e-06
+ 30%|███       | 15/50 [01:05<02:32,  4.36s/it]Fine-tune Epoch 15/50, Loss: 3.305714e-06, LR: 5.00e-06
+ 32%|███▏      | 16/50 [01:10<02:30,  4.44s/it]Fine-tune Epoch 16/50, Loss: 3.138003e-06, LR: 5.00e-06
+ 34%|███▍      | 17/50 [01:14<02:24,  4.37s/it]Fine-tune Epoch 17/50, Loss: 2.755678e-06, LR: 5.00e-06
+ 36%|███▌      | 18/50 [01:19<02:23,  4.47s/it]Fine-tune Epoch 18/50, Loss: 2.931521e-06, LR: 5.00e-06
+ 38%|███▊      | 19/50 [01:23<02:16,  4.41s/it]Fine-tune Epoch 19/50, Loss: 2.539128e-06, LR: 5.00e-06
+ 40%|████      | 20/50 [01:27<02:10,  4.35s/it]Fine-tune Epoch 20/50, Loss: 2.719243e-06, LR: 5.00e-06
+ 42%|████▏     | 21/50 [01:32<02:10,  4.51s/it]Fine-tune Epoch 21/50, Loss: 2.611569e-06, LR: 5.00e-06
+ 44%|████▍     | 22/50 [01:36<02:02,  4.37s/it]Fine-tune Epoch 22/50, Loss: 2.526925e-06, LR: 5.00e-06
+ 46%|████▌     | 23/50 [01:41<01:57,  4.34s/it]Fine-tune Epoch 23/50, Loss: 2.700911e-06, LR: 5.00e-06
+ 48%|████▊     | 24/50 [01:45<01:55,  4.43s/it]Fine-tune Epoch 24/50, Loss: 2.319525e-06, LR: 5.00e-06
+ 50%|█████     | 25/50 [01:50<01:49,  4.38s/it]Fine-tune Epoch 25/50, Loss: 2.311766e-06, LR: 5.00e-06
+ 52%|█████▏    | 26/50 [01:54<01:44,  4.37s/it]Fine-tune Epoch 26/50, Loss: 2.457607e-06, LR: 5.00e-06
+ 54%|█████▍    | 27/50 [01:58<01:41,  4.43s/it]Fine-tune Epoch 27/50, Loss: 2.271584e-06, LR: 5.00e-06
+ 56%|█████▌    | 28/50 [02:03<01:34,  4.31s/it]Fine-tune Epoch 28/50, Loss: 2.065020e-06, LR: 5.00e-06
+ 58%|█████▊    | 29/50 [02:07<01:33,  4.47s/it]Fine-tune Epoch 29/50, Loss: 2.380247e-06, LR: 5.00e-06
+ 60%|██████    | 30/50 [02:12<01:28,  4.40s/it]Fine-tune Epoch 30/50, Loss: 2.306196e-06, LR: 5.00e-06
+ 62%|██████▏   | 31/50 [02:16<01:21,  4.29s/it]Fine-tune Epoch 31/50, Loss: 2.065462e-06, LR: 5.00e-06
+ 64%|██████▍   | 32/50 [02:20<01:20,  4.46s/it]Fine-tune Epoch 32/50, Loss: 2.446923e-06, LR: 5.00e-06
+ 66%|██████▌   | 33/50 [02:25<01:14,  4.39s/it]Fine-tune Epoch 33/50, Loss: 1.871632e-06, LR: 5.00e-06
+ 68%|██████▊   | 34/50 [02:29<01:08,  4.29s/it]Fine-tune Epoch 34/50, Loss: 2.010579e-06, LR: 5.00e-06
+ 70%|███████   | 35/50 [02:34<01:06,  4.46s/it]Fine-tune Epoch 35/50, Loss: 2.234357e-06, LR: 5.00e-06
+ 72%|███████▏  | 36/50 [02:38<01:01,  4.40s/it]Fine-tune Epoch 36/50, Loss: 2.042022e-06, LR: 5.00e-06
+ 74%|███████▍  | 37/50 [02:43<00:58,  4.49s/it]Fine-tune Epoch 37/50, Loss: 1.961893e-06, LR: 5.00e-06
+ 76%|███████▌  | 38/50 [02:47<00:53,  4.44s/it]Fine-tune Epoch 38/50, Loss: 2.075104e-06, LR: 5.00e-06
+ 78%|███████▊  | 39/50 [02:51<00:48,  4.37s/it]Fine-tune Epoch 39/50, Loss: 2.066099e-06, LR: 5.00e-06
+ 80%|████████  | 40/50 [02:56<00:44,  4.46s/it]Fine-tune Epoch 40/50, Loss: 1.844949e-06, LR: 5.00e-06
+ 82%|████████▏ | 41/50 [03:00<00:39,  4.39s/it]Fine-tune Epoch 41/50, Loss: 1.953053e-06, LR: 5.00e-06
+ 84%|████████▍ | 42/50 [03:04<00:34,  4.29s/it]Fine-tune Epoch 42/50, Loss: 2.052371e-06, LR: 5.00e-06
+ 86%|████████▌ | 43/50 [03:09<00:31,  4.45s/it]Fine-tune Epoch 43/50, Loss: 1.881572e-06, LR: 5.00e-06
+ 88%|████████▊ | 44/50 [03:13<00:26,  4.40s/it]Fine-tune Epoch 44/50, Loss: 1.977908e-06, LR: 5.00e-06
+ 90%|█████████ | 45/50 [03:17<00:21,  4.34s/it]Fine-tune Epoch 45/50, Loss: 1.883589e-06, LR: 5.00e-06
+ 92%|█████████▏| 46/50 [03:22<00:18,  4.51s/it]Fine-tune Epoch 46/50, Loss: 1.966740e-06, LR: 5.00e-06
+ 94%|█████████▍| 47/50 [03:26<00:13,  4.42s/it]Fine-tune Epoch 47/50, Loss: 1.740340e-06, LR: 5.00e-06
+ 96%|█████████▌| 48/50 [03:31<00:09,  4.50s/it]Fine-tune Epoch 48/50, Loss: 1.578012e-06, LR: 5.00e-06
+ 98%|█████████▊| 49/50 [03:35<00:04,  4.42s/it]Fine-tune Epoch 49/50, Loss: 2.131614e-06, LR: 5.00e-06
+100%|██████████| 50/50 [03:40<00:00,  4.40s/it]
+Fine-tune Epoch 50/50, Loss: 1.662974e-06, LR: 5.00e-06
+
+Final PSNR after pruning and fine-tuning: 64.7710
+Pruning resulted in PSNR 64.77 which is below target 70.00. Consider less aggressive pruning.
+Pruning with ratio 5% failed to meet PSNR target.
+
+Attempting to prune with ratio: 10%
+Original hidden neurons: 150, New hidden neurons: 135 (Pruning 15 neurons)
+New pruned model architecture:
+MyResidualSirenNet(
+  (net_layers): ModuleList(
+    (0): SineLayer(
+      (linear): Linear(in_features=3, out_features=135, bias=True)
+    )
+    (1-6): 6 x ResidualSineLayer(
+      (linear_1): Linear(in_features=135, out_features=135, bias=True)
+      (linear_2): Linear(in_features=135, out_features=135, bias=True)
+    )
+    (7): Linear(in_features=135, out_features=1, bias=True)
+  )
+)
+New pruned model parameters: 220996
+Parameter reduction: 18.92%
+
+--- Fine-tuning pruned model for 50 epochs ---
+  2%|▏         | 1/50 [00:04<03:49,  4.68s/it]Fine-tune Epoch 1/50, Loss: 2.129900e-03, LR: 5.00e-06
+  4%|▍         | 2/50 [00:08<03:32,  4.42s/it]Fine-tune Epoch 2/50, Loss: 1.433895e-04, LR: 5.00e-06
+  6%|▌         | 3/50 [00:12<03:19,  4.24s/it]Fine-tune Epoch 3/50, Loss: 6.866154e-05, LR: 5.00e-06
+  8%|▊         | 4/50 [00:17<03:26,  4.48s/it]Fine-tune Epoch 4/50, Loss: 4.140246e-05, LR: 5.00e-06
+ 10%|█         | 5/50 [00:21<03:17,  4.38s/it]Fine-tune Epoch 5/50, Loss: 2.773339e-05, LR: 5.00e-06
+ 12%|█▏        | 6/50 [00:26<03:07,  4.27s/it]Fine-tune Epoch 6/50, Loss: 2.018537e-05, LR: 5.00e-06
+ 14%|█▍        | 7/50 [00:30<03:12,  4.47s/it]Fine-tune Epoch 7/50, Loss: 1.537724e-05, LR: 5.00e-06
+ 16%|█▌        | 8/50 [00:35<03:04,  4.39s/it]Fine-tune Epoch 8/50, Loss: 1.239394e-05, LR: 5.00e-06
+ 18%|█▊        | 9/50 [00:39<03:04,  4.49s/it]Fine-tune Epoch 9/50, Loss: 1.009844e-05, LR: 5.00e-06
+ 20%|██        | 10/50 [00:44<02:55,  4.38s/it]Fine-tune Epoch 10/50, Loss: 8.657114e-06, LR: 5.00e-06
+ 22%|██▏       | 11/50 [00:48<02:46,  4.28s/it]Fine-tune Epoch 11/50, Loss: 7.458139e-06, LR: 5.00e-06
+ 24%|██▍       | 12/50 [00:52<02:49,  4.46s/it]Fine-tune Epoch 12/50, Loss: 7.122513e-06, LR: 5.00e-06
+ 26%|██▌       | 13/50 [00:57<02:45,  4.46s/it]Fine-tune Epoch 13/50, Loss: 6.087495e-06, LR: 5.00e-06
+ 28%|██▊       | 14/50 [01:01<02:36,  4.36s/it]Fine-tune Epoch 14/50, Loss: 5.810588e-06, LR: 5.00e-06
+ 30%|███       | 15/50 [01:06<02:37,  4.51s/it]Fine-tune Epoch 15/50, Loss: 5.524375e-06, LR: 5.00e-06
+ 32%|███▏      | 16/50 [01:10<02:28,  4.37s/it]Fine-tune Epoch 16/50, Loss: 4.883150e-06, LR: 5.00e-06
+ 34%|███▍      | 17/50 [01:14<02:24,  4.37s/it]Fine-tune Epoch 17/50, Loss: 4.620194e-06, LR: 5.00e-06
+ 36%|███▌      | 18/50 [01:19<02:23,  4.48s/it]Fine-tune Epoch 18/50, Loss: 4.448478e-06, LR: 5.00e-06
+ 38%|███▊      | 19/50 [01:23<02:14,  4.34s/it]Fine-tune Epoch 19/50, Loss: 4.106239e-06, LR: 5.00e-06
+ 40%|████      | 20/50 [01:28<02:14,  4.48s/it]Fine-tune Epoch 20/50, Loss: 3.926535e-06, LR: 5.00e-06
+ 42%|████▏     | 21/50 [01:32<02:07,  4.38s/it]Fine-tune Epoch 21/50, Loss: 3.933116e-06, LR: 5.00e-06
+ 44%|████▍     | 22/50 [01:36<02:01,  4.34s/it]Fine-tune Epoch 22/50, Loss: 3.607954e-06, LR: 5.00e-06
+ 46%|████▌     | 23/50 [01:41<02:01,  4.51s/it]Fine-tune Epoch 23/50, Loss: 3.371732e-06, LR: 5.00e-06
+ 48%|████▊     | 24/50 [01:45<01:53,  4.38s/it]Fine-tune Epoch 24/50, Loss: 3.300040e-06, LR: 5.00e-06
+ 50%|█████     | 25/50 [01:49<01:48,  4.33s/it]Fine-tune Epoch 25/50, Loss: 3.426941e-06, LR: 5.00e-06
+ 52%|█████▏    | 26/50 [01:54<01:47,  4.49s/it]Fine-tune Epoch 26/50, Loss: 2.977622e-06, LR: 5.00e-06
+ 54%|█████▍    | 27/50 [01:58<01:40,  4.37s/it]Fine-tune Epoch 27/50, Loss: 3.172591e-06, LR: 5.00e-06
+ 56%|█████▌    | 28/50 [02:03<01:36,  4.38s/it]Fine-tune Epoch 28/50, Loss: 3.000057e-06, LR: 5.00e-06
+ 58%|█████▊    | 29/50 [02:07<01:33,  4.44s/it]Fine-tune Epoch 29/50, Loss: 2.913674e-06, LR: 5.00e-06
+ 60%|██████    | 30/50 [02:12<01:27,  4.37s/it]Fine-tune Epoch 30/50, Loss: 2.728144e-06, LR: 5.00e-06
+ 62%|██████▏   | 31/50 [02:16<01:25,  4.52s/it]Fine-tune Epoch 31/50, Loss: 3.010952e-06, LR: 5.00e-06
+ 64%|██████▍   | 32/50 [02:21<01:19,  4.44s/it]Fine-tune Epoch 32/50, Loss: 2.700357e-06, LR: 5.00e-06
+ 66%|██████▌   | 33/50 [02:25<01:14,  4.37s/it]Fine-tune Epoch 33/50, Loss: 2.662144e-06, LR: 5.00e-06
+ 68%|██████▊   | 34/50 [02:30<01:12,  4.52s/it]Fine-tune Epoch 34/50, Loss: 2.516997e-06, LR: 5.00e-06
+ 70%|███████   | 35/50 [02:34<01:06,  4.45s/it]Fine-tune Epoch 35/50, Loss: 2.693982e-06, LR: 5.00e-06
+ 72%|███████▏  | 36/50 [02:38<01:00,  4.33s/it]Fine-tune Epoch 36/50, Loss: 2.386119e-06, LR: 5.00e-06
+ 74%|███████▍  | 37/50 [02:43<00:58,  4.49s/it]Fine-tune Epoch 37/50, Loss: 2.658730e-06, LR: 5.00e-06
+ 76%|███████▌  | 38/50 [02:47<00:52,  4.37s/it]Fine-tune Epoch 38/50, Loss: 2.520844e-06, LR: 5.00e-06
+ 78%|███████▊  | 39/50 [02:51<00:48,  4.39s/it]Fine-tune Epoch 39/50, Loss: 2.593648e-06, LR: 5.00e-06
+ 80%|████████  | 40/50 [02:56<00:44,  4.46s/it]Fine-tune Epoch 40/50, Loss: 2.095046e-06, LR: 5.00e-06
+ 82%|████████▏ | 41/50 [03:00<00:39,  4.40s/it]Fine-tune Epoch 41/50, Loss: 2.455504e-06, LR: 5.00e-06
+ 84%|████████▍ | 42/50 [03:05<00:36,  4.54s/it]Fine-tune Epoch 42/50, Loss: 2.184788e-06, LR: 5.00e-06
+ 86%|████████▌ | 43/50 [03:09<00:30,  4.39s/it]Fine-tune Epoch 43/50, Loss: 2.492927e-06, LR: 5.00e-06
+ 88%|████████▊ | 44/50 [03:14<00:26,  4.34s/it]Fine-tune Epoch 44/50, Loss: 2.092695e-06, LR: 5.00e-06
+ 90%|█████████ | 45/50 [03:18<00:22,  4.46s/it]Fine-tune Epoch 45/50, Loss: 2.061685e-06, LR: 5.00e-06
+ 92%|█████████▏| 46/50 [03:22<00:17,  4.39s/it]Fine-tune Epoch 46/50, Loss: 2.465066e-06, LR: 5.00e-06
+ 94%|█████████▍| 47/50 [03:27<00:12,  4.28s/it]Fine-tune Epoch 47/50, Loss: 1.844718e-06, LR: 5.00e-06
+ 96%|█████████▌| 48/50 [03:31<00:08,  4.45s/it]Fine-tune Epoch 48/50, Loss: 2.062380e-06, LR: 5.00e-06
+ 98%|█████████▊| 49/50 [03:36<00:04,  4.38s/it]Fine-tune Epoch 49/50, Loss: 2.150764e-06, LR: 5.00e-06
+100%|██████████| 50/50 [03:40<00:00,  4.41s/it]
+Fine-tune Epoch 50/50, Loss: 2.500575e-06, LR: 5.00e-06
+
+Final PSNR after pruning and fine-tuning: 64.2106
+Pruning resulted in PSNR 64.21 which is below target 70.00. Consider less aggressive pruning.
+Pruning with ratio 10% failed to meet PSNR target.
+
+Attempting to prune with ratio: 15%
+Original hidden neurons: 150, New hidden neurons: 128 (Pruning 22 neurons)
+New pruned model architecture:
+MyResidualSirenNet(
+  (net_layers): ModuleList(
+    (0): SineLayer(
+      (linear): Linear(in_features=3, out_features=128, bias=True)
+    )
+    (1-6): 6 x ResidualSineLayer(
+      (linear_1): Linear(in_features=128, out_features=128, bias=True)
+      (linear_2): Linear(in_features=128, out_features=128, bias=True)
+    )
+    (7): Linear(in_features=128, out_features=1, bias=True)
+  )
+)
+New pruned model parameters: 198785
+Parameter reduction: 27.07%
+
+--- Fine-tuning pruned model for 50 epochs ---
+  2%|▏         | 1/50 [00:04<03:41,  4.53s/it]Fine-tune Epoch 1/50, Loss: 4.743458e-03, LR: 5.00e-06
+  4%|▍         | 2/50 [00:08<03:27,  4.32s/it]Fine-tune Epoch 2/50, Loss: 2.972625e-04, LR: 5.00e-06
+  6%|▌         | 3/50 [00:13<03:31,  4.49s/it]Fine-tune Epoch 3/50, Loss: 1.348434e-04, LR: 5.00e-06
+  8%|▊         | 4/50 [00:17<03:20,  4.36s/it]Fine-tune Epoch 4/50, Loss: 7.973118e-05, LR: 5.00e-06
+ 10%|█         | 5/50 [00:21<03:14,  4.31s/it]Fine-tune Epoch 5/50, Loss: 5.260392e-05, LR: 5.00e-06
+ 12%|█▏        | 6/50 [00:26<03:17,  4.49s/it]Fine-tune Epoch 6/50, Loss: 3.736731e-05, LR: 5.00e-06
+ 14%|█▍        | 7/50 [00:30<03:07,  4.35s/it]Fine-tune Epoch 7/50, Loss: 2.780311e-05, LR: 5.00e-06
+ 16%|█▌        | 8/50 [00:34<03:00,  4.30s/it]Fine-tune Epoch 8/50, Loss: 2.178840e-05, LR: 5.00e-06
+ 18%|█▊        | 9/50 [00:39<03:03,  4.48s/it]Fine-tune Epoch 9/50, Loss: 1.758127e-05, LR: 5.00e-06
+ 20%|██        | 10/50 [00:43<02:55,  4.38s/it]Fine-tune Epoch 10/50, Loss: 1.453634e-05, LR: 5.00e-06
+ 22%|██▏       | 11/50 [00:48<02:48,  4.33s/it]Fine-tune Epoch 11/50, Loss: 1.250884e-05, LR: 5.00e-06
+ 24%|██▍       | 12/50 [00:52<02:47,  4.41s/it]Fine-tune Epoch 12/50, Loss: 1.035362e-05, LR: 5.00e-06
+ 26%|██▌       | 13/50 [00:56<02:38,  4.28s/it]Fine-tune Epoch 13/50, Loss: 9.573666e-06, LR: 5.00e-06
+ 28%|██▊       | 14/50 [01:01<02:40,  4.45s/it]Fine-tune Epoch 14/50, Loss: 8.473706e-06, LR: 5.00e-06
+ 30%|███       | 15/50 [01:05<02:31,  4.32s/it]Fine-tune Epoch 15/50, Loss: 7.588687e-06, LR: 5.00e-06
+ 32%|███▏      | 16/50 [01:09<02:25,  4.28s/it]Fine-tune Epoch 16/50, Loss: 7.060492e-06, LR: 5.00e-06
+ 34%|███▍      | 17/50 [01:14<02:24,  4.39s/it]Fine-tune Epoch 17/50, Loss: 6.241232e-06, LR: 5.00e-06
+ 36%|███▌      | 18/50 [01:18<02:16,  4.27s/it]Fine-tune Epoch 18/50, Loss: 6.486605e-06, LR: 5.00e-06
+ 38%|███▊      | 19/50 [01:22<02:11,  4.25s/it]Fine-tune Epoch 19/50, Loss: 5.453515e-06, LR: 5.00e-06
+ 40%|████      | 20/50 [01:27<02:11,  4.38s/it]Fine-tune Epoch 20/50, Loss: 5.332092e-06, LR: 5.00e-06
+ 42%|████▏     | 21/50 [01:31<02:04,  4.31s/it]Fine-tune Epoch 21/50, Loss: 5.372430e-06, LR: 5.00e-06
+ 44%|████▍     | 22/50 [01:35<01:58,  4.22s/it]Fine-tune Epoch 22/50, Loss: 4.540098e-06, LR: 5.00e-06
+ 46%|████▌     | 23/50 [01:40<01:58,  4.39s/it]Fine-tune Epoch 23/50, Loss: 4.620773e-06, LR: 5.00e-06
+ 48%|████▊     | 24/50 [01:44<01:52,  4.33s/it]Fine-tune Epoch 24/50, Loss: 4.226239e-06, LR: 5.00e-06
+ 50%|█████     | 25/50 [01:48<01:49,  4.38s/it]Fine-tune Epoch 25/50, Loss: 4.051928e-06, LR: 5.00e-06
+ 52%|█████▏    | 26/50 [01:53<01:45,  4.38s/it]Fine-tune Epoch 26/50, Loss: 4.277215e-06, LR: 5.00e-06
+ 54%|█████▍    | 27/50 [01:57<01:39,  4.33s/it]Fine-tune Epoch 27/50, Loss: 3.695886e-06, LR: 5.00e-06
+ 56%|█████▌    | 28/50 [02:02<01:37,  4.43s/it]Fine-tune Epoch 28/50, Loss: 3.865583e-06, LR: 5.00e-06
+ 58%|█████▊    | 29/50 [02:06<01:31,  4.37s/it]Fine-tune Epoch 29/50, Loss: 3.666703e-06, LR: 5.00e-06
+ 60%|██████    | 30/50 [02:10<01:25,  4.25s/it]Fine-tune Epoch 30/50, Loss: 3.528795e-06, LR: 5.00e-06
+ 62%|██████▏   | 31/50 [02:15<01:24,  4.43s/it]Fine-tune Epoch 31/50, Loss: 3.456940e-06, LR: 5.00e-06
+ 64%|██████▍   | 32/50 [02:19<01:18,  4.36s/it]Fine-tune Epoch 32/50, Loss: 3.392956e-06, LR: 5.00e-06
+ 66%|██████▌   | 33/50 [02:23<01:13,  4.31s/it]Fine-tune Epoch 33/50, Loss: 3.205894e-06, LR: 5.00e-06
+ 68%|██████▊   | 34/50 [02:28<01:11,  4.48s/it]Fine-tune Epoch 34/50, Loss: 3.235185e-06, LR: 5.00e-06
+ 70%|███████   | 35/50 [02:32<01:04,  4.33s/it]Fine-tune Epoch 35/50, Loss: 2.945706e-06, LR: 5.00e-06
+ 72%|███████▏  | 36/50 [02:36<01:01,  4.37s/it]Fine-tune Epoch 36/50, Loss: 3.084108e-06, LR: 5.00e-06
+ 74%|███████▍  | 37/50 [02:41<00:57,  4.40s/it]Fine-tune Epoch 37/50, Loss: 2.873545e-06, LR: 5.00e-06
+ 76%|███████▌  | 38/50 [02:45<00:52,  4.34s/it]Fine-tune Epoch 38/50, Loss: 2.930316e-06, LR: 5.00e-06
+ 78%|███████▊  | 39/50 [02:50<00:49,  4.46s/it]Fine-tune Epoch 39/50, Loss: 2.992334e-06, LR: 5.00e-06
+ 80%|████████  | 40/50 [02:54<00:44,  4.41s/it]Fine-tune Epoch 40/50, Loss: 2.824383e-06, LR: 5.00e-06
+ 82%|████████▏ | 41/50 [02:58<00:38,  4.28s/it]Fine-tune Epoch 41/50, Loss: 2.854398e-06, LR: 5.00e-06
+ 84%|████████▍ | 42/50 [03:03<00:35,  4.47s/it]Fine-tune Epoch 42/50, Loss: 2.463279e-06, LR: 5.00e-06
+ 86%|████████▌ | 43/50 [03:07<00:30,  4.38s/it]Fine-tune Epoch 43/50, Loss: 2.944102e-06, LR: 5.00e-06
+ 88%|████████▊ | 44/50 [03:11<00:25,  4.26s/it]Fine-tune Epoch 44/50, Loss: 2.481153e-06, LR: 5.00e-06
+ 90%|█████████ | 45/50 [03:16<00:22,  4.43s/it]Fine-tune Epoch 45/50, Loss: 3.037924e-06, LR: 5.00e-06
+ 92%|█████████▏| 46/50 [03:20<00:17,  4.30s/it]Fine-tune Epoch 46/50, Loss: 2.333297e-06, LR: 5.00e-06
+ 94%|█████████▍| 47/50 [03:24<00:12,  4.27s/it]Fine-tune Epoch 47/50, Loss: 2.340960e-06, LR: 5.00e-06
+ 96%|█████████▌| 48/50 [03:29<00:08,  4.39s/it]Fine-tune Epoch 48/50, Loss: 2.517670e-06, LR: 5.00e-06
+ 98%|█████████▊| 49/50 [03:33<00:04,  4.32s/it]Fine-tune Epoch 49/50, Loss: 2.268764e-06, LR: 5.00e-06
+100%|██████████| 50/50 [03:38<00:00,  4.36s/it]
+Fine-tune Epoch 50/50, Loss: 2.694685e-06, LR: 5.00e-06
+
+Final PSNR after pruning and fine-tuning: 63.2862
+Pruning resulted in PSNR 63.29 which is below target 70.00. Consider less aggressive pruning.
+Pruning with ratio 15% failed to meet PSNR target.
+
+Attempting to prune with ratio: 20%
+Original hidden neurons: 150, New hidden neurons: 120 (Pruning 30 neurons)
+New pruned model architecture:
+MyResidualSirenNet(
+  (net_layers): ModuleList(
+    (0): SineLayer(
+      (linear): Linear(in_features=3, out_features=120, bias=True)
+    )
+    (1-6): 6 x ResidualSineLayer(
+      (linear_1): Linear(in_features=120, out_features=120, bias=True)
+      (linear_2): Linear(in_features=120, out_features=120, bias=True)
+    )
+    (7): Linear(in_features=120, out_features=1, bias=True)
+  )
+)
+New pruned model parameters: 174841
+Parameter reduction: 35.85%
+
+--- Fine-tuning pruned model for 50 epochs ---
+  2%|▏         | 1/50 [00:04<03:38,  4.46s/it]Fine-tune Epoch 1/50, Loss: 8.322123e-03, LR: 5.00e-06
+  4%|▍         | 2/50 [00:08<03:25,  4.29s/it]Fine-tune Epoch 2/50, Loss: 5.541313e-04, LR: 5.00e-06
+  6%|▌         | 3/50 [00:13<03:29,  4.46s/it]Fine-tune Epoch 3/50, Loss: 2.377366e-04, LR: 5.00e-06
+  8%|▊         | 4/50 [00:17<03:20,  4.36s/it]Fine-tune Epoch 4/50, Loss: 1.370012e-04, LR: 5.00e-06
+ 10%|█         | 5/50 [00:21<03:10,  4.23s/it]Fine-tune Epoch 5/50, Loss: 8.900292e-05, LR: 5.00e-06
+ 12%|█▏        | 6/50 [00:26<03:15,  4.43s/it]Fine-tune Epoch 6/50, Loss: 6.246155e-05, LR: 5.00e-06
+ 14%|█▍        | 7/50 [00:30<03:06,  4.35s/it]Fine-tune Epoch 7/50, Loss: 4.543712e-05, LR: 5.00e-06
+ 16%|█▌        | 8/50 [00:34<02:57,  4.23s/it]Fine-tune Epoch 8/50, Loss: 3.514095e-05, LR: 5.00e-06
+ 18%|█▊        | 9/50 [00:39<03:01,  4.43s/it]Fine-tune Epoch 9/50, Loss: 2.791060e-05, LR: 5.00e-06
+ 20%|██        | 10/50 [00:43<02:52,  4.31s/it]Fine-tune Epoch 10/50, Loss: 2.215433e-05, LR: 5.00e-06
+ 22%|██▏       | 11/50 [00:47<02:47,  4.30s/it]Fine-tune Epoch 11/50, Loss: 1.830717e-05, LR: 5.00e-06
+ 24%|██▍       | 12/50 [00:52<02:48,  4.43s/it]Fine-tune Epoch 12/50, Loss: 1.576872e-05, LR: 5.00e-06
+ 26%|██▌       | 13/50 [00:56<02:38,  4.29s/it]Fine-tune Epoch 13/50, Loss: 1.359127e-05, LR: 5.00e-06
+ 28%|██▊       | 14/50 [01:01<02:38,  4.40s/it]Fine-tune Epoch 14/50, Loss: 1.213231e-05, LR: 5.00e-06
+ 30%|███       | 15/50 [01:05<02:31,  4.34s/it]Fine-tune Epoch 15/50, Loss: 1.083625e-05, LR: 5.00e-06
+ 32%|███▏      | 16/50 [01:09<02:25,  4.28s/it]Fine-tune Epoch 16/50, Loss: 9.590687e-06, LR: 5.00e-06
+ 34%|███▍      | 17/50 [01:14<02:26,  4.45s/it]Fine-tune Epoch 17/50, Loss: 8.770665e-06, LR: 5.00e-06
+ 36%|███▌      | 18/50 [01:18<02:17,  4.30s/it]Fine-tune Epoch 18/50, Loss: 8.099377e-06, LR: 5.00e-06
+ 38%|███▊      | 19/50 [01:22<02:12,  4.27s/it]Fine-tune Epoch 19/50, Loss: 7.626635e-06, LR: 5.00e-06
+ 40%|████      | 20/50 [01:27<02:11,  4.39s/it]Fine-tune Epoch 20/50, Loss: 7.197834e-06, LR: 5.00e-06
+ 42%|████▏     | 21/50 [01:31<02:05,  4.32s/it]Fine-tune Epoch 21/50, Loss: 6.469912e-06, LR: 5.00e-06
+ 44%|████▍     | 22/50 [01:35<02:00,  4.29s/it]Fine-tune Epoch 22/50, Loss: 5.938494e-06, LR: 5.00e-06
+ 46%|████▌     | 23/50 [01:40<01:59,  4.41s/it]Fine-tune Epoch 23/50, Loss: 6.076214e-06, LR: 5.00e-06
+ 48%|████▊     | 24/50 [01:44<01:51,  4.29s/it]Fine-tune Epoch 24/50, Loss: 5.236338e-06, LR: 5.00e-06
+ 50%|█████     | 25/50 [01:48<01:48,  4.32s/it]Fine-tune Epoch 25/50, Loss: 5.123618e-06, LR: 5.00e-06
+ 52%|█████▏    | 26/50 [01:53<01:46,  4.42s/it]Fine-tune Epoch 26/50, Loss: 5.250713e-06, LR: 5.00e-06
+ 54%|█████▍    | 27/50 [01:57<01:40,  4.38s/it]Fine-tune Epoch 27/50, Loss: 4.552949e-06, LR: 5.00e-06
+ 56%|█████▌    | 28/50 [02:02<01:38,  4.48s/it]Fine-tune Epoch 28/50, Loss: 4.977564e-06, LR: 5.00e-06
+ 58%|█████▊    | 29/50 [02:06<01:32,  4.41s/it]Fine-tune Epoch 29/50, Loss: 4.194860e-06, LR: 5.00e-06
+ 60%|██████    | 30/50 [02:10<01:25,  4.29s/it]Fine-tune Epoch 30/50, Loss: 3.892825e-06, LR: 5.00e-06
+ 62%|██████▏   | 31/50 [02:15<01:24,  4.46s/it]Fine-tune Epoch 31/50, Loss: 4.112635e-06, LR: 5.00e-06
+ 64%|██████▍   | 32/50 [02:19<01:17,  4.33s/it]Fine-tune Epoch 32/50, Loss: 4.277000e-06, LR: 5.00e-06
+ 66%|██████▌   | 33/50 [02:23<01:12,  4.28s/it]Fine-tune Epoch 33/50, Loss: 4.290713e-06, LR: 5.00e-06
+ 68%|██████▊   | 34/50 [02:28<01:11,  4.46s/it]Fine-tune Epoch 34/50, Loss: 3.235033e-06, LR: 5.00e-06
+ 70%|███████   | 35/50 [02:32<01:04,  4.32s/it]Fine-tune Epoch 35/50, Loss: 3.978602e-06, LR: 5.00e-06
+ 72%|███████▏  | 36/50 [02:36<01:00,  4.29s/it]Fine-tune Epoch 36/50, Loss: 3.541448e-06, LR: 5.00e-06
+ 74%|███████▍  | 37/50 [02:41<00:57,  4.45s/it]Fine-tune Epoch 37/50, Loss: 3.491353e-06, LR: 5.00e-06
+ 76%|███████▌  | 38/50 [02:45<00:51,  4.32s/it]Fine-tune Epoch 38/50, Loss: 3.360698e-06, LR: 5.00e-06
+ 78%|███████▊  | 39/50 [02:49<00:48,  4.40s/it]Fine-tune Epoch 39/50, Loss: 4.111211e-06, LR: 5.00e-06
+ 80%|████████  | 40/50 [02:54<00:43,  4.34s/it]Fine-tune Epoch 40/50, Loss: 2.641154e-06, LR: 5.00e-06
+ 82%|████████▏ | 41/50 [02:58<00:38,  4.29s/it]Fine-tune Epoch 41/50, Loss: 3.400831e-06, LR: 5.00e-06
+ 84%|████████▍ | 42/50 [03:03<00:35,  4.46s/it]Fine-tune Epoch 42/50, Loss: 3.077840e-06, LR: 5.00e-06
+ 86%|████████▌ | 43/50 [03:07<00:30,  4.38s/it]Fine-tune Epoch 43/50, Loss: 3.091249e-06, LR: 5.00e-06
+ 88%|████████▊ | 44/50 [03:11<00:25,  4.32s/it]Fine-tune Epoch 44/50, Loss: 2.873210e-06, LR: 5.00e-06
+ 90%|█████████ | 45/50 [03:16<00:22,  4.48s/it]Fine-tune Epoch 45/50, Loss: 2.839386e-06, LR: 5.00e-06
+ 92%|█████████▏| 46/50 [03:20<00:17,  4.33s/it]Fine-tune Epoch 46/50, Loss: 2.930335e-06, LR: 5.00e-06
+ 94%|█████████▍| 47/50 [03:24<00:12,  4.28s/it]Fine-tune Epoch 47/50, Loss: 2.803921e-06, LR: 5.00e-06
+ 96%|█████████▌| 48/50 [03:29<00:08,  4.39s/it]Fine-tune Epoch 48/50, Loss: 2.884320e-06, LR: 5.00e-06
+ 98%|█████████▊| 49/50 [03:33<00:04,  4.33s/it]Fine-tune Epoch 49/50, Loss: 2.839782e-06, LR: 5.00e-06
+100%|██████████| 50/50 [03:37<00:00,  4.36s/it]
+Fine-tune Epoch 50/50, Loss: 2.510746e-06, LR: 5.00e-06
+
+Final PSNR after pruning and fine-tuning: 58.9026
+Pruning resulted in PSNR 58.90 which is below target 70.00. Consider less aggressive pruning.
+Pruning with ratio 20% failed to meet PSNR target.
+
+Attempting to prune with ratio: 25%
+Original hidden neurons: 150, New hidden neurons: 113 (Pruning 37 neurons)
+New pruned model architecture:
+MyResidualSirenNet(
+  (net_layers): ModuleList(
+    (0): SineLayer(
+      (linear): Linear(in_features=3, out_features=113, bias=True)
+    )
+    (1-6): 6 x ResidualSineLayer(
+      (linear_1): Linear(in_features=113, out_features=113, bias=True)
+      (linear_2): Linear(in_features=113, out_features=113, bias=True)
+    )
+    (7): Linear(in_features=113, out_features=1, bias=True)
+  )
+)
+New pruned model parameters: 155150
+Parameter reduction: 43.07%
+
+--- Fine-tuning pruned model for 50 epochs ---
+  2%|▏         | 1/50 [00:04<03:32,  4.33s/it]Fine-tune Epoch 1/50, Loss: 1.374205e-02, LR: 5.00e-06
+  4%|▍         | 2/50 [00:08<03:23,  4.24s/it]Fine-tune Epoch 2/50, Loss: 9.010652e-04, LR: 5.00e-06
+  6%|▌         | 3/50 [00:13<03:27,  4.42s/it]Fine-tune Epoch 3/50, Loss: 3.742845e-04, LR: 5.00e-06
+  8%|▊         | 4/50 [00:17<03:18,  4.32s/it]Fine-tune Epoch 4/50, Loss: 2.114252e-04, LR: 5.00e-06
+ 10%|█         | 5/50 [00:21<03:12,  4.27s/it]Fine-tune Epoch 5/50, Loss: 1.365724e-04, LR: 5.00e-06
+ 12%|█▏        | 6/50 [00:26<03:16,  4.46s/it]Fine-tune Epoch 6/50, Loss: 9.487096e-05, LR: 5.00e-06
+ 14%|█▍        | 7/50 [00:30<03:07,  4.36s/it]Fine-tune Epoch 7/50, Loss: 6.958646e-05, LR: 5.00e-06
+ 16%|█▌        | 8/50 [00:34<03:00,  4.30s/it]Fine-tune Epoch 8/50, Loss: 5.285817e-05, LR: 5.00e-06
+ 18%|█▊        | 9/50 [00:39<03:00,  4.41s/it]Fine-tune Epoch 9/50, Loss: 4.097822e-05, LR: 5.00e-06
+ 20%|██        | 10/50 [00:43<02:53,  4.34s/it]Fine-tune Epoch 10/50, Loss: 3.317684e-05, LR: 5.00e-06
+ 22%|██▏       | 11/50 [00:47<02:49,  4.36s/it]Fine-tune Epoch 11/50, Loss: 2.721959e-05, LR: 5.00e-06
+ 24%|██▍       | 12/50 [00:52<02:49,  4.45s/it]Fine-tune Epoch 12/50, Loss: 2.238441e-05, LR: 5.00e-06
+ 26%|██▌       | 13/50 [00:56<02:39,  4.31s/it]Fine-tune Epoch 13/50, Loss: 1.913084e-05, LR: 5.00e-06
+ 28%|██▊       | 14/50 [01:01<02:39,  4.44s/it]Fine-tune Epoch 14/50, Loss: 1.650533e-05, LR: 5.00e-06
+ 30%|███       | 15/50 [01:05<02:33,  4.39s/it]Fine-tune Epoch 15/50, Loss: 1.475793e-05, LR: 5.00e-06
+ 32%|███▏      | 16/50 [01:09<02:27,  4.34s/it]Fine-tune Epoch 16/50, Loss: 1.292081e-05, LR: 5.00e-06
+ 34%|███▍      | 17/50 [01:14<02:26,  4.43s/it]Fine-tune Epoch 17/50, Loss: 1.164258e-05, LR: 5.00e-06
+ 36%|███▌      | 18/50 [01:18<02:19,  4.35s/it]Fine-tune Epoch 18/50, Loss: 1.067324e-05, LR: 5.00e-06
+ 38%|███▊      | 19/50 [01:22<02:11,  4.24s/it]Fine-tune Epoch 19/50, Loss: 9.961605e-06, LR: 5.00e-06
+ 40%|████      | 20/50 [01:27<02:12,  4.42s/it]Fine-tune Epoch 20/50, Loss: 8.823583e-06, LR: 5.00e-06
+ 42%|████▏     | 21/50 [01:31<02:06,  4.35s/it]Fine-tune Epoch 21/50, Loss: 8.100748e-06, LR: 5.00e-06
+ 44%|████▍     | 22/50 [01:35<01:58,  4.24s/it]Fine-tune Epoch 22/50, Loss: 7.437170e-06, LR: 5.00e-06
+ 46%|████▌     | 23/50 [01:40<01:59,  4.42s/it]Fine-tune Epoch 23/50, Loss: 7.427678e-06, LR: 5.00e-06
+ 48%|████▊     | 24/50 [01:44<01:51,  4.29s/it]Fine-tune Epoch 24/50, Loss: 7.185525e-06, LR: 5.00e-06
+ 50%|█████     | 25/50 [01:48<01:46,  4.27s/it]Fine-tune Epoch 25/50, Loss: 6.217794e-06, LR: 5.00e-06
+ 52%|█████▏    | 26/50 [01:53<01:44,  4.36s/it]Fine-tune Epoch 26/50, Loss: 6.377112e-06, LR: 5.00e-06
+ 54%|█████▍    | 27/50 [01:57<01:39,  4.31s/it]Fine-tune Epoch 27/50, Loss: 5.844263e-06, LR: 5.00e-06
+ 56%|█████▌    | 28/50 [02:01<01:36,  4.40s/it]Fine-tune Epoch 28/50, Loss: 5.574440e-06, LR: 5.00e-06
+ 58%|█████▊    | 29/50 [02:06<01:31,  4.35s/it]Fine-tune Epoch 29/50, Loss: 5.167820e-06, LR: 5.00e-06
+ 60%|██████    | 30/50 [02:10<01:25,  4.29s/it]Fine-tune Epoch 30/50, Loss: 5.302164e-06, LR: 5.00e-06
+ 62%|██████▏   | 31/50 [02:15<01:23,  4.40s/it]Fine-tune Epoch 31/50, Loss: 5.275141e-06, LR: 5.00e-06
+ 64%|██████▍   | 32/50 [02:19<01:17,  4.33s/it]Fine-tune Epoch 32/50, Loss: 4.332902e-06, LR: 5.00e-06
+ 66%|██████▌   | 33/50 [02:23<01:12,  4.24s/it]Fine-tune Epoch 33/50, Loss: 4.842717e-06, LR: 5.00e-06
+ 68%|██████▊   | 34/50 [02:27<01:09,  4.36s/it]Fine-tune Epoch 34/50, Loss: 4.458826e-06, LR: 5.00e-06
+ 70%|███████   | 35/50 [02:32<01:04,  4.30s/it]Fine-tune Epoch 35/50, Loss: 4.406321e-06, LR: 5.00e-06
+ 72%|███████▏  | 36/50 [02:36<00:59,  4.26s/it]Fine-tune Epoch 36/50, Loss: 4.093950e-06, LR: 5.00e-06
+ 74%|███████▍  | 37/50 [02:41<00:57,  4.44s/it]Fine-tune Epoch 37/50, Loss: 3.908816e-06, LR: 5.00e-06
+ 76%|███████▌  | 38/50 [02:45<00:51,  4.31s/it]Fine-tune Epoch 38/50, Loss: 3.838024e-06, LR: 5.00e-06
+ 78%|███████▊  | 39/50 [02:49<00:47,  4.32s/it]Fine-tune Epoch 39/50, Loss: 4.181295e-06, LR: 5.00e-06
+ 80%|████████  | 40/50 [02:53<00:43,  4.37s/it]Fine-tune Epoch 40/50, Loss: 3.516885e-06, LR: 5.00e-06
+ 82%|████████▏ | 41/50 [02:58<00:38,  4.31s/it]Fine-tune Epoch 41/50, Loss: 3.726863e-06, LR: 5.00e-06
+ 84%|████████▍ | 42/50 [03:02<00:35,  4.46s/it]Fine-tune Epoch 42/50, Loss: 3.588116e-06, LR: 5.00e-06
+ 86%|████████▌ | 43/50 [03:07<00:30,  4.39s/it]Fine-tune Epoch 43/50, Loss: 3.744768e-06, LR: 5.00e-06
+ 88%|████████▊ | 44/50 [03:11<00:25,  4.26s/it]Fine-tune Epoch 44/50, Loss: 3.253625e-06, LR: 5.00e-06
+ 90%|█████████ | 45/50 [03:15<00:22,  4.44s/it]Fine-tune Epoch 45/50, Loss: 3.799793e-06, LR: 5.00e-06
+ 92%|█████████▏| 46/50 [03:20<00:17,  4.36s/it]Fine-tune Epoch 46/50, Loss: 3.379867e-06, LR: 5.00e-06
+ 94%|█████████▍| 47/50 [03:24<00:12,  4.25s/it]Fine-tune Epoch 47/50, Loss: 3.072940e-06, LR: 5.00e-06
+ 96%|█████████▌| 48/50 [03:28<00:08,  4.43s/it]Fine-tune Epoch 48/50, Loss: 3.318409e-06, LR: 5.00e-06
+ 98%|█████████▊| 49/50 [03:33<00:04,  4.36s/it]Fine-tune Epoch 49/50, Loss: 3.523133e-06, LR: 5.00e-06
+100%|██████████| 50/50 [03:37<00:00,  4.35s/it]
+Fine-tune Epoch 50/50, Loss: 2.761052e-06, LR: 5.00e-06
+
+Final PSNR after pruning and fine-tuning: 60.2095
+Pruning resulted in PSNR 60.21 which is below target 70.00. Consider less aggressive pruning.
+Pruning with ratio 25% failed to meet PSNR target.
+
+Attempting to prune with ratio: 30%
+Original hidden neurons: 150, New hidden neurons: 105 (Pruning 45 neurons)
+New pruned model architecture:
+MyResidualSirenNet(
+  (net_layers): ModuleList(
+    (0): SineLayer(
+      (linear): Linear(in_features=3, out_features=105, bias=True)
+    )
+    (1-6): 6 x ResidualSineLayer(
+      (linear_1): Linear(in_features=105, out_features=105, bias=True)
+      (linear_2): Linear(in_features=105, out_features=105, bias=True)
+    )
+    (7): Linear(in_features=105, out_features=1, bias=True)
+  )
+)
+New pruned model parameters: 134086
+Parameter reduction: 50.80%
+
+--- Fine-tuning pruned model for 50 epochs ---
+  2%|▏         | 1/50 [00:04<03:45,  4.61s/it]Fine-tune Epoch 1/50, Loss: 1.731919e-02, LR: 5.00e-06
+  4%|▍         | 2/50 [00:08<03:24,  4.25s/it]Fine-tune Epoch 2/50, Loss: 1.292639e-03, LR: 5.00e-06
+  6%|▌         | 3/50 [00:13<03:32,  4.52s/it]Fine-tune Epoch 3/50, Loss: 5.190694e-04, LR: 5.00e-06
+  8%|▊         | 4/50 [00:17<03:21,  4.39s/it]Fine-tune Epoch 4/50, Loss: 2.834779e-04, LR: 5.00e-06
+ 10%|█         | 5/50 [00:21<03:11,  4.25s/it]Fine-tune Epoch 5/50, Loss: 1.790214e-04, LR: 5.00e-06
+ 12%|█▏        | 6/50 [00:26<03:15,  4.44s/it]Fine-tune Epoch 6/50, Loss: 1.235366e-04, LR: 5.00e-06
+ 14%|█▍        | 7/50 [00:30<03:07,  4.36s/it]Fine-tune Epoch 7/50, Loss: 8.973952e-05, LR: 5.00e-06
+ 16%|█▌        | 8/50 [00:34<02:58,  4.25s/it]Fine-tune Epoch 8/50, Loss: 6.838622e-05, LR: 5.00e-06
+ 18%|█▊        | 9/50 [00:39<03:01,  4.43s/it]Fine-tune Epoch 9/50, Loss: 5.357636e-05, LR: 5.00e-06
+ 20%|██        | 10/50 [00:43<02:54,  4.36s/it]Fine-tune Epoch 10/50, Loss: 4.260109e-05, LR: 5.00e-06
+ 22%|██▏       | 11/50 [00:47<02:46,  4.26s/it]Fine-tune Epoch 11/50, Loss: 3.461635e-05, LR: 5.00e-06
+ 24%|██▍       | 12/50 [00:52<02:46,  4.38s/it]Fine-tune Epoch 12/50, Loss: 2.872712e-05, LR: 5.00e-06
+ 26%|██▌       | 13/50 [00:56<02:39,  4.32s/it]Fine-tune Epoch 13/50, Loss: 2.417988e-05, LR: 5.00e-06
+ 28%|██▊       | 14/50 [01:01<02:38,  4.39s/it]Fine-tune Epoch 14/50, Loss: 2.093781e-05, LR: 5.00e-06
+ 30%|███       | 15/50 [01:05<02:32,  4.36s/it]Fine-tune Epoch 15/50, Loss: 1.815920e-05, LR: 5.00e-06
+ 32%|███▏      | 16/50 [01:09<02:26,  4.31s/it]Fine-tune Epoch 16/50, Loss: 1.596159e-05, LR: 5.00e-06
+ 34%|███▍      | 17/50 [01:14<02:27,  4.47s/it]Fine-tune Epoch 17/50, Loss: 1.428013e-05, LR: 5.00e-06
+ 36%|███▌      | 18/50 [01:18<02:18,  4.33s/it]Fine-tune Epoch 18/50, Loss: 1.300670e-05, LR: 5.00e-06
+ 38%|███▊      | 19/50 [01:22<02:12,  4.29s/it]Fine-tune Epoch 19/50, Loss: 1.138115e-05, LR: 5.00e-06
+ 40%|████      | 20/50 [01:27<02:13,  4.45s/it]Fine-tune Epoch 20/50, Loss: 1.065321e-05, LR: 5.00e-06
+ 42%|████▏     | 21/50 [01:31<02:06,  4.38s/it]Fine-tune Epoch 21/50, Loss: 9.630976e-06, LR: 5.00e-06
+ 44%|████▍     | 22/50 [01:35<01:59,  4.26s/it]Fine-tune Epoch 22/50, Loss: 9.260865e-06, LR: 5.00e-06
+ 46%|████▌     | 23/50 [01:40<01:57,  4.37s/it]Fine-tune Epoch 23/50, Loss: 8.094246e-06, LR: 5.00e-06
+ 48%|████▊     | 24/50 [01:44<01:51,  4.31s/it]Fine-tune Epoch 24/50, Loss: 7.569561e-06, LR: 5.00e-06
+ 50%|█████     | 25/50 [01:48<01:46,  4.27s/it]Fine-tune Epoch 25/50, Loss: 7.416805e-06, LR: 5.00e-06
+ 52%|█████▏    | 26/50 [01:53<01:45,  4.38s/it]Fine-tune Epoch 26/50, Loss: 6.764941e-06, LR: 5.00e-06
+ 54%|█████▍    | 27/50 [01:57<01:38,  4.26s/it]Fine-tune Epoch 27/50, Loss: 6.718358e-06, LR: 5.00e-06
+ 56%|█████▌    | 28/50 [02:01<01:36,  4.40s/it]Fine-tune Epoch 28/50, Loss: 6.304962e-06, LR: 5.00e-06
+ 58%|█████▊    | 29/50 [02:06<01:30,  4.32s/it]Fine-tune Epoch 29/50, Loss: 5.973587e-06, LR: 5.00e-06
+ 60%|██████    | 30/50 [02:10<01:25,  4.28s/it]Fine-tune Epoch 30/50, Loss: 5.968398e-06, LR: 5.00e-06
+ 62%|██████▏   | 31/50 [02:15<01:24,  4.45s/it]Fine-tune Epoch 31/50, Loss: 5.237240e-06, LR: 5.00e-06
+ 64%|██████▍   | 32/50 [02:19<01:18,  4.36s/it]Fine-tune Epoch 32/50, Loss: 4.996921e-06, LR: 5.00e-06
+ 66%|██████▌   | 33/50 [02:23<01:13,  4.31s/it]Fine-tune Epoch 33/50, Loss: 5.659419e-06, LR: 5.00e-06
+ 68%|██████▊   | 34/50 [02:28<01:11,  4.47s/it]Fine-tune Epoch 34/50, Loss: 4.892933e-06, LR: 5.00e-06
+ 70%|███████   | 35/50 [02:32<01:05,  4.34s/it]Fine-tune Epoch 35/50, Loss: 4.439219e-06, LR: 5.00e-06
+ 72%|███████▏  | 36/50 [02:36<01:00,  4.30s/it]Fine-tune Epoch 36/50, Loss: 4.536618e-06, LR: 5.00e-06
+ 74%|███████▍  | 37/50 [02:41<00:57,  4.40s/it]Fine-tune Epoch 37/50, Loss: 4.349060e-06, LR: 5.00e-06
+ 76%|███████▌  | 38/50 [02:45<00:52,  4.34s/it]Fine-tune Epoch 38/50, Loss: 4.071860e-06, LR: 5.00e-06
+ 78%|███████▊  | 39/50 [02:49<00:48,  4.40s/it]Fine-tune Epoch 39/50, Loss: 4.162077e-06, LR: 5.00e-06
+ 80%|████████  | 40/50 [02:54<00:43,  4.37s/it]Fine-tune Epoch 40/50, Loss: 4.229992e-06, LR: 5.00e-06
+ 82%|████████▏ | 41/50 [02:58<00:38,  4.31s/it]Fine-tune Epoch 41/50, Loss: 3.703080e-06, LR: 5.00e-06
+ 84%|████████▍ | 42/50 [03:03<00:35,  4.44s/it]Fine-tune Epoch 42/50, Loss: 3.983577e-06, LR: 5.00e-06
+ 86%|████████▌ | 43/50 [03:07<00:30,  4.40s/it]Fine-tune Epoch 43/50, Loss: 3.547116e-06, LR: 5.00e-06
+ 88%|████████▊ | 44/50 [03:11<00:26,  4.34s/it]Fine-tune Epoch 44/50, Loss: 3.669023e-06, LR: 5.00e-06
+ 90%|█████████ | 45/50 [03:16<00:22,  4.47s/it]Fine-tune Epoch 45/50, Loss: 3.526390e-06, LR: 5.00e-06
+ 92%|█████████▏| 46/50 [03:20<00:17,  4.35s/it]Fine-tune Epoch 46/50, Loss: 3.517273e-06, LR: 5.00e-06
+ 94%|█████████▍| 47/50 [03:24<00:12,  4.30s/it]Fine-tune Epoch 47/50, Loss: 3.502218e-06, LR: 5.00e-06
+ 96%|█████████▌| 48/50 [03:29<00:08,  4.43s/it]Fine-tune Epoch 48/50, Loss: 3.425987e-06, LR: 5.00e-06
+ 98%|█████████▊| 49/50 [03:33<00:04,  4.36s/it]Fine-tune Epoch 49/50, Loss: 3.119778e-06, LR: 5.00e-06
+100%|██████████| 50/50 [03:38<00:00,  4.36s/it]Fine-tune Epoch 50/50, Loss: 3.597569e-06, LR: 5.00e-06
+
+Final PSNR after pruning and fine-tuning: 62.0631
+Pruning resulted in PSNR 62.06 which is below target 70.00. Consider less aggressive pruning.
+Pruning with ratio 30% failed to meet PSNR target.
+
+--- Pruning Process Complete ---
+No pruned model found that met the PSNR target.

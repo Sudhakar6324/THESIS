@@ -1,0 +1,814 @@
+nohup: ignoring input
+Could not save font_manager cache [Errno 122] Disk quota exceeded
+(3125000, 9)
+(3125000, 3)
+  0%|          | 0/200 [00:00<?, ?it/s]
+Epoch 1/200, Loss = 0.007811
+
+Component Losses: mean: 0.008433, stds: 0.001429, gmm weights: 0.013572
+  0%|          | 1/200 [01:05<3:36:50, 65.38s/it]
+Epoch 2/200, Loss = 0.003261
+
+Component Losses: mean: 0.000358, stds: 0.000718, gmm weights: 0.008706
+  1%|          | 2/200 [02:07<3:29:05, 63.36s/it]
+Epoch 3/200, Loss = 0.002805
+
+Component Losses: mean: 0.000350, stds: 0.000705, gmm weights: 0.007359
+  2%|▏         | 3/200 [03:12<3:30:32, 64.12s/it]
+Epoch 4/200, Loss = 0.002352
+
+Component Losses: mean: 0.000346, stds: 0.000700, gmm weights: 0.006009
+  2%|▏         | 4/200 [04:17<3:30:13, 64.35s/it]
+Epoch 5/200, Loss = 0.002078
+
+Component Losses: mean: 0.000344, stds: 0.000696, gmm weights: 0.005194
+  2%|▎         | 5/200 [05:15<3:22:24, 62.28s/it]
+Epoch 6/200, Loss = 0.001891
+
+Component Losses: mean: 0.000342, stds: 0.000694, gmm weights: 0.004638
+  3%|▎         | 6/200 [06:11<3:13:50, 59.95s/it]
+Epoch 7/200, Loss = 0.001745
+
+Component Losses: mean: 0.000341, stds: 0.000691, gmm weights: 0.004203
+  4%|▎         | 7/200 [07:14<3:16:10, 60.99s/it]
+Epoch 8/200, Loss = 0.001620
+
+Component Losses: mean: 0.000340, stds: 0.000690, gmm weights: 0.003829
+  4%|▍         | 8/200 [08:19<3:19:04, 62.21s/it]
+Epoch 9/200, Loss = 0.001508
+
+Component Losses: mean: 0.000339, stds: 0.000689, gmm weights: 0.003496
+  4%|▍         | 9/200 [09:24<3:20:54, 63.11s/it]
+Epoch 10/200, Loss = 0.001407
+
+Component Losses: mean: 0.000338, stds: 0.000687, gmm weights: 0.003195
+  5%|▌         | 10/200 [10:28<3:21:18, 63.57s/it]
+Epoch 11/200, Loss = 0.001318
+
+Component Losses: mean: 0.000337, stds: 0.000687, gmm weights: 0.002930
+  6%|▌         | 11/200 [11:33<3:21:38, 64.01s/it]
+Epoch 12/200, Loss = 0.001240
+
+Component Losses: mean: 0.000336, stds: 0.000685, gmm weights: 0.002697
+  6%|▌         | 12/200 [12:38<3:20:57, 64.13s/it]
+Epoch 13/200, Loss = 0.001170
+
+Component Losses: mean: 0.000336, stds: 0.000685, gmm weights: 0.002489
+  6%|▋         | 13/200 [13:42<3:19:52, 64.13s/it]
+Epoch 14/200, Loss = 0.001109
+
+Component Losses: mean: 0.000335, stds: 0.000684, gmm weights: 0.002308
+  7%|▋         | 14/200 [14:46<3:18:45, 64.12s/it]
+Epoch 15/200, Loss = 0.001055
+
+Component Losses: mean: 0.000335, stds: 0.000684, gmm weights: 0.002145
+  8%|▊         | 15/200 [15:51<3:18:10, 64.27s/it]
+Epoch 16/200, Loss = 0.001006
+
+Component Losses: mean: 0.000335, stds: 0.000683, gmm weights: 0.002001
+  8%|▊         | 16/200 [16:56<3:18:04, 64.59s/it]
+Epoch 17/200, Loss = 0.000964
+
+Component Losses: mean: 0.000334, stds: 0.000683, gmm weights: 0.001874
+  8%|▊         | 17/200 [18:00<3:16:31, 64.44s/it]
+Epoch 18/200, Loss = 0.000925
+
+Component Losses: mean: 0.000334, stds: 0.000682, gmm weights: 0.001760
+  9%|▉         | 18/200 [19:04<3:15:11, 64.35s/it]
+Epoch 19/200, Loss = 0.000892
+
+Component Losses: mean: 0.000333, stds: 0.000682, gmm weights: 0.001660
+ 10%|▉         | 19/200 [20:08<3:13:53, 64.27s/it]
+Epoch 20/200, Loss = 0.000861
+
+Component Losses: mean: 0.000333, stds: 0.000681, gmm weights: 0.001569
+ 10%|█         | 20/200 [21:12<3:12:50, 64.28s/it]
+Epoch 21/200, Loss = 0.000834
+
+Component Losses: mean: 0.000332, stds: 0.000681, gmm weights: 0.001489
+ 10%|█         | 21/200 [22:17<3:11:49, 64.30s/it]
+Epoch 22/200, Loss = 0.000809
+
+Component Losses: mean: 0.000332, stds: 0.000680, gmm weights: 0.001415
+ 11%|█         | 22/200 [23:21<3:10:30, 64.21s/it]
+Epoch 23/200, Loss = 0.000787
+
+Component Losses: mean: 0.000332, stds: 0.000680, gmm weights: 0.001350
+ 12%|█▏        | 23/200 [24:25<3:09:27, 64.22s/it]
+Epoch 24/200, Loss = 0.000767
+
+Component Losses: mean: 0.000331, stds: 0.000680, gmm weights: 0.001290
+ 12%|█▏        | 24/200 [25:27<3:06:15, 63.49s/it]
+Epoch 25/200, Loss = 0.000749
+
+Component Losses: mean: 0.000331, stds: 0.000679, gmm weights: 0.001238
+ 12%|█▎        | 25/200 [26:31<3:05:19, 63.54s/it]PSNR @ Epoch 25: [34.674713134765625, 34.93004608154297, 34.9567756652832, 31.432571411132812, 31.452913284301758, 32.31401824951172, 29.8111572265625, 29.367780685424805, 31.330278396606445]
+
+Epoch 26/200, Loss = 0.000733
+
+Component Losses: mean: 0.000331, stds: 0.000679, gmm weights: 0.001188
+ 13%|█▎        | 26/200 [27:35<3:04:54, 63.76s/it]
+Epoch 27/200, Loss = 0.000718
+
+Component Losses: mean: 0.000330, stds: 0.000678, gmm weights: 0.001144
+ 14%|█▎        | 27/200 [28:39<3:03:53, 63.78s/it]
+Epoch 28/200, Loss = 0.000703
+
+Component Losses: mean: 0.000330, stds: 0.000678, gmm weights: 0.001102
+ 14%|█▍        | 28/200 [29:43<3:03:10, 63.90s/it]
+Epoch 29/200, Loss = 0.000691
+
+Component Losses: mean: 0.000330, stds: 0.000678, gmm weights: 0.001066
+ 14%|█▍        | 29/200 [30:47<3:02:02, 63.87s/it]
+Epoch 30/200, Loss = 0.000679
+
+Component Losses: mean: 0.000329, stds: 0.000678, gmm weights: 0.001031
+ 15%|█▌        | 30/200 [31:51<3:01:15, 63.97s/it]
+Epoch 31/200, Loss = 0.000669
+
+Component Losses: mean: 0.000329, stds: 0.000677, gmm weights: 0.001000
+ 16%|█▌        | 31/200 [32:54<2:59:39, 63.78s/it]
+Epoch 32/200, Loss = 0.000659
+
+Component Losses: mean: 0.000329, stds: 0.000677, gmm weights: 0.000971
+ 16%|█▌        | 32/200 [33:58<2:58:59, 63.93s/it]
+Epoch 33/200, Loss = 0.000650
+
+Component Losses: mean: 0.000329, stds: 0.000676, gmm weights: 0.000944
+ 16%|█▋        | 33/200 [35:03<2:58:13, 64.03s/it]
+Epoch 34/200, Loss = 0.000641
+
+Component Losses: mean: 0.000329, stds: 0.000676, gmm weights: 0.000919
+ 17%|█▋        | 34/200 [35:59<2:51:02, 61.82s/it]
+Epoch 35/200, Loss = 0.000633
+
+Component Losses: mean: 0.000329, stds: 0.000676, gmm weights: 0.000895
+ 18%|█▊        | 35/200 [36:56<2:45:37, 60.23s/it]
+Epoch 36/200, Loss = 0.000626
+
+Component Losses: mean: 0.000328, stds: 0.000676, gmm weights: 0.000874
+ 18%|█▊        | 36/200 [37:59<2:47:25, 61.25s/it]
+Epoch 37/200, Loss = 0.000619
+
+Component Losses: mean: 0.000328, stds: 0.000676, gmm weights: 0.000853
+ 18%|█▊        | 37/200 [39:04<2:49:10, 62.28s/it]
+Epoch 38/200, Loss = 0.000612
+
+Component Losses: mean: 0.000328, stds: 0.000675, gmm weights: 0.000834
+ 19%|█▉        | 38/200 [40:09<2:49:52, 62.92s/it]
+Epoch 39/200, Loss = 0.000606
+
+Component Losses: mean: 0.000328, stds: 0.000675, gmm weights: 0.000817
+ 20%|█▉        | 39/200 [41:13<2:49:55, 63.33s/it]
+Epoch 40/200, Loss = 0.000601
+
+Component Losses: mean: 0.000328, stds: 0.000675, gmm weights: 0.000800
+ 20%|██        | 40/200 [42:15<2:47:54, 62.97s/it]
+Epoch 41/200, Loss = 0.000595
+
+Component Losses: mean: 0.000327, stds: 0.000674, gmm weights: 0.000783
+ 20%|██        | 41/200 [43:19<2:47:59, 63.39s/it]
+Epoch 42/200, Loss = 0.000590
+
+Component Losses: mean: 0.000327, stds: 0.000674, gmm weights: 0.000768
+ 21%|██        | 42/200 [44:23<2:46:55, 63.39s/it]
+Epoch 43/200, Loss = 0.000585
+
+Component Losses: mean: 0.000327, stds: 0.000674, gmm weights: 0.000754
+ 22%|██▏       | 43/200 [45:27<2:46:30, 63.64s/it]
+Epoch 44/200, Loss = 0.000580
+
+Component Losses: mean: 0.000327, stds: 0.000674, gmm weights: 0.000740
+ 22%|██▏       | 44/200 [46:32<2:46:36, 64.08s/it]
+Epoch 45/200, Loss = 0.000576
+
+Component Losses: mean: 0.000327, stds: 0.000674, gmm weights: 0.000728
+ 22%|██▎       | 45/200 [47:37<2:46:33, 64.48s/it]
+Epoch 46/200, Loss = 0.000572
+
+Component Losses: mean: 0.000327, stds: 0.000673, gmm weights: 0.000716
+ 23%|██▎       | 46/200 [48:42<2:45:36, 64.52s/it]
+Epoch 47/200, Loss = 0.000568
+
+Component Losses: mean: 0.000327, stds: 0.000673, gmm weights: 0.000704
+ 24%|██▎       | 47/200 [49:46<2:44:17, 64.43s/it]
+Epoch 48/200, Loss = 0.000564
+
+Component Losses: mean: 0.000326, stds: 0.000673, gmm weights: 0.000694
+ 24%|██▍       | 48/200 [50:51<2:43:15, 64.44s/it]
+Epoch 49/200, Loss = 0.000561
+
+Component Losses: mean: 0.000326, stds: 0.000673, gmm weights: 0.000683
+ 24%|██▍       | 49/200 [51:55<2:42:04, 64.40s/it]
+Epoch 50/200, Loss = 0.000557
+
+Component Losses: mean: 0.000326, stds: 0.000673, gmm weights: 0.000673
+ 25%|██▌       | 50/200 [53:00<2:41:36, 64.64s/it]PSNR @ Epoch 50: [34.74610137939453, 35.00465774536133, 35.00172805786133, 31.470073699951172, 31.490877151489258, 32.352577209472656, 32.058570861816406, 31.67751693725586, 33.70087432861328]
+
+Epoch 51/200, Loss = 0.000554
+
+Component Losses: mean: 0.000326, stds: 0.000673, gmm weights: 0.000663
+ 26%|██▌       | 51/200 [54:05<2:40:19, 64.56s/it]
+Epoch 52/200, Loss = 0.000551
+
+Component Losses: mean: 0.000326, stds: 0.000672, gmm weights: 0.000655
+ 26%|██▌       | 52/200 [55:09<2:38:57, 64.44s/it]
+Epoch 53/200, Loss = 0.000548
+
+Component Losses: mean: 0.000326, stds: 0.000672, gmm weights: 0.000646
+ 26%|██▋       | 53/200 [56:13<2:37:31, 64.30s/it]
+Epoch 54/200, Loss = 0.000545
+
+Component Losses: mean: 0.000326, stds: 0.000672, gmm weights: 0.000636
+ 27%|██▋       | 54/200 [57:15<2:35:09, 63.76s/it]
+Epoch 55/200, Loss = 0.000542
+
+Component Losses: mean: 0.000325, stds: 0.000672, gmm weights: 0.000629
+ 28%|██▊       | 55/200 [58:19<2:34:11, 63.81s/it]
+Epoch 56/200, Loss = 0.000539
+
+Component Losses: mean: 0.000325, stds: 0.000672, gmm weights: 0.000621
+ 28%|██▊       | 56/200 [59:23<2:33:12, 63.84s/it]
+Epoch 57/200, Loss = 0.000537
+
+Component Losses: mean: 0.000325, stds: 0.000672, gmm weights: 0.000614
+ 28%|██▊       | 57/200 [1:00:27<2:32:01, 63.79s/it]
+Epoch 58/200, Loss = 0.000534
+
+Component Losses: mean: 0.000325, stds: 0.000671, gmm weights: 0.000607
+ 29%|██▉       | 58/200 [1:01:30<2:30:49, 63.73s/it]
+Epoch 59/200, Loss = 0.000532
+
+Component Losses: mean: 0.000325, stds: 0.000671, gmm weights: 0.000600
+ 30%|██▉       | 59/200 [1:02:34<2:29:48, 63.75s/it]
+Epoch 60/200, Loss = 0.000530
+
+Component Losses: mean: 0.000325, stds: 0.000672, gmm weights: 0.000593
+ 30%|███       | 60/200 [1:03:39<2:29:10, 63.93s/it]
+Epoch 61/200, Loss = 0.000528
+
+Component Losses: mean: 0.000325, stds: 0.000671, gmm weights: 0.000587
+ 30%|███       | 61/200 [1:04:43<2:28:44, 64.20s/it]
+Epoch 62/200, Loss = 0.000526
+
+Component Losses: mean: 0.000325, stds: 0.000671, gmm weights: 0.000581
+ 31%|███       | 62/200 [1:05:42<2:23:31, 62.40s/it]
+Epoch 63/200, Loss = 0.000523
+
+Component Losses: mean: 0.000325, stds: 0.000671, gmm weights: 0.000575
+ 32%|███▏      | 63/200 [1:06:46<2:23:45, 62.96s/it]
+Epoch 64/200, Loss = 0.000522
+
+Component Losses: mean: 0.000324, stds: 0.000671, gmm weights: 0.000570
+ 32%|███▏      | 64/200 [1:07:50<2:23:45, 63.42s/it]
+Epoch 65/200, Loss = 0.000520
+
+Component Losses: mean: 0.000324, stds: 0.000671, gmm weights: 0.000564
+ 32%|███▎      | 65/200 [1:08:54<2:22:57, 63.54s/it]
+Epoch 66/200, Loss = 0.000518
+
+Component Losses: mean: 0.000324, stds: 0.000671, gmm weights: 0.000558
+ 33%|███▎      | 66/200 [1:09:58<2:22:23, 63.76s/it]
+Epoch 67/200, Loss = 0.000516
+
+Component Losses: mean: 0.000324, stds: 0.000670, gmm weights: 0.000553
+ 34%|███▎      | 67/200 [1:11:02<2:21:30, 63.84s/it]
+Epoch 68/200, Loss = 0.000514
+
+Component Losses: mean: 0.000324, stds: 0.000670, gmm weights: 0.000548
+ 34%|███▍      | 68/200 [1:12:06<2:20:06, 63.68s/it]
+Epoch 69/200, Loss = 0.000512
+
+Component Losses: mean: 0.000324, stds: 0.000670, gmm weights: 0.000543
+ 34%|███▍      | 69/200 [1:13:10<2:19:21, 63.83s/it]
+Epoch 70/200, Loss = 0.000511
+
+Component Losses: mean: 0.000324, stds: 0.000670, gmm weights: 0.000539
+ 35%|███▌      | 70/200 [1:14:14<2:18:33, 63.95s/it]
+Epoch 71/200, Loss = 0.000509
+
+Component Losses: mean: 0.000324, stds: 0.000670, gmm weights: 0.000534
+ 36%|███▌      | 71/200 [1:15:18<2:17:30, 63.96s/it]
+Epoch 72/200, Loss = 0.000508
+
+Component Losses: mean: 0.000324, stds: 0.000670, gmm weights: 0.000530
+ 36%|███▌      | 72/200 [1:16:22<2:16:07, 63.81s/it]
+Epoch 73/200, Loss = 0.000507
+
+Component Losses: mean: 0.000324, stds: 0.000670, gmm weights: 0.000526
+ 36%|███▋      | 73/200 [1:17:25<2:15:05, 63.82s/it]
+Epoch 74/200, Loss = 0.000505
+
+Component Losses: mean: 0.000324, stds: 0.000670, gmm weights: 0.000522
+ 37%|███▋      | 74/200 [1:18:29<2:13:52, 63.75s/it]
+Epoch 75/200, Loss = 0.000504
+
+Component Losses: mean: 0.000323, stds: 0.000670, gmm weights: 0.000519
+ 38%|███▊      | 75/200 [1:19:33<2:13:12, 63.94s/it]PSNR @ Epoch 75: [34.727725982666016, 34.97857666015625, 34.97235107421875, 31.459728240966797, 31.48064422607422, 32.35322189331055, 33.039634704589844, 32.753684997558594, 34.70230484008789]
+
+Epoch 76/200, Loss = 0.000502
+
+Component Losses: mean: 0.000323, stds: 0.000670, gmm weights: 0.000514
+ 38%|███▊      | 76/200 [1:20:37<2:12:02, 63.89s/it]
+Epoch 77/200, Loss = 0.000501
+
+Component Losses: mean: 0.000323, stds: 0.000669, gmm weights: 0.000510
+ 38%|███▊      | 77/200 [1:21:41<2:10:52, 63.84s/it]
+Epoch 78/200, Loss = 0.000500
+
+Component Losses: mean: 0.000323, stds: 0.000669, gmm weights: 0.000506
+ 39%|███▉      | 78/200 [1:22:44<2:09:38, 63.76s/it]
+Epoch 79/200, Loss = 0.000498
+
+Component Losses: mean: 0.000323, stds: 0.000669, gmm weights: 0.000502
+ 40%|███▉      | 79/200 [1:23:48<2:08:11, 63.57s/it]
+Epoch 80/200, Loss = 0.000497
+
+Component Losses: mean: 0.000323, stds: 0.000669, gmm weights: 0.000500
+ 40%|████      | 80/200 [1:24:52<2:07:30, 63.76s/it]
+Epoch 81/200, Loss = 0.000496
+
+Component Losses: mean: 0.000323, stds: 0.000669, gmm weights: 0.000495
+ 40%|████      | 81/200 [1:25:56<2:06:54, 63.98s/it]
+Epoch 82/200, Loss = 0.000495
+
+Component Losses: mean: 0.000323, stds: 0.000669, gmm weights: 0.000492
+ 41%|████      | 82/200 [1:27:00<2:05:35, 63.86s/it]
+Epoch 83/200, Loss = 0.000493
+
+Component Losses: mean: 0.000323, stds: 0.000669, gmm weights: 0.000489
+ 42%|████▏     | 83/200 [1:28:04<2:04:23, 63.79s/it]
+Epoch 84/200, Loss = 0.000493
+
+Component Losses: mean: 0.000323, stds: 0.000669, gmm weights: 0.000486
+ 42%|████▏     | 84/200 [1:29:07<2:03:16, 63.76s/it]
+Epoch 85/200, Loss = 0.000491
+
+Component Losses: mean: 0.000323, stds: 0.000669, gmm weights: 0.000483
+ 42%|████▎     | 85/200 [1:30:11<2:02:28, 63.90s/it]
+Epoch 86/200, Loss = 0.000490
+
+Component Losses: mean: 0.000323, stds: 0.000669, gmm weights: 0.000480
+ 43%|████▎     | 86/200 [1:31:16<2:01:30, 63.96s/it]
+Epoch 87/200, Loss = 0.000489
+
+Component Losses: mean: 0.000322, stds: 0.000669, gmm weights: 0.000477
+ 44%|████▎     | 87/200 [1:32:20<2:00:45, 64.12s/it]
+Epoch 88/200, Loss = 0.000488
+
+Component Losses: mean: 0.000322, stds: 0.000668, gmm weights: 0.000474
+ 44%|████▍     | 88/200 [1:33:23<1:59:03, 63.78s/it]
+Epoch 89/200, Loss = 0.000488
+
+Component Losses: mean: 0.000322, stds: 0.000668, gmm weights: 0.000472
+ 44%|████▍     | 89/200 [1:34:26<1:57:46, 63.66s/it]
+Epoch 90/200, Loss = 0.000486
+
+Component Losses: mean: 0.000322, stds: 0.000668, gmm weights: 0.000469
+ 45%|████▌     | 90/200 [1:35:30<1:56:52, 63.75s/it]
+Epoch 91/200, Loss = 0.000486
+
+Component Losses: mean: 0.000322, stds: 0.000668, gmm weights: 0.000466
+ 46%|████▌     | 91/200 [1:36:35<1:56:09, 63.94s/it]
+Epoch 92/200, Loss = 0.000485
+
+Component Losses: mean: 0.000322, stds: 0.000668, gmm weights: 0.000464
+ 46%|████▌     | 92/200 [1:37:39<1:55:10, 63.99s/it]
+Epoch 93/200, Loss = 0.000484
+
+Component Losses: mean: 0.000322, stds: 0.000668, gmm weights: 0.000461
+ 46%|████▋     | 93/200 [1:38:43<1:54:02, 63.95s/it]
+Epoch 94/200, Loss = 0.000483
+
+Component Losses: mean: 0.000322, stds: 0.000668, gmm weights: 0.000459
+ 47%|████▋     | 94/200 [1:39:46<1:52:46, 63.83s/it]
+Epoch 95/200, Loss = 0.000482
+
+Component Losses: mean: 0.000322, stds: 0.000668, gmm weights: 0.000456
+ 48%|████▊     | 95/200 [1:40:50<1:51:39, 63.81s/it]
+Epoch 96/200, Loss = 0.000481
+
+Component Losses: mean: 0.000322, stds: 0.000668, gmm weights: 0.000454
+ 48%|████▊     | 96/200 [1:41:54<1:50:38, 63.83s/it]
+Epoch 97/200, Loss = 0.000481
+
+Component Losses: mean: 0.000322, stds: 0.000668, gmm weights: 0.000452
+ 48%|████▊     | 97/200 [1:42:57<1:49:26, 63.75s/it]
+Epoch 98/200, Loss = 0.000480
+
+Component Losses: mean: 0.000322, stds: 0.000668, gmm weights: 0.000450
+ 49%|████▉     | 98/200 [1:44:01<1:48:20, 63.74s/it]
+Epoch 99/200, Loss = 0.000479
+
+Component Losses: mean: 0.000322, stds: 0.000668, gmm weights: 0.000447
+ 50%|████▉     | 99/200 [1:45:05<1:47:27, 63.84s/it]
+Epoch 100/200, Loss = 0.000478
+
+Component Losses: mean: 0.000322, stds: 0.000668, gmm weights: 0.000445
+ 50%|█████     | 100/200 [1:46:06<1:44:40, 62.80s/it]PSNR @ Epoch 100: [34.792747497558594, 35.02287292480469, 34.98869323730469, 31.492931365966797, 31.517383575439453, 32.3746337890625, 33.600738525390625, 33.376869201660156, 35.26180648803711]
+
+Epoch 101/200, Loss = 0.000477
+
+Component Losses: mean: 0.000322, stds: 0.000668, gmm weights: 0.000443
+ 50%|█████     | 101/200 [1:47:10<1:44:25, 63.29s/it]
+Epoch 102/200, Loss = 0.000477
+
+Component Losses: mean: 0.000322, stds: 0.000668, gmm weights: 0.000441
+ 51%|█████     | 102/200 [1:48:14<1:43:54, 63.62s/it]
+Epoch 103/200, Loss = 0.000476
+
+Component Losses: mean: 0.000322, stds: 0.000667, gmm weights: 0.000439
+ 52%|█████▏    | 103/200 [1:49:18<1:43:00, 63.71s/it]
+Epoch 104/200, Loss = 0.000475
+
+Component Losses: mean: 0.000322, stds: 0.000667, gmm weights: 0.000437
+ 52%|█████▏    | 104/200 [1:50:23<1:42:23, 63.99s/it]
+Epoch 105/200, Loss = 0.000475
+
+Component Losses: mean: 0.000321, stds: 0.000667, gmm weights: 0.000436
+ 52%|█████▎    | 105/200 [1:51:26<1:40:41, 63.59s/it]
+Epoch 106/200, Loss = 0.000474
+
+Component Losses: mean: 0.000321, stds: 0.000667, gmm weights: 0.000433
+ 53%|█████▎    | 106/200 [1:52:30<1:39:48, 63.71s/it]
+Epoch 107/200, Loss = 0.000473
+
+Component Losses: mean: 0.000321, stds: 0.000667, gmm weights: 0.000431
+ 54%|█████▎    | 107/200 [1:53:33<1:38:47, 63.73s/it]
+Epoch 108/200, Loss = 0.000473
+
+Component Losses: mean: 0.000321, stds: 0.000667, gmm weights: 0.000430
+ 54%|█████▍    | 108/200 [1:54:37<1:37:50, 63.81s/it]
+Epoch 109/200, Loss = 0.000472
+
+Component Losses: mean: 0.000321, stds: 0.000667, gmm weights: 0.000428
+ 55%|█████▍    | 109/200 [1:55:42<1:37:14, 64.12s/it]
+Epoch 110/200, Loss = 0.000472
+
+Component Losses: mean: 0.000321, stds: 0.000667, gmm weights: 0.000426
+ 55%|█████▌    | 110/200 [1:56:45<1:35:21, 63.57s/it]
+Epoch 111/200, Loss = 0.000471
+
+Component Losses: mean: 0.000321, stds: 0.000667, gmm weights: 0.000425
+ 56%|█████▌    | 111/200 [1:57:49<1:34:30, 63.71s/it]
+Epoch 112/200, Loss = 0.000470
+
+Component Losses: mean: 0.000321, stds: 0.000667, gmm weights: 0.000423
+ 56%|█████▌    | 112/200 [1:58:53<1:33:35, 63.81s/it]
+Epoch 113/200, Loss = 0.000470
+
+Component Losses: mean: 0.000321, stds: 0.000667, gmm weights: 0.000422
+ 56%|█████▋    | 113/200 [1:59:57<1:32:47, 63.99s/it]
+Epoch 114/200, Loss = 0.000469
+
+Component Losses: mean: 0.000321, stds: 0.000667, gmm weights: 0.000420
+ 57%|█████▋    | 114/200 [2:01:01<1:31:45, 64.02s/it]
+Epoch 115/200, Loss = 0.000469
+
+Component Losses: mean: 0.000321, stds: 0.000667, gmm weights: 0.000419
+ 57%|█████▊    | 115/200 [2:02:05<1:30:43, 64.04s/it]
+Epoch 116/200, Loss = 0.000468
+
+Component Losses: mean: 0.000321, stds: 0.000667, gmm weights: 0.000416
+ 58%|█████▊    | 116/200 [2:03:10<1:29:46, 64.13s/it]
+Epoch 117/200, Loss = 0.000468
+
+Component Losses: mean: 0.000321, stds: 0.000667, gmm weights: 0.000415
+ 58%|█████▊    | 117/200 [2:04:14<1:28:44, 64.16s/it]
+Epoch 118/200, Loss = 0.000467
+
+Component Losses: mean: 0.000321, stds: 0.000667, gmm weights: 0.000414
+ 59%|█████▉    | 118/200 [2:05:18<1:27:38, 64.13s/it]
+Epoch 119/200, Loss = 0.000467
+
+Component Losses: mean: 0.000321, stds: 0.000667, gmm weights: 0.000412
+ 60%|█████▉    | 119/200 [2:06:21<1:26:12, 63.86s/it]
+Epoch 120/200, Loss = 0.000466
+
+Component Losses: mean: 0.000321, stds: 0.000667, gmm weights: 0.000411
+ 60%|██████    | 120/200 [2:07:25<1:25:03, 63.80s/it]
+Epoch 121/200, Loss = 0.000466
+
+Component Losses: mean: 0.000321, stds: 0.000667, gmm weights: 0.000410
+ 60%|██████    | 121/200 [2:08:29<1:24:01, 63.82s/it]
+Epoch 122/200, Loss = 0.000465
+
+Component Losses: mean: 0.000321, stds: 0.000667, gmm weights: 0.000408
+ 61%|██████    | 122/200 [2:09:31<1:22:32, 63.49s/it]
+Epoch 123/200, Loss = 0.000465
+
+Component Losses: mean: 0.000321, stds: 0.000666, gmm weights: 0.000407
+ 62%|██████▏   | 123/200 [2:10:35<1:21:35, 63.58s/it]
+Epoch 124/200, Loss = 0.000464
+
+Component Losses: mean: 0.000321, stds: 0.000667, gmm weights: 0.000406
+ 62%|██████▏   | 124/200 [2:11:39<1:20:34, 63.61s/it]
+Epoch 125/200, Loss = 0.000464
+
+Component Losses: mean: 0.000321, stds: 0.000666, gmm weights: 0.000404
+ 62%|██████▎   | 125/200 [2:12:43<1:19:52, 63.90s/it]PSNR @ Epoch 125: [34.795745849609375, 35.057098388671875, 35.0595817565918, 31.51899528503418, 31.530330657958984, 32.39458465576172, 33.98693084716797, 33.757320404052734, 35.627647399902344]
+
+Epoch 126/200, Loss = 0.000463
+
+Component Losses: mean: 0.000321, stds: 0.000666, gmm weights: 0.000403
+ 63%|██████▎   | 126/200 [2:13:48<1:18:56, 64.00s/it]
+Epoch 127/200, Loss = 0.000463
+
+Component Losses: mean: 0.000321, stds: 0.000666, gmm weights: 0.000401
+ 64%|██████▎   | 127/200 [2:14:51<1:17:42, 63.87s/it]
+Epoch 128/200, Loss = 0.000462
+
+Component Losses: mean: 0.000321, stds: 0.000666, gmm weights: 0.000400
+ 64%|██████▍   | 128/200 [2:15:55<1:16:42, 63.93s/it]
+Epoch 129/200, Loss = 0.000462
+
+Component Losses: mean: 0.000320, stds: 0.000666, gmm weights: 0.000399
+ 64%|██████▍   | 129/200 [2:16:59<1:15:38, 63.92s/it]
+Epoch 130/200, Loss = 0.000461
+
+Component Losses: mean: 0.000321, stds: 0.000666, gmm weights: 0.000397
+ 65%|██████▌   | 130/200 [2:18:03<1:14:31, 63.88s/it]
+Epoch 131/200, Loss = 0.000461
+
+Component Losses: mean: 0.000320, stds: 0.000666, gmm weights: 0.000397
+ 66%|██████▌   | 131/200 [2:19:07<1:13:28, 63.89s/it]
+Epoch 132/200, Loss = 0.000461
+
+Component Losses: mean: 0.000320, stds: 0.000666, gmm weights: 0.000396
+ 66%|██████▌   | 132/200 [2:20:11<1:12:35, 64.05s/it]
+Epoch 133/200, Loss = 0.000460
+
+Component Losses: mean: 0.000320, stds: 0.000666, gmm weights: 0.000394
+ 66%|██████▋   | 133/200 [2:21:16<1:11:40, 64.19s/it]
+Epoch 134/200, Loss = 0.000460
+
+Component Losses: mean: 0.000320, stds: 0.000666, gmm weights: 0.000393
+ 67%|██████▋   | 134/200 [2:22:19<1:10:24, 64.00s/it]
+Epoch 135/200, Loss = 0.000460
+
+Component Losses: mean: 0.000320, stds: 0.000666, gmm weights: 0.000392
+ 68%|██████▊   | 135/200 [2:23:23<1:09:15, 63.94s/it]
+Epoch 136/200, Loss = 0.000459
+
+Component Losses: mean: 0.000320, stds: 0.000666, gmm weights: 0.000391
+ 68%|██████▊   | 136/200 [2:24:27<1:08:08, 63.88s/it]
+Epoch 137/200, Loss = 0.000459
+
+Component Losses: mean: 0.000320, stds: 0.000666, gmm weights: 0.000390
+ 68%|██████▊   | 137/200 [2:25:30<1:06:58, 63.79s/it]
+Epoch 138/200, Loss = 0.000458
+
+Component Losses: mean: 0.000320, stds: 0.000666, gmm weights: 0.000389
+ 69%|██████▉   | 138/200 [2:26:34<1:05:54, 63.78s/it]
+Epoch 139/200, Loss = 0.000458
+
+Component Losses: mean: 0.000320, stds: 0.000665, gmm weights: 0.000388
+ 70%|██████▉   | 139/200 [2:27:38<1:04:50, 63.78s/it]
+Epoch 140/200, Loss = 0.000458
+
+Component Losses: mean: 0.000320, stds: 0.000666, gmm weights: 0.000387
+ 70%|███████   | 140/200 [2:28:42<1:03:43, 63.72s/it]
+Epoch 141/200, Loss = 0.000457
+
+Component Losses: mean: 0.000320, stds: 0.000666, gmm weights: 0.000385
+ 70%|███████   | 141/200 [2:29:46<1:02:56, 64.01s/it]
+Epoch 142/200, Loss = 0.000457
+
+Component Losses: mean: 0.000320, stds: 0.000666, gmm weights: 0.000385
+ 71%|███████   | 142/200 [2:30:50<1:01:53, 64.03s/it]
+Epoch 143/200, Loss = 0.000457
+
+Component Losses: mean: 0.000320, stds: 0.000666, gmm weights: 0.000384
+ 72%|███████▏  | 143/200 [2:31:54<1:00:45, 63.96s/it]
+Epoch 144/200, Loss = 0.000456
+
+Component Losses: mean: 0.000320, stds: 0.000666, gmm weights: 0.000383
+ 72%|███████▏  | 144/200 [2:32:58<59:32, 63.80s/it]  
+Epoch 145/200, Loss = 0.000456
+
+Component Losses: mean: 0.000320, stds: 0.000666, gmm weights: 0.000382
+ 72%|███████▎  | 145/200 [2:34:02<58:31, 63.84s/it]
+Epoch 146/200, Loss = 0.000455
+
+Component Losses: mean: 0.000320, stds: 0.000666, gmm weights: 0.000381
+ 73%|███████▎  | 146/200 [2:35:05<57:26, 63.82s/it]
+Epoch 147/200, Loss = 0.000455
+
+Component Losses: mean: 0.000320, stds: 0.000665, gmm weights: 0.000380
+ 74%|███████▎  | 147/200 [2:36:09<56:21, 63.81s/it]
+Epoch 148/200, Loss = 0.000455
+
+Component Losses: mean: 0.000320, stds: 0.000666, gmm weights: 0.000379
+ 74%|███████▍  | 148/200 [2:37:13<55:22, 63.89s/it]
+Epoch 149/200, Loss = 0.000455
+
+Component Losses: mean: 0.000320, stds: 0.000666, gmm weights: 0.000379
+ 74%|███████▍  | 149/200 [2:38:16<54:10, 63.73s/it]
+Epoch 150/200, Loss = 0.000454
+
+Component Losses: mean: 0.000320, stds: 0.000665, gmm weights: 0.000377
+ 75%|███████▌  | 150/200 [2:39:21<53:11, 63.83s/it]PSNR @ Epoch 150: [34.7967643737793, 35.064632415771484, 35.05719757080078, 31.517736434936523, 31.537458419799805, 32.397762298583984, 34.25563049316406, 34.032958984375, 35.927703857421875]
+
+Epoch 151/200, Loss = 0.000454
+
+Component Losses: mean: 0.000320, stds: 0.000666, gmm weights: 0.000376
+ 76%|███████▌  | 151/200 [2:40:22<51:25, 62.98s/it]
+Epoch 152/200, Loss = 0.000454
+
+Component Losses: mean: 0.000320, stds: 0.000665, gmm weights: 0.000376
+ 76%|███████▌  | 152/200 [2:41:24<50:10, 62.72s/it]
+Epoch 153/200, Loss = 0.000453
+
+Component Losses: mean: 0.000320, stds: 0.000665, gmm weights: 0.000374
+ 76%|███████▋  | 153/200 [2:42:27<49:18, 62.95s/it]
+Epoch 154/200, Loss = 0.000453
+
+Component Losses: mean: 0.000320, stds: 0.000665, gmm weights: 0.000374
+ 77%|███████▋  | 154/200 [2:43:31<48:28, 63.22s/it]
+Epoch 155/200, Loss = 0.000453
+
+Component Losses: mean: 0.000320, stds: 0.000665, gmm weights: 0.000373
+ 78%|███████▊  | 155/200 [2:44:36<47:43, 63.64s/it]
+Epoch 156/200, Loss = 0.000452
+
+Component Losses: mean: 0.000320, stds: 0.000665, gmm weights: 0.000372
+ 78%|███████▊  | 156/200 [2:45:39<46:39, 63.63s/it]
+Epoch 157/200, Loss = 0.000452
+
+Component Losses: mean: 0.000320, stds: 0.000666, gmm weights: 0.000372
+ 78%|███████▊  | 157/200 [2:46:43<45:33, 63.58s/it]
+Epoch 158/200, Loss = 0.000452
+
+Component Losses: mean: 0.000320, stds: 0.000665, gmm weights: 0.000371
+ 79%|███████▉  | 158/200 [2:47:47<44:37, 63.75s/it]
+Epoch 159/200, Loss = 0.000452
+
+Component Losses: mean: 0.000320, stds: 0.000665, gmm weights: 0.000370
+ 80%|███████▉  | 159/200 [2:48:51<43:39, 63.89s/it]
+Epoch 160/200, Loss = 0.000451
+
+Component Losses: mean: 0.000320, stds: 0.000665, gmm weights: 0.000369
+ 80%|████████  | 160/200 [2:49:55<42:36, 63.91s/it]
+Epoch 161/200, Loss = 0.000451
+
+Component Losses: mean: 0.000320, stds: 0.000665, gmm weights: 0.000368
+ 80%|████████  | 161/200 [2:50:59<41:35, 63.97s/it]
+Epoch 162/200, Loss = 0.000451
+
+Component Losses: mean: 0.000320, stds: 0.000665, gmm weights: 0.000368
+ 81%|████████  | 162/200 [2:52:03<40:29, 63.93s/it]
+Epoch 163/200, Loss = 0.000450
+
+Component Losses: mean: 0.000320, stds: 0.000665, gmm weights: 0.000367
+ 82%|████████▏ | 163/200 [2:53:07<39:29, 64.03s/it]
+Epoch 164/200, Loss = 0.000450
+
+Component Losses: mean: 0.000320, stds: 0.000665, gmm weights: 0.000367
+ 82%|████████▏ | 164/200 [2:54:12<38:27, 64.11s/it]
+Epoch 165/200, Loss = 0.000450
+
+Component Losses: mean: 0.000320, stds: 0.000665, gmm weights: 0.000366
+ 82%|████████▎ | 165/200 [2:55:16<37:27, 64.21s/it]
+Epoch 166/200, Loss = 0.000450
+
+Component Losses: mean: 0.000320, stds: 0.000665, gmm weights: 0.000365
+ 83%|████████▎ | 166/200 [2:56:20<36:23, 64.22s/it]
+Epoch 167/200, Loss = 0.000450
+
+Component Losses: mean: 0.000319, stds: 0.000665, gmm weights: 0.000364
+ 84%|████████▎ | 167/200 [2:57:24<35:10, 63.95s/it]
+Epoch 168/200, Loss = 0.000449
+
+Component Losses: mean: 0.000320, stds: 0.000665, gmm weights: 0.000364
+ 84%|████████▍ | 168/200 [2:58:27<34:03, 63.86s/it]
+Epoch 169/200, Loss = 0.000449
+
+Component Losses: mean: 0.000319, stds: 0.000665, gmm weights: 0.000363
+ 84%|████████▍ | 169/200 [2:59:31<33:01, 63.91s/it]
+Epoch 170/200, Loss = 0.000449
+
+Component Losses: mean: 0.000319, stds: 0.000665, gmm weights: 0.000362
+ 85%|████████▌ | 170/200 [3:00:35<32:00, 64.01s/it]
+Epoch 171/200, Loss = 0.000448
+
+Component Losses: mean: 0.000319, stds: 0.000665, gmm weights: 0.000361
+ 86%|████████▌ | 171/200 [3:01:39<30:51, 63.83s/it]
+Epoch 172/200, Loss = 0.000448
+
+Component Losses: mean: 0.000319, stds: 0.000665, gmm weights: 0.000361
+ 86%|████████▌ | 172/200 [3:02:43<29:50, 63.94s/it]
+Epoch 173/200, Loss = 0.000448
+
+Component Losses: mean: 0.000319, stds: 0.000665, gmm weights: 0.000360
+ 86%|████████▋ | 173/200 [3:03:47<28:48, 64.00s/it]
+Epoch 174/200, Loss = 0.000448
+
+Component Losses: mean: 0.000319, stds: 0.000665, gmm weights: 0.000360
+ 87%|████████▋ | 174/200 [3:04:52<27:46, 64.11s/it]
+Epoch 175/200, Loss = 0.000448
+
+Component Losses: mean: 0.000319, stds: 0.000665, gmm weights: 0.000359
+ 88%|████████▊ | 175/200 [3:05:57<26:48, 64.35s/it]PSNR @ Epoch 175: [34.819091796875, 35.08781433105469, 35.06931686401367, 31.512523651123047, 31.537593841552734, 32.39964294433594, 34.447784423828125, 34.223716735839844, 36.20182418823242]
+
+Epoch 176/200, Loss = 0.000447
+
+Component Losses: mean: 0.000319, stds: 0.000664, gmm weights: 0.000358
+ 88%|████████▊ | 176/200 [3:06:59<25:32, 63.85s/it]
+Epoch 177/200, Loss = 0.000447
+
+Component Losses: mean: 0.000319, stds: 0.000665, gmm weights: 0.000358
+ 88%|████████▊ | 177/200 [3:08:03<24:30, 63.94s/it]
+Epoch 178/200, Loss = 0.000447
+
+Component Losses: mean: 0.000319, stds: 0.000665, gmm weights: 0.000357
+ 89%|████████▉ | 178/200 [3:09:07<23:27, 63.96s/it]
+Epoch 179/200, Loss = 0.000447
+
+Component Losses: mean: 0.000319, stds: 0.000664, gmm weights: 0.000357
+ 90%|████████▉ | 179/200 [3:10:11<22:24, 64.00s/it]
+Epoch 180/200, Loss = 0.000447
+
+Component Losses: mean: 0.000319, stds: 0.000665, gmm weights: 0.000356
+ 90%|█████████ | 180/200 [3:11:15<21:20, 64.01s/it]
+Epoch 181/200, Loss = 0.000446
+
+Component Losses: mean: 0.000319, stds: 0.000664, gmm weights: 0.000355
+ 90%|█████████ | 181/200 [3:12:20<20:16, 64.03s/it]
+Epoch 182/200, Loss = 0.000446
+
+Component Losses: mean: 0.000319, stds: 0.000665, gmm weights: 0.000355
+ 91%|█████████ | 182/200 [3:13:23<19:11, 63.99s/it]
+Epoch 183/200, Loss = 0.000446
+
+Component Losses: mean: 0.000319, stds: 0.000664, gmm weights: 0.000354
+ 92%|█████████▏| 183/200 [3:14:28<18:09, 64.09s/it]
+Epoch 184/200, Loss = 0.000446
+
+Component Losses: mean: 0.000319, stds: 0.000664, gmm weights: 0.000353
+ 92%|█████████▏| 184/200 [3:15:32<17:05, 64.09s/it]
+Epoch 185/200, Loss = 0.000446
+
+Component Losses: mean: 0.000319, stds: 0.000665, gmm weights: 0.000353
+ 92%|█████████▎| 185/200 [3:16:36<16:01, 64.11s/it]
+Epoch 186/200, Loss = 0.000445
+
+Component Losses: mean: 0.000319, stds: 0.000664, gmm weights: 0.000352
+ 93%|█████████▎| 186/200 [3:17:40<14:57, 64.12s/it]
+Epoch 187/200, Loss = 0.000445
+
+Component Losses: mean: 0.000319, stds: 0.000664, gmm weights: 0.000352
+ 94%|█████████▎| 187/200 [3:18:45<13:54, 64.19s/it]
+Epoch 188/200, Loss = 0.000445
+
+Component Losses: mean: 0.000319, stds: 0.000665, gmm weights: 0.000352
+ 94%|█████████▍| 188/200 [3:19:49<12:50, 64.19s/it]
+Epoch 189/200, Loss = 0.000445
+
+Component Losses: mean: 0.000319, stds: 0.000665, gmm weights: 0.000351
+ 94%|█████████▍| 189/200 [3:20:52<11:44, 64.03s/it]
+Epoch 190/200, Loss = 0.000444
+
+Component Losses: mean: 0.000319, stds: 0.000664, gmm weights: 0.000350
+ 95%|█████████▌| 190/200 [3:21:56<10:38, 63.88s/it]
+Epoch 191/200, Loss = 0.000444
+
+Component Losses: mean: 0.000319, stds: 0.000664, gmm weights: 0.000350
+ 96%|█████████▌| 191/200 [3:22:59<09:34, 63.80s/it]
+Epoch 192/200, Loss = 0.000444
+
+Component Losses: mean: 0.000319, stds: 0.000664, gmm weights: 0.000349
+ 96%|█████████▌| 192/200 [3:24:03<08:29, 63.71s/it]
+Epoch 193/200, Loss = 0.000444
+
+Component Losses: mean: 0.000319, stds: 0.000664, gmm weights: 0.000349
+ 96%|█████████▋| 193/200 [3:25:07<07:27, 63.92s/it]
+Epoch 194/200, Loss = 0.000444
+
+Component Losses: mean: 0.000319, stds: 0.000664, gmm weights: 0.000348
+ 97%|█████████▋| 194/200 [3:26:12<06:24, 64.09s/it]
+Epoch 195/200, Loss = 0.000444
+
+Component Losses: mean: 0.000319, stds: 0.000664, gmm weights: 0.000348
+ 98%|█████████▊| 195/200 [3:27:16<05:21, 64.21s/it]
+Epoch 196/200, Loss = 0.000443
+
+Component Losses: mean: 0.000319, stds: 0.000664, gmm weights: 0.000347
+ 98%|█████████▊| 196/200 [3:28:20<04:16, 64.15s/it]
+Epoch 197/200, Loss = 0.000443
+
+Component Losses: mean: 0.000319, stds: 0.000664, gmm weights: 0.000347
+ 98%|█████████▊| 197/200 [3:29:24<03:12, 64.07s/it]
+Epoch 198/200, Loss = 0.000443
+
+Component Losses: mean: 0.000319, stds: 0.000664, gmm weights: 0.000347
+ 99%|█████████▉| 198/200 [3:30:28<02:07, 63.92s/it]
+Epoch 199/200, Loss = 0.000443
+
+Component Losses: mean: 0.000319, stds: 0.000664, gmm weights: 0.000346
+100%|█████████▉| 199/200 [3:31:32<01:03, 63.87s/it]
+Epoch 200/200, Loss = 0.000443
+
+Component Losses: mean: 0.000319, stds: 0.000664, gmm weights: 0.000346
+100%|██████████| 200/200 [3:32:36<00:00, 64.02s/it]100%|██████████| 200/200 [3:32:36<00:00, 63.78s/it]
+PSNR @ Epoch 200: [34.834049224853516, 35.100341796875, 35.085365295410156, 31.520713806152344, 31.542598724365234, 32.40241241455078, 34.59486389160156, 34.31684112548828, 36.342994689941406]
+Saved final component loss plot as final_component_loss_plot.png

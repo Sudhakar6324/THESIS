@@ -1,0 +1,1 @@
+# Dist Paraameters Learning with SIREN for Scientific Data Modeling and Analysis

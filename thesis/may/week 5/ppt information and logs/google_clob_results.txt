@@ -1,0 +1,14 @@
+three different models for each
+GMM_Mean0  PSNR: 72.83245
+GMM_Mean1  PSNR: 72.972015
+GMM_Mean2  PSNR: 72.755875
+GMM_Std0  PSNR: 42.794647
+GMM_Std1  PSNR: 42.80456
+GMM_Std2  PSNR: 43.076622
+GMM_Weight0  PSNR: 33.35548
+GMM_Weight1  PSNR: 32.81491
+GMM_Weight2  PSNR: 33.987316
+
+Average psnr :  49.71043
+Final RMSE: 0.010491754
+by this we can confirm there is some relation infulenece one each other.

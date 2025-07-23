@@ -1,0 +1,349 @@
+2025-06-11 22:03:22,636 - Loaded data: 3125000 points, dimensions: (250, 250, 50)
+2025-06-11 22:03:22,636 - Variables: ['Pressure_Mean', 'Pressure_Std']
+2025-06-11 22:03:22,636 - Standard deviation shape: (3125000,)
+2025-06-11 22:08:14,277 - [Progress] Processed 10000 / 3125000 points
+2025-06-11 22:11:03,305 - [Progress] Processed 20000 / 3125000 points
+2025-06-11 22:13:55,564 - [Progress] Processed 30000 / 3125000 points
+2025-06-11 22:17:31,490 - [Progress] Processed 40000 / 3125000 points
+2025-06-11 22:18:46,604 - [Progress] Processed 50000 / 3125000 points
+2025-06-11 22:22:27,734 - [Progress] Processed 60000 / 3125000 points
+2025-06-11 22:24:25,609 - [Progress] Processed 70000 / 3125000 points
+2025-06-11 22:28:03,060 - [Progress] Processed 80000 / 3125000 points
+2025-06-11 22:29:40,375 - [Progress] Processed 90000 / 3125000 points
+2025-06-11 22:33:40,611 - [Progress] Processed 100000 / 3125000 points
+2025-06-11 22:33:40,631 - [Time] Elapsed after 100000 points: 1819.21 sec (00:30:19)
+2025-06-11 22:35:21,331 - [Progress] Processed 110000 / 3125000 points
+2025-06-11 22:38:52,498 - [Progress] Processed 120000 / 3125000 points
+2025-06-11 22:40:49,543 - [Progress] Processed 130000 / 3125000 points
+2025-06-11 22:44:15,387 - [Progress] Processed 140000 / 3125000 points
+2025-06-11 22:47:55,730 - [Progress] Processed 150000 / 3125000 points
+2025-06-11 22:49:31,180 - [Progress] Processed 160000 / 3125000 points
+2025-06-11 22:53:02,652 - [Progress] Processed 170000 / 3125000 points
+2025-06-11 22:55:34,037 - [Progress] Processed 180000 / 3125000 points
+2025-06-11 22:59:08,306 - [Progress] Processed 190000 / 3125000 points
+2025-06-11 23:00:37,146 - [Progress] Processed 200000 / 3125000 points
+2025-06-11 23:00:37,146 - [Time] Elapsed after 200000 points: 3435.75 sec (00:57:15)
+2025-06-11 23:04:18,347 - [Progress] Processed 210000 / 3125000 points
+2025-06-11 23:06:02,634 - [Progress] Processed 220000 / 3125000 points
+2025-06-11 23:09:38,208 - [Progress] Processed 230000 / 3125000 points
+2025-06-11 23:11:29,346 - [Progress] Processed 240000 / 3125000 points
+2025-06-11 23:14:56,134 - [Progress] Processed 250000 / 3125000 points
+2025-06-11 23:18:06,187 - [Progress] Processed 260000 / 3125000 points
+2025-06-11 23:20:41,080 - [Progress] Processed 270000 / 3125000 points
+2025-06-11 23:23:21,763 - [Progress] Processed 280000 / 3125000 points
+2025-06-11 23:25:53,871 - [Progress] Processed 290000 / 3125000 points
+2025-06-11 23:29:18,872 - [Progress] Processed 300000 / 3125000 points
+2025-06-11 23:29:18,873 - [Time] Elapsed after 300000 points: 5157.47 sec (01:25:57)
+2025-06-11 23:31:29,904 - [Progress] Processed 310000 / 3125000 points
+2025-06-11 23:34:26,627 - [Progress] Processed 320000 / 3125000 points
+2025-06-11 23:36:50,747 - [Progress] Processed 330000 / 3125000 points
+2025-06-11 23:39:58,999 - [Progress] Processed 340000 / 3125000 points
+2025-06-11 23:42:59,681 - [Progress] Processed 350000 / 3125000 points
+2025-06-11 23:45:19,215 - [Progress] Processed 360000 / 3125000 points
+2025-06-11 23:48:39,304 - [Progress] Processed 370000 / 3125000 points
+2025-06-11 23:51:09,177 - [Progress] Processed 380000 / 3125000 points
+2025-06-11 23:54:27,088 - [Progress] Processed 390000 / 3125000 points
+2025-06-11 23:56:34,866 - [Progress] Processed 400000 / 3125000 points
+2025-06-11 23:56:34,866 - [Time] Elapsed after 400000 points: 6793.47 sec (01:53:13)
+2025-06-11 23:59:49,288 - [Progress] Processed 410000 / 3125000 points
+2025-06-12 00:02:34,017 - [Progress] Processed 420000 / 3125000 points
+2025-06-12 00:05:19,847 - [Progress] Processed 430000 / 3125000 points
+2025-06-12 00:07:45,642 - [Progress] Processed 440000 / 3125000 points
+2025-06-12 00:10:47,732 - [Progress] Processed 450000 / 3125000 points
+2025-06-12 00:13:45,175 - [Progress] Processed 460000 / 3125000 points
+2025-06-12 00:16:24,521 - [Progress] Processed 470000 / 3125000 points
+2025-06-12 00:19:00,610 - [Progress] Processed 480000 / 3125000 points
+2025-06-12 00:22:03,378 - [Progress] Processed 490000 / 3125000 points
+2025-06-12 00:25:07,624 - [Progress] Processed 500000 / 3125000 points
+2025-06-12 00:25:07,624 - [Time] Elapsed after 500000 points: 8506.22 sec (02:21:46)
+2025-06-12 00:27:54,681 - [Progress] Processed 510000 / 3125000 points
+2025-06-12 00:30:26,658 - [Progress] Processed 520000 / 3125000 points
+2025-06-12 00:33:30,127 - [Progress] Processed 530000 / 3125000 points
+2025-06-12 00:35:56,435 - [Progress] Processed 540000 / 3125000 points
+2025-06-12 00:38:46,228 - [Progress] Processed 550000 / 3125000 points
+2025-06-12 00:41:11,958 - [Progress] Processed 560000 / 3125000 points
+2025-06-12 00:44:39,014 - [Progress] Processed 570000 / 3125000 points
+2025-06-12 00:47:25,589 - [Progress] Processed 580000 / 3125000 points
+2025-06-12 00:50:00,859 - [Progress] Processed 590000 / 3125000 points
+2025-06-12 00:52:29,203 - [Progress] Processed 600000 / 3125000 points
+2025-06-12 00:52:29,203 - [Time] Elapsed after 600000 points: 10147.80 sec (02:49:07)
+2025-06-12 00:55:50,463 - [Progress] Processed 610000 / 3125000 points
+2025-06-12 00:59:09,958 - [Progress] Processed 620000 / 3125000 points
+2025-06-12 01:01:02,382 - [Progress] Processed 630000 / 3125000 points
+2025-06-12 01:04:09,841 - [Progress] Processed 640000 / 3125000 points
+2025-06-12 01:06:51,548 - [Progress] Processed 650000 / 3125000 points
+2025-06-12 01:10:08,276 - [Progress] Processed 660000 / 3125000 points
+2025-06-12 01:11:57,229 - [Progress] Processed 670000 / 3125000 points
+2025-06-12 01:15:31,579 - [Progress] Processed 680000 / 3125000 points
+2025-06-12 01:18:04,294 - [Progress] Processed 690000 / 3125000 points
+2025-06-12 01:20:46,968 - [Progress] Processed 700000 / 3125000 points
+2025-06-12 01:20:46,968 - [Time] Elapsed after 700000 points: 11845.57 sec (03:17:25)
+2025-06-12 01:23:36,521 - [Progress] Processed 710000 / 3125000 points
+2025-06-12 01:26:13,829 - [Progress] Processed 720000 / 3125000 points
+2025-06-12 01:30:02,550 - [Progress] Processed 730000 / 3125000 points
+2025-06-12 01:31:46,186 - [Progress] Processed 740000 / 3125000 points
+2025-06-12 01:34:59,761 - [Progress] Processed 750000 / 3125000 points
+2025-06-12 01:37:23,962 - [Progress] Processed 760000 / 3125000 points
+2025-06-12 01:40:20,700 - [Progress] Processed 770000 / 3125000 points
+2025-06-12 01:43:18,067 - [Progress] Processed 780000 / 3125000 points
+2025-06-12 01:45:55,167 - [Progress] Processed 790000 / 3125000 points
+2025-06-12 01:49:26,983 - [Progress] Processed 800000 / 3125000 points
+2025-06-12 01:49:26,983 - [Time] Elapsed after 800000 points: 13565.58 sec (03:46:05)
+2025-06-12 01:51:19,351 - [Progress] Processed 810000 / 3125000 points
+2025-06-12 01:54:34,645 - [Progress] Processed 820000 / 3125000 points
+2025-06-12 01:57:28,918 - [Progress] Processed 830000 / 3125000 points
+2025-06-12 01:59:52,933 - [Progress] Processed 840000 / 3125000 points
+2025-06-12 02:03:10,995 - [Progress] Processed 850000 / 3125000 points
+2025-06-12 02:05:32,194 - [Progress] Processed 860000 / 3125000 points
+2025-06-12 02:09:07,090 - [Progress] Processed 870000 / 3125000 points
+2025-06-12 02:11:17,375 - [Progress] Processed 880000 / 3125000 points
+2025-06-12 02:14:20,927 - [Progress] Processed 890000 / 3125000 points
+2025-06-12 02:16:36,485 - [Progress] Processed 900000 / 3125000 points
+2025-06-12 02:16:36,485 - [Time] Elapsed after 900000 points: 15195.08 sec (04:13:15)
+2025-06-12 02:19:44,507 - [Progress] Processed 910000 / 3125000 points
+2025-06-12 02:21:47,440 - [Progress] Processed 920000 / 3125000 points
+2025-06-12 02:24:52,950 - [Progress] Processed 930000 / 3125000 points
+2025-06-12 02:27:56,720 - [Progress] Processed 940000 / 3125000 points
+2025-06-12 02:30:26,311 - [Progress] Processed 950000 / 3125000 points
+2025-06-12 02:33:32,253 - [Progress] Processed 960000 / 3125000 points
+2025-06-12 02:35:36,273 - [Progress] Processed 970000 / 3125000 points
+2025-06-12 02:39:35,456 - [Progress] Processed 980000 / 3125000 points
+2025-06-12 02:41:37,900 - [Progress] Processed 990000 / 3125000 points
+2025-06-12 02:44:45,563 - [Progress] Processed 1000000 / 3125000 points
+2025-06-12 02:44:45,563 - [Time] Elapsed after 1000000 points: 16884.16 sec (04:41:24)
+2025-06-12 02:47:18,642 - [Progress] Processed 1010000 / 3125000 points
+2025-06-12 02:49:44,939 - [Progress] Processed 1020000 / 3125000 points
+2025-06-12 02:52:42,654 - [Progress] Processed 1030000 / 3125000 points
+2025-06-12 02:55:18,256 - [Progress] Processed 1040000 / 3125000 points
+2025-06-12 02:58:22,319 - [Progress] Processed 1050000 / 3125000 points
+2025-06-12 03:01:22,976 - [Progress] Processed 1060000 / 3125000 points
+2025-06-12 03:03:44,221 - [Progress] Processed 1070000 / 3125000 points
+2025-06-12 03:06:23,450 - [Progress] Processed 1080000 / 3125000 points
+2025-06-12 03:09:28,616 - [Progress] Processed 1090000 / 3125000 points
+2025-06-12 03:12:08,146 - [Progress] Processed 1100000 / 3125000 points
+2025-06-12 03:12:08,147 - [Time] Elapsed after 1100000 points: 18526.75 sec (05:08:46)
+2025-06-12 03:14:49,251 - [Progress] Processed 1110000 / 3125000 points
+2025-06-12 03:17:09,157 - [Progress] Processed 1120000 / 3125000 points
+2025-06-12 03:20:35,469 - [Progress] Processed 1130000 / 3125000 points
+2025-06-12 03:23:05,195 - [Progress] Processed 1140000 / 3125000 points
+2025-06-12 03:25:32,795 - [Progress] Processed 1150000 / 3125000 points
+2025-06-12 03:28:14,637 - [Progress] Processed 1160000 / 3125000 points
+2025-06-12 03:31:02,842 - [Progress] Processed 1170000 / 3125000 points
+2025-06-12 03:33:38,663 - [Progress] Processed 1180000 / 3125000 points
+2025-06-12 03:36:30,781 - [Progress] Processed 1190000 / 3125000 points
+2025-06-12 03:39:11,789 - [Progress] Processed 1200000 / 3125000 points
+2025-06-12 03:39:11,789 - [Time] Elapsed after 1200000 points: 20150.39 sec (05:35:50)
+2025-06-12 03:42:04,544 - [Progress] Processed 1210000 / 3125000 points
+2025-06-12 03:44:35,167 - [Progress] Processed 1220000 / 3125000 points
+2025-06-12 03:47:14,890 - [Progress] Processed 1230000 / 3125000 points
+2025-06-12 03:50:07,303 - [Progress] Processed 1240000 / 3125000 points
+2025-06-12 03:52:48,573 - [Progress] Processed 1250000 / 3125000 points
+2025-06-12 03:55:48,603 - [Progress] Processed 1260000 / 3125000 points
+2025-06-12 03:58:36,695 - [Progress] Processed 1270000 / 3125000 points
+2025-06-12 04:00:48,542 - [Progress] Processed 1280000 / 3125000 points
+2025-06-12 04:04:20,116 - [Progress] Processed 1290000 / 3125000 points
+2025-06-12 04:06:14,678 - [Progress] Processed 1300000 / 3125000 points
+2025-06-12 04:06:14,678 - [Time] Elapsed after 1300000 points: 21773.28 sec (06:02:53)
+2025-06-12 04:09:38,468 - [Progress] Processed 1310000 / 3125000 points
+2025-06-12 04:11:57,240 - [Progress] Processed 1320000 / 3125000 points
+2025-06-12 04:15:08,976 - [Progress] Processed 1330000 / 3125000 points
+2025-06-12 04:17:42,454 - [Progress] Processed 1340000 / 3125000 points
+2025-06-12 04:20:25,676 - [Progress] Processed 1350000 / 3125000 points
+2025-06-12 04:23:10,330 - [Progress] Processed 1360000 / 3125000 points
+2025-06-12 04:26:11,792 - [Progress] Processed 1370000 / 3125000 points
+2025-06-12 04:28:27,874 - [Progress] Processed 1380000 / 3125000 points
+2025-06-12 04:31:41,605 - [Progress] Processed 1390000 / 3125000 points
+2025-06-12 04:34:19,181 - [Progress] Processed 1400000 / 3125000 points
+2025-06-12 04:34:19,181 - [Time] Elapsed after 1400000 points: 23457.78 sec (06:30:57)
+2025-06-12 04:36:40,202 - [Progress] Processed 1410000 / 3125000 points
+2025-06-12 04:39:21,436 - [Progress] Processed 1420000 / 3125000 points
+2025-06-12 04:42:17,630 - [Progress] Processed 1430000 / 3125000 points
+2025-06-12 04:44:42,549 - [Progress] Processed 1440000 / 3125000 points
+2025-06-12 04:47:26,739 - [Progress] Processed 1450000 / 3125000 points
+2025-06-12 04:50:09,115 - [Progress] Processed 1460000 / 3125000 points
+2025-06-12 04:53:05,616 - [Progress] Processed 1470000 / 3125000 points
+2025-06-12 04:55:56,204 - [Progress] Processed 1480000 / 3125000 points
+2025-06-12 04:58:04,923 - [Progress] Processed 1490000 / 3125000 points
+2025-06-12 05:01:35,440 - [Progress] Processed 1500000 / 3125000 points
+2025-06-12 05:01:35,440 - [Time] Elapsed after 1500000 points: 25094.04 sec (06:58:14)
+2025-06-12 05:04:00,971 - [Progress] Processed 1510000 / 3125000 points
+2025-06-12 05:06:43,851 - [Progress] Processed 1520000 / 3125000 points
+2025-06-12 05:10:00,319 - [Progress] Processed 1530000 / 3125000 points
+2025-06-12 05:12:31,240 - [Progress] Processed 1540000 / 3125000 points
+2025-06-12 05:15:03,571 - [Progress] Processed 1550000 / 3125000 points
+2025-06-12 05:17:33,141 - [Progress] Processed 1560000 / 3125000 points
+2025-06-12 05:20:19,121 - [Progress] Processed 1570000 / 3125000 points
+2025-06-12 05:22:49,581 - [Progress] Processed 1580000 / 3125000 points
+2025-06-12 05:26:04,049 - [Progress] Processed 1590000 / 3125000 points
+2025-06-12 05:28:26,650 - [Progress] Processed 1600000 / 3125000 points
+2025-06-12 05:28:26,650 - [Time] Elapsed after 1600000 points: 26705.25 sec (07:25:05)
+2025-06-12 05:31:02,290 - [Progress] Processed 1610000 / 3125000 points
+2025-06-12 05:34:42,716 - [Progress] Processed 1620000 / 3125000 points
+2025-06-12 05:36:22,917 - [Progress] Processed 1630000 / 3125000 points
+2025-06-12 05:40:15,412 - [Progress] Processed 1640000 / 3125000 points
+2025-06-12 05:42:43,886 - [Progress] Processed 1650000 / 3125000 points
+2025-06-12 05:45:07,267 - [Progress] Processed 1660000 / 3125000 points
+2025-06-12 05:47:43,131 - [Progress] Processed 1670000 / 3125000 points
+2025-06-12 05:51:05,184 - [Progress] Processed 1680000 / 3125000 points
+2025-06-12 05:53:39,018 - [Progress] Processed 1690000 / 3125000 points
+2025-06-12 05:55:52,793 - [Progress] Processed 1700000 / 3125000 points
+2025-06-12 05:55:52,793 - [Time] Elapsed after 1700000 points: 28351.39 sec (07:52:31)
+2025-06-12 05:59:02,896 - [Progress] Processed 1710000 / 3125000 points
+2025-06-12 06:01:42,784 - [Progress] Processed 1720000 / 3125000 points
+2025-06-12 06:04:03,356 - [Progress] Processed 1730000 / 3125000 points
+2025-06-12 06:06:56,969 - [Progress] Processed 1740000 / 3125000 points
+2025-06-12 06:10:01,294 - [Progress] Processed 1750000 / 3125000 points
+2025-06-12 06:12:38,437 - [Progress] Processed 1760000 / 3125000 points
+2025-06-12 06:15:41,783 - [Progress] Processed 1770000 / 3125000 points
+2025-06-12 06:17:54,968 - [Progress] Processed 1780000 / 3125000 points
+2025-06-12 06:21:11,931 - [Progress] Processed 1790000 / 3125000 points
+2025-06-12 06:23:43,054 - [Progress] Processed 1800000 / 3125000 points
+2025-06-12 06:23:43,056 - [Time] Elapsed after 1800000 points: 30021.66 sec (08:20:21)
+2025-06-12 06:26:12,103 - [Progress] Processed 1810000 / 3125000 points
+2025-06-12 06:28:59,323 - [Progress] Processed 1820000 / 3125000 points
+2025-06-12 06:31:55,860 - [Progress] Processed 1830000 / 3125000 points
+2025-06-12 06:34:36,132 - [Progress] Processed 1840000 / 3125000 points
+2025-06-12 06:37:16,571 - [Progress] Processed 1850000 / 3125000 points
+2025-06-12 06:39:18,296 - [Progress] Processed 1860000 / 3125000 points
+2025-06-12 06:42:25,119 - [Progress] Processed 1870000 / 3125000 points
+2025-06-12 06:45:15,469 - [Progress] Processed 1880000 / 3125000 points
+2025-06-12 06:48:35,144 - [Progress] Processed 1890000 / 3125000 points
+2025-06-12 06:50:20,752 - [Progress] Processed 1900000 / 3125000 points
+2025-06-12 06:50:20,752 - [Time] Elapsed after 1900000 points: 31619.35 sec (08:46:59)
+2025-06-12 06:53:34,289 - [Progress] Processed 1910000 / 3125000 points
+2025-06-12 06:56:27,054 - [Progress] Processed 1920000 / 3125000 points
+2025-06-12 06:58:59,989 - [Progress] Processed 1930000 / 3125000 points
+2025-06-12 07:01:28,040 - [Progress] Processed 1940000 / 3125000 points
+2025-06-12 07:04:17,769 - [Progress] Processed 1950000 / 3125000 points
+2025-06-12 07:07:15,397 - [Progress] Processed 1960000 / 3125000 points
+2025-06-12 07:09:53,331 - [Progress] Processed 1970000 / 3125000 points
+2025-06-12 07:12:44,653 - [Progress] Processed 1980000 / 3125000 points
+2025-06-12 07:14:54,860 - [Progress] Processed 1990000 / 3125000 points
+2025-06-12 07:18:02,383 - [Progress] Processed 2000000 / 3125000 points
+2025-06-12 07:18:02,383 - [Time] Elapsed after 2000000 points: 33280.98 sec (09:14:40)
+2025-06-12 07:21:03,806 - [Progress] Processed 2010000 / 3125000 points
+2025-06-12 07:22:14,796 - [Progress] Processed 2020000 / 3125000 points
+2025-06-12 07:26:02,030 - [Progress] Processed 2030000 / 3125000 points
+2025-06-12 07:28:47,026 - [Progress] Processed 2040000 / 3125000 points
+2025-06-12 07:31:27,022 - [Progress] Processed 2050000 / 3125000 points
+2025-06-12 07:34:05,663 - [Progress] Processed 2060000 / 3125000 points
+2025-06-12 07:36:28,573 - [Progress] Processed 2070000 / 3125000 points
+2025-06-12 07:40:01,219 - [Progress] Processed 2080000 / 3125000 points
+2025-06-12 07:41:56,900 - [Progress] Processed 2090000 / 3125000 points
+2025-06-12 07:44:45,265 - [Progress] Processed 2100000 / 3125000 points
+2025-06-12 07:44:45,266 - [Time] Elapsed after 2100000 points: 34883.87 sec (09:41:23)
+2025-06-12 07:47:55,551 - [Progress] Processed 2110000 / 3125000 points
+2025-06-12 07:50:06,024 - [Progress] Processed 2120000 / 3125000 points
+2025-06-12 07:53:05,543 - [Progress] Processed 2130000 / 3125000 points
+2025-06-12 07:55:20,194 - [Progress] Processed 2140000 / 3125000 points
+2025-06-12 07:58:34,909 - [Progress] Processed 2150000 / 3125000 points
+2025-06-12 08:00:46,029 - [Progress] Processed 2160000 / 3125000 points
+2025-06-12 08:03:44,471 - [Progress] Processed 2170000 / 3125000 points
+2025-06-12 08:06:23,008 - [Progress] Processed 2180000 / 3125000 points
+2025-06-12 08:08:31,166 - [Progress] Processed 2190000 / 3125000 points
+2025-06-12 08:11:24,892 - [Progress] Processed 2200000 / 3125000 points
+2025-06-12 08:11:24,892 - [Time] Elapsed after 2200000 points: 36483.49 sec (10:08:03)
+2025-06-12 08:13:31,192 - [Progress] Processed 2210000 / 3125000 points
+2025-06-12 08:16:26,942 - [Progress] Processed 2220000 / 3125000 points
+2025-06-12 08:19:27,412 - [Progress] Processed 2230000 / 3125000 points
+2025-06-12 08:22:13,830 - [Progress] Processed 2240000 / 3125000 points
+2025-06-12 08:24:28,591 - [Progress] Processed 2250000 / 3125000 points
+2025-06-12 08:27:10,835 - [Progress] Processed 2260000 / 3125000 points
+2025-06-12 08:30:04,666 - [Progress] Processed 2270000 / 3125000 points
+2025-06-12 08:32:19,722 - [Progress] Processed 2280000 / 3125000 points
+2025-06-12 08:35:35,168 - [Progress] Processed 2290000 / 3125000 points
+2025-06-12 08:37:47,347 - [Progress] Processed 2300000 / 3125000 points
+2025-06-12 08:37:47,347 - [Time] Elapsed after 2300000 points: 38065.95 sec (10:34:25)
+2025-06-12 08:40:22,234 - [Progress] Processed 2310000 / 3125000 points
+2025-06-12 08:43:32,537 - [Progress] Processed 2320000 / 3125000 points
+2025-06-12 08:45:12,992 - [Progress] Processed 2330000 / 3125000 points
+2025-06-12 08:48:34,330 - [Progress] Processed 2340000 / 3125000 points
+2025-06-12 08:51:34,419 - [Progress] Processed 2350000 / 3125000 points
+2025-06-12 08:53:53,355 - [Progress] Processed 2360000 / 3125000 points
+2025-06-12 08:56:52,699 - [Progress] Processed 2370000 / 3125000 points
+2025-06-12 08:58:45,712 - [Progress] Processed 2380000 / 3125000 points
+2025-06-12 09:01:46,989 - [Progress] Processed 2390000 / 3125000 points
+2025-06-12 09:04:40,443 - [Progress] Processed 2400000 / 3125000 points
+2025-06-12 09:04:40,443 - [Time] Elapsed after 2400000 points: 39679.04 sec (11:01:19)
+2025-06-12 09:07:09,790 - [Progress] Processed 2410000 / 3125000 points
+2025-06-12 09:09:28,796 - [Progress] Processed 2420000 / 3125000 points
+2025-06-12 09:12:25,524 - [Progress] Processed 2430000 / 3125000 points
+2025-06-12 09:15:07,098 - [Progress] Processed 2440000 / 3125000 points
+2025-06-12 09:17:08,717 - [Progress] Processed 2450000 / 3125000 points
+2025-06-12 09:20:20,317 - [Progress] Processed 2460000 / 3125000 points
+2025-06-12 09:22:59,421 - [Progress] Processed 2470000 / 3125000 points
+2025-06-12 09:25:32,598 - [Progress] Processed 2480000 / 3125000 points
+2025-06-12 09:28:35,360 - [Progress] Processed 2490000 / 3125000 points
+2025-06-12 09:30:25,665 - [Progress] Processed 2500000 / 3125000 points
+2025-06-12 09:30:25,665 - [Time] Elapsed after 2500000 points: 41224.26 sec (11:27:04)
+2025-06-12 09:33:31,168 - [Progress] Processed 2510000 / 3125000 points
+2025-06-12 09:36:22,551 - [Progress] Processed 2520000 / 3125000 points
+2025-06-12 09:38:38,324 - [Progress] Processed 2530000 / 3125000 points
+2025-06-12 09:41:37,810 - [Progress] Processed 2540000 / 3125000 points
+2025-06-12 09:44:42,007 - [Progress] Processed 2550000 / 3125000 points
+2025-06-12 09:46:59,736 - [Progress] Processed 2560000 / 3125000 points
+2025-06-12 09:49:30,459 - [Progress] Processed 2570000 / 3125000 points
+2025-06-12 09:52:45,070 - [Progress] Processed 2580000 / 3125000 points
+2025-06-12 09:55:19,873 - [Progress] Processed 2590000 / 3125000 points
+2025-06-12 09:57:15,685 - [Progress] Processed 2600000 / 3125000 points
+2025-06-12 09:57:15,685 - [Time] Elapsed after 2600000 points: 42834.28 sec (11:53:54)
+2025-06-12 10:01:07,702 - [Progress] Processed 2610000 / 3125000 points
+2025-06-12 10:03:20,586 - [Progress] Processed 2620000 / 3125000 points
+2025-06-12 10:05:55,299 - [Progress] Processed 2630000 / 3125000 points
+2025-06-12 10:08:42,995 - [Progress] Processed 2640000 / 3125000 points
+2025-06-12 10:10:43,940 - [Progress] Processed 2650000 / 3125000 points
+2025-06-12 10:14:01,001 - [Progress] Processed 2660000 / 3125000 points
+2025-06-12 10:16:36,211 - [Progress] Processed 2670000 / 3125000 points
+2025-06-12 10:19:08,018 - [Progress] Processed 2680000 / 3125000 points
+2025-06-12 10:22:25,709 - [Progress] Processed 2690000 / 3125000 points
+2025-06-12 10:24:44,373 - [Progress] Processed 2700000 / 3125000 points
+2025-06-12 10:24:44,373 - [Time] Elapsed after 2700000 points: 44482.97 sec (12:21:22)
+2025-06-12 10:27:45,897 - [Progress] Processed 2710000 / 3125000 points
+2025-06-12 10:30:10,644 - [Progress] Processed 2720000 / 3125000 points
+2025-06-12 10:32:49,091 - [Progress] Processed 2730000 / 3125000 points
+2025-06-12 10:35:50,557 - [Progress] Processed 2740000 / 3125000 points
+2025-06-12 10:37:55,344 - [Progress] Processed 2750000 / 3125000 points
+2025-06-12 10:41:05,878 - [Progress] Processed 2760000 / 3125000 points
+2025-06-12 10:43:58,837 - [Progress] Processed 2770000 / 3125000 points
+2025-06-12 10:46:37,129 - [Progress] Processed 2780000 / 3125000 points
+2025-06-12 10:49:04,528 - [Progress] Processed 2790000 / 3125000 points
+2025-06-12 10:52:12,700 - [Progress] Processed 2800000 / 3125000 points
+2025-06-12 10:52:12,700 - [Time] Elapsed after 2800000 points: 46131.30 sec (12:48:51)
+2025-06-12 10:54:41,965 - [Progress] Processed 2810000 / 3125000 points
+2025-06-12 10:57:11,391 - [Progress] Processed 2820000 / 3125000 points
+2025-06-12 10:59:57,864 - [Progress] Processed 2830000 / 3125000 points
+2025-06-12 11:02:54,856 - [Progress] Processed 2840000 / 3125000 points
+2025-06-12 11:05:25,240 - [Progress] Processed 2850000 / 3125000 points
+2025-06-12 11:08:25,415 - [Progress] Processed 2860000 / 3125000 points
+2025-06-12 11:11:07,492 - [Progress] Processed 2870000 / 3125000 points
+2025-06-12 11:13:36,135 - [Progress] Processed 2880000 / 3125000 points
+2025-06-12 11:16:27,697 - [Progress] Processed 2890000 / 3125000 points
+2025-06-12 11:19:15,202 - [Progress] Processed 2900000 / 3125000 points
+2025-06-12 11:19:15,202 - [Time] Elapsed after 2900000 points: 47753.80 sec (13:15:53)
+2025-06-12 11:21:55,986 - [Progress] Processed 2910000 / 3125000 points
+2025-06-12 11:24:46,011 - [Progress] Processed 2920000 / 3125000 points
+2025-06-12 11:27:18,589 - [Progress] Processed 2930000 / 3125000 points
+2025-06-12 11:30:18,507 - [Progress] Processed 2940000 / 3125000 points
+2025-06-12 11:32:32,677 - [Progress] Processed 2950000 / 3125000 points
+2025-06-12 11:35:52,231 - [Progress] Processed 2960000 / 3125000 points
+2025-06-12 11:38:24,314 - [Progress] Processed 2970000 / 3125000 points
+2025-06-12 11:41:25,901 - [Progress] Processed 2980000 / 3125000 points
+2025-06-12 11:43:56,802 - [Progress] Processed 2990000 / 3125000 points
+2025-06-12 11:46:34,217 - [Progress] Processed 3000000 / 3125000 points
+2025-06-12 11:46:34,217 - [Time] Elapsed after 3000000 points: 49392.82 sec (13:43:12)
+2025-06-12 11:49:29,832 - [Progress] Processed 3010000 / 3125000 points
+2025-06-12 11:52:08,293 - [Progress] Processed 3020000 / 3125000 points
+2025-06-12 11:55:03,805 - [Progress] Processed 3030000 / 3125000 points
+2025-06-12 11:57:45,481 - [Progress] Processed 3040000 / 3125000 points
+2025-06-12 12:00:42,181 - [Progress] Processed 3050000 / 3125000 points
+2025-06-12 12:03:17,476 - [Progress] Processed 3060000 / 3125000 points
+2025-06-12 12:05:31,904 - [Progress] Processed 3070000 / 3125000 points
+2025-06-12 12:08:42,049 - [Progress] Processed 3080000 / 3125000 points
+2025-06-12 12:10:59,043 - [Progress] Processed 3090000 / 3125000 points
+2025-06-12 12:13:55,279 - [Progress] Processed 3100000 / 3125000 points
+2025-06-12 12:13:55,280 - [Time] Elapsed after 3100000 points: 51033.88 sec (14:10:33)
+2025-06-12 12:17:09,317 - [Progress] Processed 3110000 / 3125000 points
+2025-06-12 12:18:22,018 - [Progress] Processed 3120000 / 3125000 points
+2025-06-12 12:18:42,032 - Removed arrays: Pressure_Mean, Pressure_Std
+2025-06-12 12:18:50,980 - Total time taken: 51329.58 seconds (14:15:29)
+2025-06-12 12:18:50,981 - Done. Output written to sklearn_isabel_gmm_multi.vti

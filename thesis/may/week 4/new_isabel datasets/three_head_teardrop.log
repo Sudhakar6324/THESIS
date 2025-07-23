@@ -1,0 +1,260 @@
+nohup: ignoring input
+Device running: cuda
+Namespace(n_neurons=150, n_layers=6, epochs=200, batchsize=512, lr=5e-05, no_decay=False, decay_rate=0.8, decay_at_interval=True, decay_interval=30, datapath='sklearn_teardrop_gmm.vti', outpath='./models/', exp_path='../logs/', modified_data_path='./data/', dataset_name='3d_data', vti_name='teardrop_sgmm_predicted_vti', vti_path='./data/')
+Variables: ['GMM_Mean0', 'GMM_Mean1', 'GMM_Mean2', 'GMM_Std0', 'GMM_Std1', 'GMM_Std2', 'GMM_Weight0', 'GMM_Weight1', 'GMM_Weight2']
+Total Points: 262144
+Dataset Name: 3d_data
+Total Variables: 9
+Total Points in Data: 262144
+Coordinate Tensor Shape: torch.Size([262144, 3])
+Scalar Values Tensor Shape: torch.Size([262144, 9])
+
+###### Data setup is complete, now starting training ######
+
+MyResidualSirenNet(
+  (net_layers): ModuleList(
+    (0): SineLayer(
+      (linear): Linear(in_features=3, out_features=150, bias=True)
+    )
+    (1-6): 6 x ResidualSineLayer(
+      (linear_1): Linear(in_features=150, out_features=150, bias=True)
+      (linear_2): Linear(in_features=150, out_features=150, bias=True)
+    )
+  )
+  (mean_head): Linear(in_features=150, out_features=3, bias=True)
+  (std_head): Linear(in_features=150, out_features=3, bias=True)
+  (weight_head): Linear(in_features=150, out_features=3, bias=True)
+)
+Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 5e-05
+    maximize: False
+    weight_decay: 0
+)
+MSELoss()
+  0%|          | 0/200 [00:00<?, ?it/s]Epoch: 1/200 | Train Loss: 0.008701 | Time: 9.36s (cuda) | LR: 5.00e-05
+  0%|          | 1/200 [00:09<31:01,  9.36s/it]Epoch: 2/200 | Train Loss: 0.001232 | Time: 6.62s (cuda) | LR: 5.00e-05
+  1%|          | 2/200 [00:15<25:34,  7.75s/it]Epoch: 3/200 | Train Loss: 0.001160 | Time: 6.66s (cuda) | LR: 5.00e-05
+  2%|▏         | 3/200 [00:22<23:48,  7.25s/it]Epoch: 4/200 | Train Loss: 0.001127 | Time: 7.05s (cuda) | LR: 5.00e-05
+  2%|▏         | 4/200 [00:29<23:26,  7.17s/it]Epoch: 5/200 | Train Loss: 0.001114 | Time: 6.82s (cuda) | LR: 5.00e-05
+  2%|▎         | 5/200 [00:36<22:54,  7.05s/it]Epoch: 6/200 | Train Loss: 0.001103 | Time: 7.07s (cuda) | LR: 5.00e-05
+  3%|▎         | 6/200 [00:43<22:48,  7.06s/it]Epoch: 7/200 | Train Loss: 0.001096 | Time: 7.26s (cuda) | LR: 5.00e-05
+  4%|▎         | 7/200 [00:50<22:54,  7.12s/it]Epoch: 8/200 | Train Loss: 0.001092 | Time: 7.33s (cuda) | LR: 5.00e-05
+  4%|▍         | 8/200 [00:58<23:00,  7.19s/it]Epoch: 9/200 | Train Loss: 0.001086 | Time: 7.05s (cuda) | LR: 5.00e-05
+  4%|▍         | 9/200 [01:05<22:44,  7.15s/it]Epoch: 10/200 | Train Loss: 0.001080 | Time: 6.65s (cuda) | LR: 5.00e-05
+  5%|▌         | 10/200 [01:11<22:08,  6.99s/it]Epoch: 11/200 | Train Loss: 0.001075 | Time: 6.37s (cuda) | LR: 5.00e-05
+  6%|▌         | 11/200 [01:18<21:25,  6.80s/it]Epoch: 12/200 | Train Loss: 0.001068 | Time: 5.82s (cuda) | LR: 5.00e-05
+  6%|▌         | 12/200 [01:24<20:22,  6.50s/it]Epoch: 13/200 | Train Loss: 0.001062 | Time: 6.32s (cuda) | LR: 5.00e-05
+  6%|▋         | 13/200 [01:30<20:05,  6.45s/it]Epoch: 14/200 | Train Loss: 0.001055 | Time: 7.85s (cuda) | LR: 5.00e-05
+  7%|▋         | 14/200 [01:38<21:18,  6.87s/it]Epoch: 15/200 | Train Loss: 0.001046 | Time: 8.26s (cuda) | LR: 5.00e-05
+  8%|▊         | 15/200 [01:46<22:28,  7.29s/it]Epoch: 16/200 | Train Loss: 0.001040 | Time: 7.68s (cuda) | LR: 5.00e-05
+  8%|▊         | 16/200 [01:54<22:43,  7.41s/it]Epoch: 17/200 | Train Loss: 0.001031 | Time: 7.11s (cuda) | LR: 5.00e-05
+  8%|▊         | 17/200 [02:01<22:19,  7.32s/it]Epoch: 18/200 | Train Loss: 0.001021 | Time: 7.14s (cuda) | LR: 5.00e-05
+  9%|▉         | 18/200 [02:08<22:01,  7.26s/it]Epoch: 19/200 | Train Loss: 0.001015 | Time: 7.14s (cuda) | LR: 5.00e-05
+ 10%|▉         | 19/200 [02:15<21:48,  7.23s/it]Epoch: 20/200 | Train Loss: 0.001007 | Time: 7.56s (cuda) | LR: 5.00e-05
+ 10%|█         | 20/200 [02:23<21:59,  7.33s/it]Epoch: 21/200 | Train Loss: 0.001000 | Time: 7.24s (cuda) | LR: 5.00e-05
+ 10%|█         | 21/200 [02:30<21:46,  7.30s/it]Epoch: 22/200 | Train Loss: 0.000993 | Time: 7.64s (cuda) | LR: 5.00e-05
+ 11%|█         | 22/200 [02:38<21:57,  7.40s/it]Epoch: 23/200 | Train Loss: 0.000987 | Time: 7.06s (cuda) | LR: 5.00e-05
+ 12%|█▏        | 23/200 [02:45<21:32,  7.30s/it]Epoch: 24/200 | Train Loss: 0.000979 | Time: 6.53s (cuda) | LR: 5.00e-05
+ 12%|█▏        | 24/200 [02:51<20:44,  7.07s/it]Epoch: 25/200 | Train Loss: 0.000973 | Time: 6.52s (cuda) | LR: 5.00e-05
+ 12%|█▎        | 25/200 [02:58<20:08,  6.90s/it]Epoch: 26/200 | Train Loss: 0.000968 | Time: 7.02s (cuda) | LR: 5.00e-05
+ 13%|█▎        | 26/200 [03:05<20:07,  6.94s/it]Epoch: 27/200 | Train Loss: 0.000966 | Time: 6.71s (cuda) | LR: 5.00e-05
+ 14%|█▎        | 27/200 [03:11<19:48,  6.87s/it]Epoch: 28/200 | Train Loss: 0.000961 | Time: 6.69s (cuda) | LR: 5.00e-05
+ 14%|█▍        | 28/200 [03:18<19:32,  6.82s/it]Epoch: 29/200 | Train Loss: 0.000953 | Time: 6.52s (cuda) | LR: 5.00e-05
+ 14%|█▍        | 29/200 [03:25<19:10,  6.73s/it]Epoch: 30/200 | Train Loss: 0.000950 | Time: 7.15s (cuda) | LR: 5.00e-05
+ 15%|█▌        | 30/200 [03:32<19:25,  6.86s/it]Epoch: 31/200 | Train Loss: 0.000947 | Time: 6.98s (cuda) | LR: 4.00e-05
+ 16%|█▌        | 31/200 [03:39<19:24,  6.89s/it]Epoch: 32/200 | Train Loss: 0.000917 | Time: 6.52s (cuda) | LR: 4.00e-05
+ 16%|█▌        | 32/200 [03:45<18:59,  6.78s/it]Epoch: 33/200 | Train Loss: 0.000909 | Time: 7.42s (cuda) | LR: 4.00e-05
+ 16%|█▋        | 33/200 [03:53<19:24,  6.97s/it]Epoch: 34/200 | Train Loss: 0.000902 | Time: 7.07s (cuda) | LR: 4.00e-05
+ 17%|█▋        | 34/200 [04:00<19:22,  7.00s/it]Epoch: 35/200 | Train Loss: 0.000898 | Time: 7.19s (cuda) | LR: 4.00e-05
+ 18%|█▊        | 35/200 [04:07<19:24,  7.06s/it]Epoch: 36/200 | Train Loss: 0.000892 | Time: 8.65s (cuda) | LR: 4.00e-05
+ 18%|█▊        | 36/200 [04:16<20:35,  7.54s/it]Epoch: 37/200 | Train Loss: 0.000888 | Time: 6.34s (cuda) | LR: 4.00e-05
+ 18%|█▊        | 37/200 [04:22<19:29,  7.18s/it]Epoch: 38/200 | Train Loss: 0.000883 | Time: 6.94s (cuda) | LR: 4.00e-05
+ 19%|█▉        | 38/200 [04:29<19:11,  7.11s/it]Epoch: 39/200 | Train Loss: 0.000879 | Time: 8.31s (cuda) | LR: 4.00e-05
+ 20%|█▉        | 39/200 [04:37<20:02,  7.47s/it]Epoch: 40/200 | Train Loss: 0.000875 | Time: 6.75s (cuda) | LR: 4.00e-05
+ 20%|██        | 40/200 [04:44<19:20,  7.25s/it]Epoch: 41/200 | Train Loss: 0.000871 | Time: 6.59s (cuda) | LR: 4.00e-05
+ 20%|██        | 41/200 [04:50<18:41,  7.05s/it]Epoch: 42/200 | Train Loss: 0.000867 | Time: 8.63s (cuda) | LR: 4.00e-05
+ 21%|██        | 42/200 [04:59<19:49,  7.53s/it]Epoch: 43/200 | Train Loss: 0.000863 | Time: 7.05s (cuda) | LR: 4.00e-05
+ 22%|██▏       | 43/200 [05:06<19:19,  7.38s/it]Epoch: 44/200 | Train Loss: 0.000859 | Time: 7.41s (cuda) | LR: 4.00e-05
+ 22%|██▏       | 44/200 [05:14<19:13,  7.39s/it]Epoch: 45/200 | Train Loss: 0.000856 | Time: 7.72s (cuda) | LR: 4.00e-05
+ 22%|██▎       | 45/200 [05:21<19:21,  7.49s/it]Epoch: 46/200 | Train Loss: 0.000853 | Time: 6.92s (cuda) | LR: 4.00e-05
+ 23%|██▎       | 46/200 [05:28<18:47,  7.32s/it]Epoch: 47/200 | Train Loss: 0.000849 | Time: 6.65s (cuda) | LR: 4.00e-05
+ 24%|██▎       | 47/200 [05:35<18:09,  7.12s/it]Epoch: 48/200 | Train Loss: 0.000847 | Time: 7.2s (cuda) | LR: 4.00e-05
+ 24%|██▍       | 48/200 [05:42<18:05,  7.14s/it]Epoch: 49/200 | Train Loss: 0.000845 | Time: 5.96s (cuda) | LR: 4.00e-05
+ 24%|██▍       | 49/200 [05:48<17:04,  6.79s/it]Epoch: 50/200 | Train Loss: 0.000842 | Time: 6.85s (cuda) | LR: 4.00e-05
+ 25%|██▌       | 50/200 [05:55<17:01,  6.81s/it]Epoch: 51/200 | Train Loss: 0.000837 | Time: 6.81s (cuda) | LR: 4.00e-05
+ 26%|██▌       | 51/200 [06:02<16:54,  6.81s/it]Epoch: 52/200 | Train Loss: 0.000837 | Time: 7.16s (cuda) | LR: 4.00e-05
+ 26%|██▌       | 52/200 [06:09<17:03,  6.92s/it]Epoch: 53/200 | Train Loss: 0.000833 | Time: 6.74s (cuda) | LR: 4.00e-05
+ 26%|██▋       | 53/200 [06:16<16:48,  6.86s/it]Epoch: 54/200 | Train Loss: 0.000833 | Time: 6.66s (cuda) | LR: 4.00e-05
+ 27%|██▋       | 54/200 [06:22<16:33,  6.80s/it]Epoch: 55/200 | Train Loss: 0.000829 | Time: 6.52s (cuda) | LR: 4.00e-05
+ 28%|██▊       | 55/200 [06:29<16:14,  6.72s/it]Epoch: 56/200 | Train Loss: 0.000829 | Time: 6.96s (cuda) | LR: 4.00e-05
+ 28%|██▊       | 56/200 [06:36<16:18,  6.79s/it]Epoch: 57/200 | Train Loss: 0.000827 | Time: 7.22s (cuda) | LR: 4.00e-05
+ 28%|██▊       | 57/200 [06:43<16:29,  6.92s/it]Epoch: 58/200 | Train Loss: 0.000823 | Time: 6.47s (cuda) | LR: 4.00e-05
+ 29%|██▉       | 58/200 [06:49<16:03,  6.79s/it]Epoch: 59/200 | Train Loss: 0.000821 | Time: 6.74s (cuda) | LR: 4.00e-05
+ 30%|██▉       | 59/200 [06:56<15:54,  6.77s/it]Epoch: 60/200 | Train Loss: 0.000821 | Time: 6.0s (cuda) | LR: 4.00e-05
+ 30%|███       | 60/200 [07:02<15:15,  6.54s/it]Epoch: 61/200 | Train Loss: 0.000818 | Time: 6.52s (cuda) | LR: 3.20e-05
+ 30%|███       | 61/200 [07:09<15:08,  6.54s/it]Epoch: 62/200 | Train Loss: 0.000777 | Time: 6.11s (cuda) | LR: 3.20e-05
+ 31%|███       | 62/200 [07:15<14:44,  6.41s/it]Epoch: 63/200 | Train Loss: 0.000762 | Time: 6.46s (cuda) | LR: 3.20e-05
+ 32%|███▏      | 63/200 [07:21<14:40,  6.43s/it]Epoch: 64/200 | Train Loss: 0.000757 | Time: 6.75s (cuda) | LR: 3.20e-05
+ 32%|███▏      | 64/200 [07:28<14:47,  6.52s/it]Epoch: 65/200 | Train Loss: 0.000752 | Time: 5.94s (cuda) | LR: 3.20e-05
+ 32%|███▎      | 65/200 [07:34<14:17,  6.35s/it]Epoch: 66/200 | Train Loss: 0.000747 | Time: 6.69s (cuda) | LR: 3.20e-05
+ 33%|███▎      | 66/200 [07:41<14:24,  6.45s/it]Epoch: 67/200 | Train Loss: 0.000742 | Time: 6.26s (cuda) | LR: 3.20e-05
+ 34%|███▎      | 67/200 [07:47<14:10,  6.39s/it]Epoch: 68/200 | Train Loss: 0.000737 | Time: 6.52s (cuda) | LR: 3.20e-05
+ 34%|███▍      | 68/200 [07:53<14:08,  6.43s/it]Epoch: 69/200 | Train Loss: 0.000732 | Time: 6.65s (cuda) | LR: 3.20e-05
+ 34%|███▍      | 69/200 [08:00<14:11,  6.50s/it]Epoch: 70/200 | Train Loss: 0.000729 | Time: 6.51s (cuda) | LR: 3.20e-05
+ 35%|███▌      | 70/200 [08:07<14:05,  6.50s/it]Epoch: 71/200 | Train Loss: 0.000726 | Time: 6.38s (cuda) | LR: 3.20e-05
+ 36%|███▌      | 71/200 [08:13<13:53,  6.46s/it]Epoch: 72/200 | Train Loss: 0.000723 | Time: 6.54s (cuda) | LR: 3.20e-05
+ 36%|███▌      | 72/200 [08:20<13:50,  6.49s/it]Epoch: 73/200 | Train Loss: 0.000720 | Time: 6.48s (cuda) | LR: 3.20e-05
+ 36%|███▋      | 73/200 [08:26<13:43,  6.49s/it]Epoch: 74/200 | Train Loss: 0.000716 | Time: 6.47s (cuda) | LR: 3.20e-05
+ 37%|███▋      | 74/200 [08:33<13:36,  6.48s/it]Epoch: 75/200 | Train Loss: 0.000714 | Time: 6.07s (cuda) | LR: 3.20e-05
+ 38%|███▊      | 75/200 [08:39<13:14,  6.36s/it]Epoch: 76/200 | Train Loss: 0.000712 | Time: 6.3s (cuda) | LR: 3.20e-05
+ 38%|███▊      | 76/200 [08:45<13:06,  6.34s/it]Epoch: 77/200 | Train Loss: 0.000710 | Time: 6.17s (cuda) | LR: 3.20e-05
+ 38%|███▊      | 77/200 [08:51<12:53,  6.29s/it]Epoch: 78/200 | Train Loss: 0.000706 | Time: 6.86s (cuda) | LR: 3.20e-05
+ 39%|███▉      | 78/200 [08:58<13:08,  6.46s/it]Epoch: 79/200 | Train Loss: 0.000704 | Time: 7.06s (cuda) | LR: 3.20e-05
+ 40%|███▉      | 79/200 [09:05<13:23,  6.64s/it]Epoch: 80/200 | Train Loss: 0.000702 | Time: 6.46s (cuda) | LR: 3.20e-05
+ 40%|████      | 80/200 [09:11<13:10,  6.59s/it]Epoch: 81/200 | Train Loss: 0.000702 | Time: 6.38s (cuda) | LR: 3.20e-05
+ 40%|████      | 81/200 [09:18<12:56,  6.53s/it]Epoch: 82/200 | Train Loss: 0.000699 | Time: 6.91s (cuda) | LR: 3.20e-05
+ 41%|████      | 82/200 [09:25<13:03,  6.64s/it]Epoch: 83/200 | Train Loss: 0.000697 | Time: 6.2s (cuda) | LR: 3.20e-05
+ 42%|████▏     | 83/200 [09:31<12:41,  6.51s/it]Epoch: 84/200 | Train Loss: 0.000696 | Time: 6.87s (cuda) | LR: 3.20e-05
+ 42%|████▏     | 84/200 [09:38<12:47,  6.62s/it]Epoch: 85/200 | Train Loss: 0.000693 | Time: 6.67s (cuda) | LR: 3.20e-05
+ 42%|████▎     | 85/200 [09:44<12:42,  6.63s/it]Epoch: 86/200 | Train Loss: 0.000693 | Time: 6.35s (cuda) | LR: 3.20e-05
+ 43%|████▎     | 86/200 [09:51<12:26,  6.55s/it]Epoch: 87/200 | Train Loss: 0.000691 | Time: 6.87s (cuda) | LR: 3.20e-05
+ 44%|████▎     | 87/200 [09:58<12:30,  6.64s/it]Epoch: 88/200 | Train Loss: 0.000690 | Time: 6.91s (cuda) | LR: 3.20e-05
+ 44%|████▍     | 88/200 [10:05<12:33,  6.72s/it]Epoch: 89/200 | Train Loss: 0.000689 | Time: 7.67s (cuda) | LR: 3.20e-05
+ 44%|████▍     | 89/200 [10:12<12:57,  7.01s/it]Epoch: 90/200 | Train Loss: 0.000688 | Time: 6.53s (cuda) | LR: 3.20e-05
+ 45%|████▌     | 90/200 [10:19<12:35,  6.87s/it]Epoch: 91/200 | Train Loss: 0.000686 | Time: 6.87s (cuda) | LR: 2.56e-05
+ 46%|████▌     | 91/200 [10:26<12:28,  6.87s/it]Epoch: 92/200 | Train Loss: 0.000638 | Time: 6.65s (cuda) | LR: 2.56e-05
+ 46%|████▌     | 92/200 [10:32<12:14,  6.80s/it]Epoch: 93/200 | Train Loss: 0.000621 | Time: 6.98s (cuda) | LR: 2.56e-05
+ 46%|████▋     | 93/200 [10:39<12:13,  6.86s/it]Epoch: 94/200 | Train Loss: 0.000618 | Time: 6.54s (cuda) | LR: 2.56e-05
+ 47%|████▋     | 94/200 [10:46<11:56,  6.76s/it]Epoch: 95/200 | Train Loss: 0.000616 | Time: 6.7s (cuda) | LR: 2.56e-05
+ 48%|████▊     | 95/200 [10:53<11:47,  6.74s/it]Epoch: 96/200 | Train Loss: 0.000612 | Time: 6.75s (cuda) | LR: 2.56e-05
+ 48%|████▊     | 96/200 [10:59<11:41,  6.74s/it]Epoch: 97/200 | Train Loss: 0.000610 | Time: 6.91s (cuda) | LR: 2.56e-05
+ 48%|████▊     | 97/200 [11:06<11:39,  6.79s/it]Epoch: 98/200 | Train Loss: 0.000606 | Time: 6.88s (cuda) | LR: 2.56e-05
+ 49%|████▉     | 98/200 [11:13<11:35,  6.82s/it]Epoch: 99/200 | Train Loss: 0.000606 | Time: 6.44s (cuda) | LR: 2.56e-05
+ 50%|████▉     | 99/200 [11:20<11:17,  6.70s/it]Epoch: 100/200 | Train Loss: 0.000602 | Time: 6.88s (cuda) | LR: 2.56e-05
+ 50%|█████     | 100/200 [11:26<11:15,  6.76s/it]Epoch: 101/200 | Train Loss: 0.000600 | Time: 7.4s (cuda) | LR: 2.56e-05
+ 50%|█████     | 101/200 [11:34<11:28,  6.95s/it]Epoch: 102/200 | Train Loss: 0.000597 | Time: 7.13s (cuda) | LR: 2.56e-05
+ 51%|█████     | 102/200 [11:41<11:26,  7.01s/it]Epoch: 103/200 | Train Loss: 0.000596 | Time: 6.9s (cuda) | LR: 2.56e-05
+ 52%|█████▏    | 103/200 [11:48<11:16,  6.97s/it]Epoch: 104/200 | Train Loss: 0.000595 | Time: 6.75s (cuda) | LR: 2.56e-05
+ 52%|█████▏    | 104/200 [11:55<11:03,  6.91s/it]Epoch: 105/200 | Train Loss: 0.000592 | Time: 6.48s (cuda) | LR: 2.56e-05
+ 52%|█████▎    | 105/200 [12:01<10:43,  6.78s/it]Epoch: 106/200 | Train Loss: 0.000591 | Time: 6.42s (cuda) | LR: 2.56e-05
+ 53%|█████▎    | 106/200 [12:07<10:27,  6.67s/it]Epoch: 107/200 | Train Loss: 0.000590 | Time: 6.99s (cuda) | LR: 2.56e-05
+ 54%|█████▎    | 107/200 [12:14<10:29,  6.77s/it]Epoch: 108/200 | Train Loss: 0.000588 | Time: 6.77s (cuda) | LR: 2.56e-05
+ 54%|█████▍    | 108/200 [12:21<10:22,  6.77s/it]Epoch: 109/200 | Train Loss: 0.000587 | Time: 6.89s (cuda) | LR: 2.56e-05
+ 55%|█████▍    | 109/200 [12:28<10:19,  6.81s/it]Epoch: 110/200 | Train Loss: 0.000586 | Time: 6.26s (cuda) | LR: 2.56e-05
+ 55%|█████▌    | 110/200 [12:34<09:57,  6.64s/it]Epoch: 111/200 | Train Loss: 0.000585 | Time: 6.63s (cuda) | LR: 2.56e-05
+ 56%|█████▌    | 111/200 [12:41<09:50,  6.64s/it]Epoch: 112/200 | Train Loss: 0.000583 | Time: 6.54s (cuda) | LR: 2.56e-05
+ 56%|█████▌    | 112/200 [12:48<09:41,  6.61s/it]Epoch: 113/200 | Train Loss: 0.000582 | Time: 6.93s (cuda) | LR: 2.56e-05
+ 56%|█████▋    | 113/200 [12:55<09:43,  6.70s/it]Epoch: 114/200 | Train Loss: 0.000582 | Time: 6.84s (cuda) | LR: 2.56e-05
+ 57%|█████▋    | 114/200 [13:01<09:40,  6.74s/it]Epoch: 115/200 | Train Loss: 0.000581 | Time: 6.87s (cuda) | LR: 2.56e-05
+ 57%|█████▊    | 115/200 [13:08<09:36,  6.78s/it]Epoch: 116/200 | Train Loss: 0.000580 | Time: 6.86s (cuda) | LR: 2.56e-05
+ 58%|█████▊    | 116/200 [13:15<09:31,  6.81s/it]Epoch: 117/200 | Train Loss: 0.000577 | Time: 6.62s (cuda) | LR: 2.56e-05
+ 58%|█████▊    | 117/200 [13:22<09:20,  6.75s/it]Epoch: 118/200 | Train Loss: 0.000578 | Time: 7.16s (cuda) | LR: 2.56e-05
+ 59%|█████▉    | 118/200 [13:29<09:23,  6.87s/it]Epoch: 119/200 | Train Loss: 0.000577 | Time: 6.41s (cuda) | LR: 2.56e-05
+ 60%|█████▉    | 119/200 [13:35<09:05,  6.74s/it]Epoch: 120/200 | Train Loss: 0.000575 | Time: 7.18s (cuda) | LR: 2.56e-05
+ 60%|██████    | 120/200 [13:42<09:09,  6.87s/it]Epoch: 121/200 | Train Loss: 0.000574 | Time: 7.0s (cuda) | LR: 2.05e-05
+ 60%|██████    | 121/200 [13:49<09:05,  6.91s/it]Epoch: 122/200 | Train Loss: 0.000529 | Time: 7.32s (cuda) | LR: 2.05e-05
+ 61%|██████    | 122/200 [13:57<09:08,  7.03s/it]Epoch: 123/200 | Train Loss: 0.000515 | Time: 6.82s (cuda) | LR: 2.05e-05
+ 62%|██████▏   | 123/200 [14:04<08:56,  6.97s/it]Epoch: 124/200 | Train Loss: 0.000515 | Time: 6.74s (cuda) | LR: 2.05e-05
+ 62%|██████▏   | 124/200 [14:10<08:44,  6.90s/it]Epoch: 125/200 | Train Loss: 0.000514 | Time: 6.37s (cuda) | LR: 2.05e-05
+ 62%|██████▎   | 125/200 [14:17<08:25,  6.74s/it]Epoch: 126/200 | Train Loss: 0.000512 | Time: 6.86s (cuda) | LR: 2.05e-05
+ 63%|██████▎   | 126/200 [14:24<08:21,  6.78s/it]Epoch: 127/200 | Train Loss: 0.000511 | Time: 6.86s (cuda) | LR: 2.05e-05
+ 64%|██████▎   | 127/200 [14:30<08:16,  6.80s/it]Epoch: 128/200 | Train Loss: 0.000509 | Time: 6.61s (cuda) | LR: 2.05e-05
+ 64%|██████▍   | 128/200 [14:37<08:05,  6.75s/it]Epoch: 129/200 | Train Loss: 0.000508 | Time: 6.42s (cuda) | LR: 2.05e-05
+ 64%|██████▍   | 129/200 [14:43<07:51,  6.65s/it]Epoch: 130/200 | Train Loss: 0.000506 | Time: 6.5s (cuda) | LR: 2.05e-05
+ 65%|██████▌   | 130/200 [14:50<07:42,  6.60s/it]Epoch: 131/200 | Train Loss: 0.000505 | Time: 6.21s (cuda) | LR: 2.05e-05
+ 66%|██████▌   | 131/200 [14:56<07:27,  6.48s/it]Epoch: 132/200 | Train Loss: 0.000504 | Time: 6.9s (cuda) | LR: 2.05e-05
+ 66%|██████▌   | 132/200 [15:03<07:29,  6.61s/it]Epoch: 133/200 | Train Loss: 0.000503 | Time: 6.46s (cuda) | LR: 2.05e-05
+ 66%|██████▋   | 133/200 [15:10<07:19,  6.56s/it]Epoch: 134/200 | Train Loss: 0.000501 | Time: 6.74s (cuda) | LR: 2.05e-05
+ 67%|██████▋   | 134/200 [15:16<07:16,  6.62s/it]Epoch: 135/200 | Train Loss: 0.000500 | Time: 6.44s (cuda) | LR: 2.05e-05
+ 68%|██████▊   | 135/200 [15:23<07:06,  6.56s/it]Epoch: 136/200 | Train Loss: 0.000499 | Time: 6.9s (cuda) | LR: 2.05e-05
+ 68%|██████▊   | 136/200 [15:30<07:06,  6.67s/it]Epoch: 137/200 | Train Loss: 0.000497 | Time: 7.23s (cuda) | LR: 2.05e-05
+ 68%|██████▊   | 137/200 [15:37<07:10,  6.84s/it]Epoch: 138/200 | Train Loss: 0.000497 | Time: 7.7s (cuda) | LR: 2.05e-05
+ 69%|██████▉   | 138/200 [15:45<07:19,  7.10s/it]Epoch: 139/200 | Train Loss: 0.000497 | Time: 7.1s (cuda) | LR: 2.05e-05
+ 70%|██████▉   | 139/200 [15:52<07:12,  7.10s/it]Epoch: 140/200 | Train Loss: 0.000495 | Time: 6.33s (cuda) | LR: 2.05e-05
+ 70%|███████   | 140/200 [15:58<06:52,  6.87s/it]Epoch: 141/200 | Train Loss: 0.000495 | Time: 7.0s (cuda) | LR: 2.05e-05
+ 70%|███████   | 141/200 [16:05<06:47,  6.91s/it]Epoch: 142/200 | Train Loss: 0.000494 | Time: 8.62s (cuda) | LR: 2.05e-05
+ 71%|███████   | 142/200 [16:14<07:10,  7.42s/it]Epoch: 143/200 | Train Loss: 0.000493 | Time: 7.53s (cuda) | LR: 2.05e-05
+ 72%|███████▏  | 143/200 [16:21<07:05,  7.46s/it]Epoch: 144/200 | Train Loss: 0.000492 | Time: 6.77s (cuda) | LR: 2.05e-05
+ 72%|███████▏  | 144/200 [16:28<06:46,  7.25s/it]Epoch: 145/200 | Train Loss: 0.000493 | Time: 7.31s (cuda) | LR: 2.05e-05
+ 72%|███████▎  | 145/200 [16:35<06:39,  7.27s/it]Epoch: 146/200 | Train Loss: 0.000490 | Time: 7.59s (cuda) | LR: 2.05e-05
+ 73%|███████▎  | 146/200 [16:43<06:37,  7.36s/it]Epoch: 147/200 | Train Loss: 0.000491 | Time: 6.55s (cuda) | LR: 2.05e-05
+ 74%|███████▎  | 147/200 [16:49<06:17,  7.12s/it]Epoch: 148/200 | Train Loss: 0.000489 | Time: 7.47s (cuda) | LR: 2.05e-05
+ 74%|███████▍  | 148/200 [16:57<06:15,  7.22s/it]Epoch: 149/200 | Train Loss: 0.000490 | Time: 6.82s (cuda) | LR: 2.05e-05
+ 74%|███████▍  | 149/200 [17:04<06:02,  7.10s/it]Epoch: 150/200 | Train Loss: 0.000489 | Time: 6.72s (cuda) | LR: 2.05e-05
+ 75%|███████▌  | 150/200 [17:10<05:49,  6.99s/it]Epoch: 151/200 | Train Loss: 0.000489 | Time: 7.16s (cuda) | LR: 1.64e-05
+ 76%|███████▌  | 151/200 [17:18<05:44,  7.04s/it]Epoch: 152/200 | Train Loss: 0.000448 | Time: 6.28s (cuda) | LR: 1.64e-05
+ 76%|███████▌  | 152/200 [17:24<05:27,  6.81s/it]Epoch: 153/200 | Train Loss: 0.000437 | Time: 7.03s (cuda) | LR: 1.64e-05
+ 76%|███████▋  | 153/200 [17:31<05:23,  6.88s/it]Epoch: 154/200 | Train Loss: 0.000438 | Time: 6.55s (cuda) | LR: 1.64e-05
+ 77%|███████▋  | 154/200 [17:37<05:11,  6.78s/it]Epoch: 155/200 | Train Loss: 0.000439 | Time: 6.65s (cuda) | LR: 1.64e-05
+ 78%|███████▊  | 155/200 [17:44<05:03,  6.74s/it]Epoch: 156/200 | Train Loss: 0.000437 | Time: 6.51s (cuda) | LR: 1.64e-05
+ 78%|███████▊  | 156/200 [17:51<04:53,  6.67s/it]Epoch: 157/200 | Train Loss: 0.000437 | Time: 6.87s (cuda) | LR: 1.64e-05
+ 78%|███████▊  | 157/200 [17:57<04:49,  6.73s/it]Epoch: 158/200 | Train Loss: 0.000436 | Time: 7.24s (cuda) | LR: 1.64e-05
+ 79%|███████▉  | 158/200 [18:05<04:49,  6.88s/it]Epoch: 159/200 | Train Loss: 0.000435 | Time: 6.71s (cuda) | LR: 1.64e-05
+ 80%|███████▉  | 159/200 [18:11<04:40,  6.83s/it]Epoch: 160/200 | Train Loss: 0.000433 | Time: 6.73s (cuda) | LR: 1.64e-05
+ 80%|████████  | 160/200 [18:18<04:32,  6.80s/it]Epoch: 161/200 | Train Loss: 0.000433 | Time: 8.48s (cuda) | LR: 1.64e-05
+ 80%|████████  | 161/200 [18:27<04:44,  7.30s/it]Epoch: 162/200 | Train Loss: 0.000431 | Time: 8.29s (cuda) | LR: 1.64e-05
+ 81%|████████  | 162/200 [18:35<04:48,  7.60s/it]Epoch: 163/200 | Train Loss: 0.000431 | Time: 6.92s (cuda) | LR: 1.64e-05
+ 82%|████████▏ | 163/200 [18:42<04:33,  7.40s/it]Epoch: 164/200 | Train Loss: 0.000430 | Time: 6.88s (cuda) | LR: 1.64e-05
+ 82%|████████▏ | 164/200 [18:49<04:20,  7.24s/it]Epoch: 165/200 | Train Loss: 0.000430 | Time: 6.53s (cuda) | LR: 1.64e-05
+ 82%|████████▎ | 165/200 [18:55<04:05,  7.03s/it]Epoch: 166/200 | Train Loss: 0.000429 | Time: 7.33s (cuda) | LR: 1.64e-05
+ 83%|████████▎ | 166/200 [19:03<04:02,  7.12s/it]Epoch: 167/200 | Train Loss: 0.000428 | Time: 6.74s (cuda) | LR: 1.64e-05
+ 84%|████████▎ | 167/200 [19:09<03:51,  7.01s/it]Epoch: 168/200 | Train Loss: 0.000428 | Time: 6.63s (cuda) | LR: 1.64e-05
+ 84%|████████▍ | 168/200 [19:16<03:40,  6.90s/it]Epoch: 169/200 | Train Loss: 0.000426 | Time: 6.27s (cuda) | LR: 1.64e-05
+ 84%|████████▍ | 169/200 [19:22<03:27,  6.71s/it]Epoch: 170/200 | Train Loss: 0.000427 | Time: 6.62s (cuda) | LR: 1.64e-05
+ 85%|████████▌ | 170/200 [19:29<03:20,  6.68s/it]Epoch: 171/200 | Train Loss: 0.000425 | Time: 6.87s (cuda) | LR: 1.64e-05
+ 86%|████████▌ | 171/200 [19:36<03:15,  6.74s/it]Epoch: 172/200 | Train Loss: 0.000424 | Time: 7.3s (cuda) | LR: 1.64e-05
+ 86%|████████▌ | 172/200 [19:43<03:13,  6.91s/it]Epoch: 173/200 | Train Loss: 0.000424 | Time: 6.9s (cuda) | LR: 1.64e-05
+ 86%|████████▋ | 173/200 [19:50<03:06,  6.91s/it]Epoch: 174/200 | Train Loss: 0.000424 | Time: 6.95s (cuda) | LR: 1.64e-05
+ 87%|████████▋ | 174/200 [19:57<02:59,  6.92s/it]Epoch: 175/200 | Train Loss: 0.000423 | Time: 8.39s (cuda) | LR: 1.64e-05
+ 88%|████████▊ | 175/200 [20:05<03:04,  7.36s/it]Epoch: 176/200 | Train Loss: 0.000423 | Time: 6.64s (cuda) | LR: 1.64e-05
+ 88%|████████▊ | 176/200 [20:12<02:51,  7.14s/it]Epoch: 177/200 | Train Loss: 0.000422 | Time: 6.7s (cuda) | LR: 1.64e-05
+ 88%|████████▊ | 177/200 [20:19<02:41,  7.01s/it]Epoch: 178/200 | Train Loss: 0.000422 | Time: 6.42s (cuda) | LR: 1.64e-05
+ 89%|████████▉ | 178/200 [20:25<02:30,  6.83s/it]Epoch: 179/200 | Train Loss: 0.000421 | Time: 7.51s (cuda) | LR: 1.64e-05
+ 90%|████████▉ | 179/200 [20:32<02:27,  7.04s/it]Epoch: 180/200 | Train Loss: 0.000421 | Time: 6.56s (cuda) | LR: 1.64e-05
+ 90%|█████████ | 180/200 [20:39<02:17,  6.89s/it]Epoch: 181/200 | Train Loss: 0.000421 | Time: 7.03s (cuda) | LR: 1.31e-05
+ 90%|█████████ | 181/200 [20:46<02:11,  6.94s/it]Epoch: 182/200 | Train Loss: 0.000388 | Time: 6.78s (cuda) | LR: 1.31e-05
+ 91%|█████████ | 182/200 [20:53<02:04,  6.89s/it]Epoch: 183/200 | Train Loss: 0.000379 | Time: 6.8s (cuda) | LR: 1.31e-05
+ 92%|█████████▏| 183/200 [21:00<01:56,  6.86s/it]Epoch: 184/200 | Train Loss: 0.000380 | Time: 6.17s (cuda) | LR: 1.31e-05
+ 92%|█████████▏| 184/200 [21:06<01:46,  6.65s/it]Epoch: 185/200 | Train Loss: 0.000381 | Time: 6.87s (cuda) | LR: 1.31e-05
+ 92%|█████████▎| 185/200 [21:13<01:40,  6.72s/it]Epoch: 186/200 | Train Loss: 0.000380 | Time: 7.04s (cuda) | LR: 1.31e-05
+ 93%|█████████▎| 186/200 [21:20<01:35,  6.82s/it]Epoch: 187/200 | Train Loss: 0.000380 | Time: 6.77s (cuda) | LR: 1.31e-05
+ 94%|█████████▎| 187/200 [21:27<01:28,  6.80s/it]Epoch: 188/200 | Train Loss: 0.000379 | Time: 6.93s (cuda) | LR: 1.31e-05
+ 94%|█████████▍| 188/200 [21:33<01:22,  6.84s/it]Epoch: 189/200 | Train Loss: 0.000378 | Time: 7.09s (cuda) | LR: 1.31e-05
+ 94%|█████████▍| 189/200 [21:41<01:16,  6.91s/it]Epoch: 190/200 | Train Loss: 0.000377 | Time: 7.32s (cuda) | LR: 1.31e-05
+ 95%|█████████▌| 190/200 [21:48<01:10,  7.04s/it]Epoch: 191/200 | Train Loss: 0.000377 | Time: 8.4s (cuda) | LR: 1.31e-05
+ 96%|█████████▌| 191/200 [21:56<01:07,  7.45s/it]Epoch: 192/200 | Train Loss: 0.000375 | Time: 6.97s (cuda) | LR: 1.31e-05
+ 96%|█████████▌| 192/200 [22:03<00:58,  7.30s/it]Epoch: 193/200 | Train Loss: 0.000376 | Time: 6.49s (cuda) | LR: 1.31e-05
+ 96%|█████████▋| 193/200 [22:10<00:49,  7.06s/it]Epoch: 194/200 | Train Loss: 0.000375 | Time: 7.32s (cuda) | LR: 1.31e-05
+ 97%|█████████▋| 194/200 [22:17<00:42,  7.14s/it]Epoch: 195/200 | Train Loss: 0.000374 | Time: 6.61s (cuda) | LR: 1.31e-05
+ 98%|█████████▊| 195/200 [22:24<00:34,  6.98s/it]Epoch: 196/200 | Train Loss: 0.000374 | Time: 6.9s (cuda) | LR: 1.31e-05
+ 98%|█████████▊| 196/200 [22:31<00:27,  6.96s/it]Epoch: 197/200 | Train Loss: 0.000373 | Time: 9.08s (cuda) | LR: 1.31e-05
+ 98%|█████████▊| 197/200 [22:40<00:22,  7.59s/it]Epoch: 198/200 | Train Loss: 0.000373 | Time: 7.57s (cuda) | LR: 1.31e-05
+ 99%|█████████▉| 198/200 [22:47<00:15,  7.58s/it]Epoch: 199/200 | Train Loss: 0.000372 | Time: 7.03s (cuda) | LR: 1.31e-05
+100%|█████████▉| 199/200 [22:54<00:07,  7.42s/it]Epoch: 200/200 | Train Loss: 0.000372 | Time: 6.81s (cuda) | LR: 1.31e-05
+100%|██████████| 200/200 [23:01<00:00,  7.24s/it]100%|██████████| 200/200 [23:01<00:00,  6.91s/it]
+
+Epoch with Least Loss: 200 | Loss: 0.00037156716661002065
+GMM_Mean0  PSNR: 43.62998479817405
+GMM_Mean1  PSNR: 43.62554764907071
+GMM_Mean2  PSNR: 43.60781705316506
+GMM_Std0  PSNR: 34.8970376653581
+GMM_Std1  PSNR: 35.366929931940646
+GMM_Std2  PSNR: 34.53709121520674
+GMM_Weight0  PSNR: 26.5559225188573
+GMM_Weight1  PSNR: 24.731719236223775
+GMM_Weight2  PSNR: 27.282317107436015
+
+Average psnr :  34.914929686159155
+RMSE: 0.018422704
+Traceback (most recent call last):
+  File "/data/tsudhakar24/thesis/three_heads.py", line 373, in <module>
+    makeVTI(image_data,scaled_data, n_predictions, num_points, total_vars, var_names, dim, isMaskPresent, mask_arr, vti_path, vti_name)
+NameError: name 'total_vars' is not defined

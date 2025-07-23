@@ -1,0 +1,143 @@
+# -*- coding: utf-8 -*-
+import vtk
+from vtk.util import numpy_support
+import pandas as pd
+import torch
+import torch.nn as nn
+import torch.optim as optim
+from torch.utils.data import TensorDataset, DataLoader
+from tqdm import tqdm
+import numpy as np
+
+# Load the VTI file
+reader = vtk.vtkXMLImageDataReader()
+reader.SetFileName("Isabel_3D.vti")
+reader.Update()
+image_data = reader.GetOutput()
+
+# Get dimensions and spacing
+dims = image_data.GetDimensions()
+spacing = image_data.GetSpacing()
+origin = image_data.GetOrigin()
+
+# Get the scalar data
+scalars = image_data.GetPointData().GetScalars()
+scalar_array = numpy_support.vtk_to_numpy(scalars)
+
+# Generate (x, y, z) coordinates based on image geometry
+x_coords = [origin[0] + i * spacing[0] for i in range(dims[0])]
+y_coords = [origin[1] + j * spacing[1] for j in range(dims[1])]
+z_coords = [origin[2] + k * spacing[2] for k in range(dims[2])]
+
+# Create a full grid of coordinates
+data = []
+index = 0
+for z in z_coords:
+    for y in y_coords:
+        for x in x_coords:
+            value = scalar_array[index]
+            data.append([x, y, z, value])
+            index += 1
+
+# Create a DataFrame
+df = pd.DataFrame(data, columns=["x", "y", "z", "value"])
+
+# Min-max normalization
+X = df[["x", "y", "z"]].values
+X_min = X.min(axis=0)
+X_max = X.max(axis=0)
+X_norm = (X - X_min) / (X_max - X_min)
+
+y = df["value"].values.reshape(-1, 1)
+y_min = y.min()
+y_max = y.max()
+y_norm = 2 * (y - y_min) / (y_max - y_min) - 1
+
+# Convert to tensors
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+X_tensor = torch.tensor(X_norm, dtype=torch.float32).to(device)
+y_tensor = torch.tensor(y_norm, dtype=torch.float32).to(device)
+
+# Dataloader
+batch_size = 2048
+dataset = TensorDataset(X_tensor, y_tensor)
+dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
+
+# Neural Network with ReLU
+class NeuralNet(nn.Module):
+    def __init__(self):
+        super(NeuralNet, self).__init__()
+        self.fc1 = nn.Linear(3, 50)
+        self.fc2 = nn.Linear(50, 50)
+        self.fc3 = nn.Linear(50, 50)
+        self.fc4 = nn.Linear(50, 50)
+        self.fc5 = nn.Linear(50, 1)
+
+    def forward(self, x):
+        x = torch.relu(self.fc1(x))
+        x = torch.relu(self.fc2(x))
+        x = torch.relu(self.fc3(x))
+        x = torch.relu(self.fc4(x))
+        x = self.fc5(x)
+        return x
+
+# Function to save VTI
+def save_vti(preds, filename):
+    preds_denorm = 0.5 * (preds + 1) * (y_max - y_min) + y_min
+    vtk_array = numpy_support.numpy_to_vtk(preds_denorm.ravel(), deep=True, array_type=vtk.VTK_FLOAT)
+    vtk_array.SetName("PredictedScalar")
+
+    output_image = vtk.vtkImageData()
+    output_image.SetDimensions(dims)
+    output_image.SetSpacing(spacing)
+    output_image.SetOrigin(origin)
+    output_image.GetPointData().SetScalars(vtk_array)
+
+    writer = vtk.vtkXMLImageDataWriter()
+    writer.SetFileName(filename)
+    writer.SetInputData(output_image)
+    writer.Write()
+    print(f"Saved VTI file: {filename}", flush=True)
+
+# Training loop
+model = NeuralNet().to(device)
+optimizer = optim.Adam(model.parameters(), lr=1e-5)
+criterion = nn.MSELoss()
+
+epochs = 500
+best_loss = float('inf')
+best_model_state = None
+
+for epoch in tqdm(range(epochs), desc="Training"):
+    model.train()
+    epoch_loss = 0.0
+    for batch_X, batch_y in dataloader:
+        optimizer.zero_grad()
+        outputs = model(batch_X)
+        loss = criterion(outputs, batch_y)
+        loss.backward()
+        optimizer.step()
+        epoch_loss += loss.item() * batch_X.size(0)
+    avg_loss = epoch_loss / len(dataset)
+    print(f"Epoch [{epoch+1}], Loss: {avg_loss:.6f}", flush=True)
+
+    if (epoch + 1) in [100, 200, 300, 400, 500]:
+        model.eval()
+        with torch.no_grad():
+            preds = model(X_tensor).cpu().numpy()
+        save_vti(preds, f"Isabel_3D_Predicted_Epoch{epoch+1}_relu.vti")
+
+    if avg_loss < best_loss:
+        best_loss = avg_loss
+        best_model_state = model.state_dict()
+
+# Save best model
+torch.save(best_model_state, "best_model_relu.pth")
+
+# Final prediction
+model.load_state_dict(best_model_state)
+model.eval()
+with torch.no_grad():
+    preds = model(X_tensor).cpu().numpy()
+save_vti(preds, "Isabel_3D_Predicted_Best_relu.vti")
+print("Best model VTI file saved as 'Isabel_3D_Predicted_Best_relu.vti'", flush=True)

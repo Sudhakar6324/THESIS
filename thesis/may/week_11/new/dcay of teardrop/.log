@@ -1,0 +1,94 @@
+nohup: ignoring input
+Could not save font_manager cache [Errno 122] Disk quota exceeded
+Device running: cuda
+Namespace(n_neurons=320, n_layers=6, epochs=200, batchsize=4096, lr=5e-05, no_decay=False, decay_rate=0.8, decay_at_interval=True, decay_interval=15, datapath='noise_gmm_week_8.vti', outpath='./models/', exp_path='../logs/', modified_data_path='./data/', dataset_name='3d_data', vti_name='predicted_isabel_7.vti', vti_path='./data/')
+
+Learning Rate: 5e-05
+Batch Size: 4096
+Decay Rate: 0.8
+Max Epochs: 200
+Number of Neurons per Layer: 320
+Number of Layers (including input/output): 8
+Data Path: noise_gmm_week_8.vti
+Output Path: ./models/
+Dataset Name: 3d_data
+Vti Name: predicted_isabel_7.vti
+train_3d_data_6rb_320n_4096bs_5e-05lr_Truedecay_0.8dr_decayingAtInterval15
+Decay: True
+Extracting variables from path: noise_gmm_week_8.vti
+
+n_pts: 3125000 dim: (250, 250, 50) n_dim: 3 total_arr: 9
+Total Variables: 9
+Univariate: False
+Coordinates Shape: (3125000, 3)
+Values Shape: (3125000, 9)
+Dataset Name: 3d_data
+Total Variables: 9
+Variables Name: ['GMM_Mean0', 'GMM_Mean1', 'GMM_Mean2', 'GMM_Std0', 'GMM_Std1', 'GMM_Std2', 'GMM_Weight0', 'GMM_Weight1', 'GMM_Weight2']
+
+Total Points in Data: 3125000
+Dimension of the Dataset: (250, 250, 50)
+Number of Dimensions: 3
+Coordinate Tensor Shape: torch.Size([3125000, 3])
+Scalar Values Tensor Shape: torch.Size([3125000, 9])
+
+###### Data setup is complete, now starting training ######
+
+MyResidualSirenNet(
+  (net_layers): ModuleList(
+    (0): SineLayer(
+      (linear): Linear(in_features=3, out_features=320, bias=True)
+    )
+    (1-6): 6 x ResidualSineLayer(
+      (linear_1): Linear(in_features=320, out_features=320, bias=True)
+      (linear_2): Linear(in_features=320, out_features=320, bias=True)
+    )
+    (7): Linear(in_features=320, out_features=9, bias=True)
+  )
+)
+Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 5e-05
+    maximize: False
+    weight_decay: 0
+)
+MSELoss()
+
+Learning Rate: 5e-05
+Max Epochs: 200
+Batch Size: 4096
+Number of Hidden Layers: 6
+Number of Neurons per Layer: 320
+Decay Rate: 0.8
+Rate decays every 15 epochs.
+
+
+==== Training with 300 Neurons ====
+  0%|          | 0/200 [00:00<?, ?it/s]/usr/local/lib/python3.10/dist-packages/numpy/core/fromnumeric.py:3504: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/usr/local/lib/python3.10/dist-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+  0%|          | 1/200 [00:19<1:05:13, 19.67s/it]epoch:0 LOSS:0.004288882950289104 LR:5e-05
+  1%|          | 2/200 [00:39<1:04:15, 19.47s/it]epoch:1 LOSS:0.0007466009162246771 LR:5e-05
+  2%|▏         | 3/200 [00:58<1:03:53, 19.46s/it]epoch:2 LOSS:0.0007095625721709131 LR:5e-05
+  2%|▏         | 4/200 [01:17<1:02:49, 19.23s/it]epoch:3 LOSS:0.0006953899185313583 LR:5e-05
+  2%|▎         | 5/200 [01:35<1:01:48, 19.02s/it]epoch:4 LOSS:0.0006830021082930179 LR:5e-05
+  3%|▎         | 6/200 [01:54<1:01:29, 19.02s/it]epoch:5 LOSS:0.0006806080312429053 LR:5e-05
+  4%|▎         | 7/200 [02:13<1:01:04, 18.98s/it]epoch:6 LOSS:0.0006745110274607445 LR:5e-05
+  4%|▍         | 8/200 [02:33<1:01:07, 19.10s/it]epoch:7 LOSS:0.0006714814948589391 LR:5e-05
+  4%|▍         | 9/200 [02:51<1:00:14, 18.93s/it]epoch:8 LOSS:0.0006717816845063476 LR:4e-05
+  5%|▌         | 10/200 [03:10<59:22, 18.75s/it] epoch:9 LOSS:0.0006460590037971315 LR:4e-05
+  6%|▌         | 11/200 [03:28<58:21, 18.53s/it]epoch:10 LOSS:0.0006528435062725697 LR:3.2000000000000005e-05
+  6%|▌         | 12/200 [03:46<57:50, 18.46s/it]epoch:11 LOSS:0.0006351405288566387 LR:3.2000000000000005e-05
+  6%|▋         | 13/200 [04:05<58:06, 18.64s/it]epoch:12 LOSS:0.000637890690242503 LR:2.5600000000000006e-05
+  7%|▋         | 14/200 [04:23<57:36, 18.58s/it]epoch:13 LOSS:0.000626084575707857 LR:2.5600000000000006e-05
+  8%|▊         | 15/200 [04:42<57:35, 18.68s/it]epoch:14 LOSS:0.0006269200332401757 LR:2.0480000000000007e-05
+  8%|▊         | 16/200 [05:01<57:18, 18.69s/it]epoch:15 LOSS:0.0006174487743812319 LR:1.6384000000000008e-05
+  8%|▊         | 17/200 [05:19<56:41, 18.59s/it]epoch:16 LOSS:0.0006108860935964579 LR:1.6384000000000008e-05

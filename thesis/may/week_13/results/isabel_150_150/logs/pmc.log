@@ -1,0 +1,13 @@
+basename
+Processing GMM: data/Isabel_3D_gmm.vti
+Saved output to isosurfaces/isosurface_Isabel_3D_gmm.vti
+basename
+Processing Gaussian: data/Isabel_3D_gaussian.vti
+Saved output to isosurfaces/isosurface_Isabel_3D_gaussian.vti
+basename
+Processing Gaussian: data/predicted_Isabel_3D_gaussian.vti
+Saved output to isosurfaces/isosurface_predicted_Isabel_3D_gaussian.vti
+basename
+Processing GMM: data/predicted_Isabel_3D_gmm.vti
+Saved output to isosurfaces/isosurface_predicted_Isabel_3D_gmm.vti
+basename

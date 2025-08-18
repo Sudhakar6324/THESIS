@@ -1,0 +1,13 @@
+basename
+Processing GMM: data/GT_teardrop_128x128x128_gmm.vti
+Saved output to isosurfaces/isosurface_GT_teardrop_128x128x128_gmm.vti
+basename
+Processing GMM: data/predicted_GT_teardrop_128x128x128_gmm.vti
+Saved output to isosurfaces/isosurface_predicted_GT_teardrop_128x128x128_gmm.vti
+basename
+basename
+Processing Gaussian: data/GT_teardrop_128x128x128_gaussian.vti
+Saved output to isosurfaces/isosurface_GT_teardrop_128x128x128_gaussian.vti
+basename
+Processing Gaussian: data/predicted_GT_teardrop_128x128x128_gaussian.vti
+Saved output to isosurfaces/isosurface_predicted_GT_teardrop_128x128x128_gaussian.vti

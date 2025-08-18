@@ -52,7 +52,7 @@ from argparse import Namespace
 args = Namespace(
     n_neurons=150,
     n_layers=6,
-    epochs=300,  # Required argument: Set the number of epochs
+    epochs=400,  # Required argument: Set the number of epochs
     batchsize=4096,
     lr=0.00005,
     no_decay=False,
@@ -64,7 +64,7 @@ args = Namespace(
     exp_path='../logs/',
     modified_data_path='./data/',
     dataset_name='3d_data',  # Required: Set the dataset name
-    vti_name='predicted_GT_Gaussian.vti',  # Required: Name of the dataset
+    vti_name='predicted.vti',  # Required: Name of the dataset
     vti_path='./data/',
     iso_value=159.9798,
     file_name="teardrop"
@@ -104,7 +104,8 @@ print(f"Data Path: {datapath}",flush=True)
 print(f"Output Path: {outpath}",flush=True)
 print(f"Dataset Name: {dataset_name}",flush=True)
 print(f"Vti Name: {vti_name}",flush=True)
-
+os.makedirs("data",exist_ok=True)
+os.makedirs("models",exist_ok=True)
 # load the data
 input_file=datapath
 reader = vtk.vtkXMLImageDataReader()
@@ -213,7 +214,7 @@ if(torch.cuda.is_available()):
 else:
     device = "cpu"
 print(device)
-
+print("1.currently generating gaussian")
 for name in array_names:
     curr_arr = data.GetPointData().GetArray(name)
     arr = vtk_to_numpy(curr_arr).reshape(dim[::-1])  # (z, y, x)
@@ -227,13 +228,13 @@ for name in array_names:
     point_data.AddArray(mean_vtk)
     point_data.AddArray(std_vtk)
 
-point_data.RemoveArray("teardrop")
+point_data.RemoveArray(array_names[0])
 output_file=f"GT_{file_name}_Gaussian.vti"
 writer = vtk.vtkXMLImageDataWriter()
 writer.SetFileName(output_file)
 writer.SetInputData(new_image_data)
 writer.Write()
-
+print("1.end of generating gaussian")
 """#pmc generation"""
 
 # === CONFIG ===
@@ -317,9 +318,6 @@ def write_vti(prob_grid, spacing, origin, output_path):
 
 def process_gaussian(vti_file,data):
     print(f"Processing Gaussian: {vti_file}",flush=True)
-    # reader = vtk.vtkXMLImageDataReader()
-    # reader.SetFileName(vti_file)
-    # reader.Update()
     image = data
     dims = image.GetDimensions()
     mean_3d = vtk_to_numpy(image.GetPointData().GetArray(0)).reshape(dims[::-1], order='F')
@@ -335,10 +333,7 @@ def process_gaussian(vti_file,data):
 
 def process_gmm(vti_file,data):
     print(f"Processing GMM: {vti_file}",flush=True)
-    reader = vtk.vtkXMLImageDataReader()
-    reader.SetFileName(vti_file)
-    reader.Update()
-    image = reader.GetOutput()
+    image=data
     dims = image.GetDimensions()
     gmm_means_3d = [vtk_to_numpy(image.GetPointData().GetArray(f"GMM_Mean{i}")).reshape(dims[::-1], order='F') for i in range(3)]
     gmm_stds_3d = [vtk_to_numpy(image.GetPointData().GetArray(f"GMM_Std{i}")).reshape(dims[::-1], order='F') for i in range(3)]
@@ -355,8 +350,10 @@ ISOLEVEL = iso_value
 N_SAMPLES = 10000
 vti_dir = "data"
 if __name__ == '__main__':
+    print("2.currently generating original gaussian isosurface")
     curr_file=f"gaussin_{file_name}.vti"
     process_gaussian(curr_file,new_image_data)
+    print("2.end generating original gaussian isosurface")
 
 """#gaussian sirenet"""
 
@@ -364,7 +361,7 @@ if __name__ == '__main__':
 """gaussian_sirenet.ipynb"""
 device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
 print('Device running:', device,flush=True)
-
+print("3.training sirenet for gaussian data")
 class SineLayer(nn.Module):
     def __init__(self, in_features, out_features, bias=True, is_first=False, omega_0=30):
         super().__init__()
@@ -555,7 +552,7 @@ def findMultiVariatePSNR(var_name, total_vars, actual, pred):
         psnr = compute_PSNR(actual[:,j], pred[:,j])
         psnr_list.append(psnr)
         tot += psnr
-        print(var_name, ' PSNR:', psnr,flush=True)
+        print(var_name[j], ' PSNR:', psnr,flush=True)
     avg_psnr = tot/total_vars
     print('\nAverage psnr : ', avg_psnr,flush=True)
      #this function is calculating the psnr of final epoch (or whenever it is called) of each variable and then averaging it
@@ -594,6 +591,7 @@ def makeVTI(data, val, n_predictions, n_pts, total_vars, var_name, dim, isMaskPr
         writer.SetInputData(img)
         writer.Write()
         print(f'Vti File written successfully at {vti_path}{vti_name}',flush=True)
+        return img
     else:
         for i in range(total_vars):
             f = var_name[i]
@@ -1169,25 +1167,27 @@ vti_path = args.vti_path
 if not os.path.exists(vti_path):
     os.makedirs(vti_path)
 # vti name
-vti_name = "predicted_gaussian_"+args.vti_name
+vti_name = "predicted_gaussian_"+f"{file_name}"+".vti"
 isMaskPresent = False
 mask_arr = []
 total_vars=2
 data=makeVTI(data,real_data, n_predictions, n_pts, total_vars, var_name, dim, isMaskPresent, mask_arr, vti_path, vti_name)
-print(data)
-
+#print(data)
+print("3.end of predciting and training sirenet for gaussian data")
 if __name__ == '__main__':
-    vti_file=f"gausssian_predicted_{file_name}.vti"
+    print("4.genrating isosurface on predicted gaussian")
+    curr_file=f"gausssian_predicted_{file_name}.vti"
     process_gaussian(curr_file,data)
+    print("4. end of genrating isosurface on predicted gaussian")
 
 """#gmm generation
 
 """
 
-no_of_samples = 500
+no_of_samples = 10000
 scale_factor = 2
 output_file = "GT_teardrop_GMM.vti"   # Output filename
-
+print("5.genration of gmm dataset")
 # === Load VTI Data ===
 # reader = vtk.vtkXMLImageDataReader()
 # reader.SetFileName(input_file)
@@ -1277,10 +1277,12 @@ writer.SetFileName(output_file)
 writer.SetInputData(image_data)
 writer.Write()
 print(f"Done. GMM output saved to '{output_file}'",flush=True)
-
+print("5. end of genration of gmm dataset")
 if __name__ == '__main__':
+    print("6.genration of isosurface on gmm dataset")
     curr_file=f"gmm_{file_name}.vti"
     process_gmm(curr_file,gmm_image_data)
+    print("6.end of genration of isosurface on gmm dataset")
 
 """#pmc for gmm"""
 
@@ -1289,6 +1291,7 @@ if __name__ == '__main__':
 
 '''loading the data'''
 #datasetup
+print("7.trainning sirenet on gmm dataset and then precdiction")
 reader=vtk.vtkXMLImageDataReader()
 reader.SetFileName(datapath)
 reader.update()
@@ -1305,14 +1308,14 @@ origin=image_data.GetOrigin()
 dim=image_data.GetDimensions()
 spacing=image_data.GetSpacing()
 num_points=dim[0]*dim[1]*dim[2]
-print(num_points)
+#print(num_points)
 
 data=[]
 for i in variables:
   vtk_array=point_data.GetArray(i)
   arr=vtk_to_numpy(vtk_array)
   data.append(arr)
-print(data)
+#print(data)
 
 def scale(arr):
    min = np.min(arr)
@@ -1429,10 +1432,6 @@ for name, indices in output_groups.items():
     model = create_model()
     optimizer = torch.optim.Adam(model.parameters(), lr=LR)
     train_loss_list = train_loss_logs[name]
-    if(name=='means'):
-        MAX_EPOCH=200
-    else:
-        MAX_EPOCH=200
 
     for epoch in tqdm(range(MAX_EPOCH)):
         model.train()
@@ -1543,6 +1542,7 @@ n_predictions = np.concatenate([means_pred, stds_pred, weights_pred], axis=1)
 
 # Evaluation
 total_vars = 9
+#def findMultiVariatePSNR(var_name, total_vars, actual, pred):
 findMultiVariatePSNR(variables, total_vars,scaled_data, n_predictions)
 rmse = compute_rmse(scaled_data, n_predictions)
 print("Final RMSE:", rmse,flush=True)
@@ -1580,17 +1580,19 @@ def getImageData(actual_img, val, n_pts, var_name, isMaskPresent, mask_arr):
 
 
 # vti saving path
-vti_path = "gmm_"+args.vti_path
+vti_path = args.vti_path
 if not os.path.exists(vti_path):
     os.makedirs(vti_path)
 # vti name
 isMaskPresent=False
 mask_arr=[]
-vti_name = args.vti_name+f"{file_name}"
-real_data=np.array(real_data).T
+vti_name = "gmm_"+f"{file_name}"+args.vti_name
+real_data=np.array(real_data)
 predicted_gmm_image_data=makeVTI(image_data, real_data, n_predictions, n_pts, total_vars, variables, dim, isMaskPresent, mask_arr, vti_path, vti_name)
-
+print("7. end of trainning sirenet on gmm dataset and then precdiction")
 if __name__ == '__main__':
+    print("8.genration of isosuface on predicted gmm dataset")
     curr_file=f"gmm_predicted_{file_name}.vti"
     process_gmm(curr_file,predicted_gmm_image_data)
-log_file.close()
+    print("8. end of genration of isosuface on predicted gmm dataset")
+

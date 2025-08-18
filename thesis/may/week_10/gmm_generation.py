@@ -7,10 +7,10 @@ from tqdm import tqdm
 import os
 
 # === Configuration ===
-no_of_samples = 500
+no_of_samples = 1000
 scale_factor = 2
-input_file = "data\GT_teardrop_Gaussian.vti"
-output_file = "data\GT_teardrop_GMM.vti"   # Output filename
+input_file = "data/GT_teardrop_Gaussian.vti"
+output_file = "data/GT_teardrop_GMM_week_11.vti"   # Output filename
 
 # === Load VTI Data ===
 reader = vtk.vtkXMLImageDataReader()

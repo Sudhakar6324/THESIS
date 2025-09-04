@@ -1,0 +1,6 @@
+nohup: ignoring input
+Execution finished. Log saved to logs/gaussian_generation.log
+Execution finished. Log saved to logs/gaussian_sirenet.log
+Execution finished. Log saved to logs/gmm_generation.log
+Execution finished. Log saved to logs/gmm_sirenet.log
+pmc is also excuted

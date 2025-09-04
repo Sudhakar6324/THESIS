@@ -1,0 +1,9 @@
+Input file: data/Isabel_3D.vti
+Output file: data/Isabel_3D_gaussian.vti
+(250, 250, 50)
+(1.0, 1.0, 1.0)
+(0.0, 0.0, 0.0)
+no of arrays 1
+['Pressure']
+cuda
+553.6638357317768

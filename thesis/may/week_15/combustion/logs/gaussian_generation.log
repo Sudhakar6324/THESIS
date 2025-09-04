@@ -1,0 +1,9 @@
+Input file: data/jet_mixfrac_0041.dat_2_subsampled.vti
+Output file: data/jet_mixfrac_0041.dat_2_subsampled_gaussian.vti
+(240, 360, 60)
+(1.0, 1.0, 1.0)
+(0.0, 0.0, 0.0)
+no of arrays 1
+['ImageScalars']
+cuda
+0.33407956
